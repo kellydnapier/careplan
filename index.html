@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Plan Builder</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a365d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;overflow:hidden}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#f0f2f5}
+  #app{display:flex;flex-direction:column;height:100vh}
+  .tab-bar{display:flex;background:#1a365d;flex-shrink:0;overflow-x:auto}
+  .tab-bar::-webkit-scrollbar{height:3px}
+  .tab-bar::-webkit-scrollbar-thumb{background:#63b3ed}
+  .tab-btn{padding:10px 15px;border:none;border-bottom:3px solid transparent;background:transparent;color:#a0b4d0;font-weight:500;font-size:13px;cursor:pointer;white-space:nowrap;transition:all .15s;letter-spacing:.3px}
+  .tab-btn:hover{color:#cbd5e0}
+  .tab-btn.active{border-bottom-color:#63b3ed;background:#2a4a7f;color:#fff;font-weight:700}
+  .main{display:flex;gap:8px;padding:8px;flex:1;overflow:hidden}
+  .panel-left{width:33.33%;display:flex;flex-direction:column;gap:6px;overflow-y:auto;flex-shrink:0}
+  .panel-left::-webkit-scrollbar{width:4px}
+  .panel-left::-webkit-scrollbar-thumb{background:#cbd5e0;border-radius:4px}
+  .panel-right-area{width:66.66%;overflow-y:auto;display:flex;flex-direction:column;gap:6px}
+  .panel-right-area::-webkit-scrollbar{width:4px}
+  .panel-right-area::-webkit-scrollbar-thumb{background:#cbd5e0;border-radius:4px}
+  .int-row{display:flex;gap:8px;align-items:flex-start;flex-shrink:0}
+  .int-col{width:50%}
+  .card{background:#fff;border-radius:6px;border:1px solid #d1d5db;padding:10px;display:flex;flex-direction:column;flex-shrink:0}
+  .card-label{font-weight:700;font-size:12px;color:#1a365d;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px;line-height:1.3;flex-shrink:0}
+  .card-body{font-size:13px;color:#2d3748;line-height:1.5;white-space:pre-wrap}
+  .notes-body{font-size:12px;color:#374151;line-height:1.5;white-space:pre-wrap;overflow-y:auto;max-height:calc(33vh - 36px)}
+  .notes-body::-webkit-scrollbar{width:4px}
+  .notes-body::-webkit-scrollbar-thumb{background:#cbd5e0;border-radius:4px}
+  .notes-card{max-height:33vh}
+  .cond-list{overflow-y:auto;flex:1}
+  .cond-list::-webkit-scrollbar{width:4px}
+  .cond-list::-webkit-scrollbar-thumb{background:#cbd5e0;border-radius:4px}
+  .cond-item{display:flex;align-items:flex-start;gap:6px;padding:3px 0;cursor:pointer;font-size:13px;color:#2d3748;line-height:1.3}
+  .cond-item input{margin-top:2px;accent-color:#2a4a7f}
+  .cond-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .cond-title{font-weight:700;font-size:13px;color:#1a365d;text-transform:uppercase;letter-spacing:.5px}
+  .clear-btn{font-size:11px;color:#e53e3e;background:none;border:1px solid #e53e3e;border-radius:4px;padding:2px 8px;cursor:pointer}
+  .clear-btn:hover{background:#fff5f5}
+  .cp-select{width:100%;padding:6px 8px;border-radius:4px;border:1px solid #cbd5e0;font-size:13px;color:#2d3748;background:#fff}
+  .cp-select:disabled{background:#edf2f7}
+  .placeholder{flex:1;display:flex;align-items:center;justify-content:center;color:#718096;font-size:15px;font-style:italic}
+  .loading{flex:1;display:flex;align-items:center;justify-content:center;color:#4a5568;font-size:15px}
+</style>
+</head>
+<body>
+<div id="app"><div class="loading">Loading care plan data...</div></div>
+<script>
+let DATA = null;
+let S = { activeTab: "Cardiac", sel: {}, cp: {} };
+
+// Load data from external JSON file
+fetch('data.json')
+  .then(r => {
+    if (!r.ok) throw new Error('Failed to load data.json');
+    return r.json();
+  })
+  .then(d => { DATA = d; render(); })
+  .catch(e => {
+    document.getElementById('app').innerHTML =
+      '<div class="loading" style="color:#e53e3e;flex-direction:column;gap:8px">' +
+      '<div>Error loading data.json</div>' +
+      '<div style="font-size:12px;color:#718096">' + e.message + '</div></div>';
+  });
+
+function getTabs() {
+  if (!DATA) return [];
+  return Object.keys(DATA.body_systems);
+}
+
+function gSel() { return S.sel[S.activeTab] || []; }
+function gCP() { return S.cp[S.activeTab] || ""; }
+
+function toggleCond(c) {
+  const cur = gSel();
+  S.sel[S.activeTab] = cur.includes(c) ? cur.filter(x => x !== c) : [...cur, c];
+  render();
+}
+function clearAll() { S.sel[S.activeTab] = []; S.cp[S.activeTab] = ""; render(); }
+function setCP(v) { S.cp[S.activeTab] = v; render(); }
+function setTab(t) { S.activeTab = t; render(); }
+
+function condStr() {
+  const s = [...gSel()].sort().map(c => c.toLowerCase());
+  if (!s.length) return "";
+  if (s.length === 1) return s[0];
+  if (s.length === 2) return s[0] + " and " + s[1];
+  return s.slice(0, -1).join(", ") + ", and " + s[s.length - 1];
+}
+
+function repl(t) {
+  const c = condStr();
+  if (!c) return t;
+  return t.replace(/\(chronic illness\/es\)/gi, c).replace(/\(chronic illnes\/es\)/gi, c);
+}
+
+function getCarePlanData() {
+  const cp = gCP();
+  if (!cp || !DATA) return null;
+  return DATA.care_plans[cp] || null;
+}
+
+function activeInts() {
+  const sel = gSel(), cpd = getCarePlanData();
+  if (!cpd || !sel.length) return [];
+  const ints = cpd.interventions;
+  const result = [];
+  for (const key of Object.keys(ints).sort()) {
+    const int = ints[key];
+    if (int.skip_if_empty) {
+      const field = int.notes_field;
+      const hasData = sel.some(c => {
+        const cn = DATA.conditions[c];
+        return cn && cn[field] && cn[field].trim().length > 0;
+      });
+      if (!hasData) continue;
+    }
+    result.push(key);
+  }
+  return result;
+}
+
+function getNotes(intKey) {
+  const sel = gSel(), cpd = getCarePlanData();
+  if (!cpd || !sel.length) return "";
+  const int = cpd.interventions[intKey];
+  if (!int) return "";
+  const parts = [];
+
+  if (int.notes_source === "body_system") {
+    const em = DATA.emergency_notes[S.activeTab] || "";
+    if (em) parts.push(em);
+  } else {
+    const field = int.notes_field;
+    for (const c of sel) {
+      const cn = DATA.conditions[c];
+      if (!cn) continue;
+      const ct = cn[field] || "";
+      if (ct.trim()) parts.push(ct.trim());
+    }
+  }
+  return parts.join("\n\n\n");
+}
+
+function E(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function escQ(s) { return s.replace(/'/g, "\\'"); }
+
+function render() {
+  if (!DATA) return;
+  const tab = S.activeTab, sel = gSel(), cp = gCP();
+  const isCareCoord = tab === "Care Coordination";
+  const conds = DATA.body_systems[tab] || [];
+  const cpd = getCarePlanData();
+  const ai = activeInts();
+  const has = cpd && sel.length > 0;
+  const cpNames = Object.keys(DATA.care_plans);
+  let h = '';
+
+  // Tab bar
+  h += '<div class="tab-bar">';
+  for (const t of getTabs()) {
+    h += '<button class="tab-btn' + (t === tab ? ' active' : '') + '" onclick="setTab(\'' + escQ(t) + '\')">' + E(t) + '</button>';
+  }
+  h += '</div>';
+
+  if (isCareCoord) {
+    h += '<div class="placeholder">Care Coordination \u2014 Coming in a future version</div>';
+  } else {
+    h += '<div class="main">';
+
+    // LEFT PANEL
+    h += '<div class="panel-left">';
+
+    h += '<div class="card" style="max-height:260px">';
+    h += '<div class="cond-header"><span class="cond-title">Conditions</span><button class="clear-btn" onclick="clearAll()">Clear All</button></div>';
+    h += '<div class="cond-list">';
+    for (const c of conds) {
+      const ck = sel.includes(c) ? ' checked' : '';
+      h += '<label class="cond-item"><input type="checkbox"' + ck + ' onchange="toggleCond(\'' + escQ(c) + '\')"><span>' + E(c) + '</span></label>';
+    }
+    h += '</div></div>';
+
+    h += '<div class="card"><div class="card-label">Care Plan</div>';
+    h += '<select class="cp-select" onchange="setCP(this.value)"' + (sel.length === 0 ? ' disabled' : '') + '>';
+    h += '<option value=""' + (cp ? '' : ' selected') + '>-- Select Care Plan --</option>';
+    for (const name of cpNames) {
+      h += '<option value="' + E(name) + '"' + (cp === name ? ' selected' : '') + '>' + E(name) + '</option>';
+    }
+    h += '</select></div>';
+
+    h += '<div class="card"><div class="card-label">Problem</div>';
+    h += '<div class="card-body">' + (has ? E(repl(cpd.problem)) : '') + '</div></div>';
+
+    h += '<div class="card"><div class="card-label">Goal</div>';
+    h += '<div class="card-body">' + (has ? E(repl(cpd.goal)) : '') + '</div></div>';
+
+    h += '</div>';
+
+    // RIGHT AREA - Intervention + Notes rows
+    h += '<div class="panel-right-area">';
+    const il = ai.length > 0 ? ai : Object.keys(cpd ? cpd.interventions : { 1: 1, 2: 1, 3: 1, 4: 1, 5: 1 }).sort();
+    for (const k of il) {
+      const int = cpd ? cpd.interventions[k] : null;
+      const lbl = (cpd && int) ? 'Intervention ' + k + ' - ' + int.label : 'Intervention ' + k;
+      h += '<div class="int-row">';
+      h += '<div class="int-col"><div class="card"><div class="card-label">' + E(lbl) + '</div>';
+      h += '<div class="card-body">' + (has && int ? E(repl(int.text)) : '') + '</div></div></div>';
+      h += '<div class="int-col"><div class="card notes-card"><div class="card-label">Notes</div>';
+      h += '<div class="notes-body">' + (has ? E(getNotes(k)) : '') + '</div></div></div>';
+      h += '</div>';
+    }
+    h += '</div>';
+
+    h += '</div>';
+  }
+  document.getElementById('app').innerHTML = h;
+}
+
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(() => {}); }
+</script>
+</body>
+</html>
