@@ -58,6 +58,7 @@
     ],
     "Neurological Issues": [
       "CVA/Stroke",
+      "Migraine",
       "Multiple Sclerosis",
       "Parkinson Disease",
       "Seizure Disorders",
@@ -3234,6 +3235,71 @@
           "Symptoms occurring more than twice per week",
           "Worsening or new symptoms despite treatment",
           "Need for antacid use more frequently than recommended"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Migraine": {
+      "education": "What is Migraine?\nMigraine is a neurological condition that causes recurring episodes of moderate to severe headache, often accompanied by other symptoms affecting the nervous system and body. Migraine is more than just a headache \u2014 it can be debilitating and may interfere with daily activities at home, work, and school. Untreated migraine attacks typically last between 4 and 72 hours.\n\nSigns and Symptoms:\n\u2022Intense, throbbing, or pulsing headache, often on one side of the head but sometimes on both sides\n\u2022Nausea and vomiting\n\u2022Sensitivity to light, sound, or smells\n\u2022Dizziness or lightheadedness\n\u2022Fatigue or weakness\n\u2022Visual disturbances (aura), such as flashing lights, zigzag lines, or blind spots\n\u2022Numbness or tingling, usually in the face or hands (aura)\n\u2022Difficulty concentrating or thinking clearly (brain fog)\n\u2022Mood changes, irritability, or depression before or after an attack\n\u2022Neck stiffness\n\u2022Food cravings or loss of appetite before an attack\n\u2022Yawning excessively before an attack (prodromal phase)\n\nRisk Factors:\n\u2022Family history of migraine (strong genetic component)\n\u2022Being female (women are three times more likely than men to experience migraine)\n\u2022Hormonal changes (menstruation, pregnancy, menopause, oral contraceptive use)\n\u2022Age (most commonly begins in teens to early twenties)\n\u2022Stress\n\u2022Sleep disturbances (too much or too little sleep, irregular sleep schedule)\n\u2022Certain foods and beverages (alcohol, aged cheeses, chocolate, caffeine, processed foods, foods containing MSG or nitrates)\n\u2022Environmental factors (bright or flickering lights, strong smells, loud sounds, weather changes)\n\u2022Dehydration\n\u2022Skipping meals\n\u2022Other medical conditions (depression, anxiety, bipolar disorder, sleep disorders, epilepsy)\n\u2022Tobacco use\n\nTreatment and Self-Management:\n\u2022Take prescribed medications as directed. Migraine medications may include acute treatments (triptans, NSAIDs, anti-nausea medications, gepants) and preventive treatments (beta-blockers, anticonvulsants, antidepressants, CGRP monoclonal antibodies, or Botox injections).\n\u2022Take acute migraine medication at the first sign of an attack for best effectiveness.\n\u2022Avoid overusing acute pain medications, which can lead to medication-overuse headache (rebound headache).\n\u2022Keep a headache diary or journal to track frequency, duration, triggers, symptoms, and response to treatment.\n\u2022Identify and avoid personal migraine triggers.\n\u2022Maintain a regular sleep schedule.\n\u2022Stay well-hydrated and do not skip meals.\n\u2022Manage stress through relaxation techniques, exercise, biofeedback, or cognitive behavioral therapy.\n\u2022Stay physically active with regular, moderate exercise as tolerated.\n\u2022Rest in a quiet, dark room during an attack.\n\u2022Apply cold packs to the forehead or neck if helpful.\n\u2022Discuss preventive medication options with the healthcare provider if migraines occur frequently (4 or more days per month), are severe, or significantly interfere with daily life.\n\u2022Keep all scheduled neurology and PCP appointments.\n\nReferences:\nNational Institute of Neurological Disorders and Stroke. (2024). Migraine. https://www.ninds.nih.gov/health-information/disorders/migraine\nMedlinePlus. (2024). Migraine. https://medlineplus.gov/migraine.html\nAmerican Migraine Foundation. (2024). Understanding migraine. https://americanmigrainefoundation.org",
+      "diet": {
+        "overview": "Migraine Diet: Certain foods and dietary habits can trigger or worsen migraine attacks. Keeping a food diary can help identify personal dietary triggers. Common food triggers include aged cheeses, alcohol (especially red wine), chocolate, caffeine (both excess and withdrawal), processed meats containing nitrates, foods with MSG, and artificial sweeteners. Maintaining regular meal times, staying well-hydrated, and avoiding known personal triggers are key dietary strategies for migraine management.",
+        "eat_more": [
+          "Magnesium-rich foods such as spinach, almonds, cashews, pumpkin seeds, and black beans",
+          "Fresh fruits and vegetables",
+          "Whole grains",
+          "Lean proteins",
+          "Foods rich in omega-3 fatty acids such as salmon, sardines, and flaxseed",
+          "Foods rich in riboflavin (vitamin B2) such as eggs, lean meats, and fortified cereals",
+          "Adequate water throughout the day (at least 6-8 glasses)"
+        ],
+        "limit": [
+          "Caffeine to a consistent, moderate amount (sudden changes in caffeine intake can trigger migraine)",
+          "Alcohol, especially red wine and beer",
+          "Aged cheeses (cheddar, blue cheese, parmesan, brie)",
+          "Processed and cured meats (hot dogs, bacon, deli meats) containing nitrates or nitrites",
+          "Foods containing monosodium glutamate (MSG)",
+          "Artificial sweeteners (aspartame)",
+          "Chocolate, if identified as a personal trigger",
+          "Sodium"
+        ],
+        "avoid": [
+          "Skipping meals or fasting, which can trigger migraine",
+          "Dehydration",
+          "Sudden changes in caffeine intake (either significant increase or abrupt withdrawal)",
+          "Foods identified as personal migraine triggers",
+          "Excessive alcohol consumption"
+        ],
+        "guidelines": [
+          "Keep a food diary to identify personal dietary triggers",
+          "Eat regular meals at consistent times throughout the day",
+          "Stay well-hydrated \u2014 dehydration is a common migraine trigger",
+          "Limit but do not abruptly stop caffeine if it is a regular part of your diet",
+          "Discuss magnesium, riboflavin, or CoQ10 supplementation with the healthcare provider",
+          "Follow any individualized dietary recommendations from the healthcare provider"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Sudden, severe headache that is the worst headache of your life (thunderclap headache)",
+          "Headache accompanied by fever, stiff neck, confusion, seizure, double vision, weakness, numbness, or difficulty speaking",
+          "Headache after a head injury",
+          "Headache with loss of consciousness",
+          "Headache that is progressively worsening and unlike any previous headache",
+          "New headache with sudden vision loss",
+          "Severe headache with signs of stroke (facial drooping, arm weakness, speech difficulty)"
+        ],
+        "call_provider": [
+          "Migraines that are increasing in frequency or severity",
+          "New headache pattern or change in the character of usual headaches",
+          "Migraines not responding to current treatment",
+          "Need for acute migraine medication more than 2-3 times per week",
+          "Migraines significantly interfering with work, school, or daily activities",
+          "New or worsening aura symptoms",
+          "Side effects from migraine medications",
+          "Migraine with new neurological symptoms not previously experienced",
+          "Waking from sleep due to headache",
+          "Persistent nausea or vomiting with migraine that prevents keeping medications or fluids down"
         ]
       },
       "online": "",
