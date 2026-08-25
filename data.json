@@ -23,6 +23,7 @@
       "Coronary Artery Disease",
       "Dyslipidemia",
       "Hypertension",
+      "Pulmonary Hypertension",
       "Sick Sinus Syndrome"
     ],
     "Vascular Issues": [
@@ -32,15 +33,18 @@
     ],
     "Pulmonary Issues": [
       "Asthma",
+      "Bronchiectasis",
       "COPD",
       "Cystic Fibrosis",
+      "Emphysema",
       "OSA",
       "Pulmonary Fibrosis"
     ],
     "Endocrine Issues": [
       "Diabetes",
       "Hyperparathyroidism",
-      "Hypothyroidism"
+      "Hypothyroidism",
+      "Thyroid Nodules"
     ],
     "Renal Issues": [
       "CKD"
@@ -70,19 +74,31 @@
     "Gastrointestinal Issues": [
       "Cirrhosis",
       "Crohn's Disease",
+      "Diverticulitis",
+      "Dysphagia",
+      "Gallstones",
+      "GI Bleed",
       "Inflammatory Bowel Disease",
       "Liver Disease",
       "NASH"
     ],
     "Musculoskeletal Issues": [
+      "Amputation",
       "Arthritis",
       "Back Pain",
+      "Carpal Tunnel Syndrome",
       "DDD",
-      "Osteoporosis"
+      "Osteoporosis",
+      "Spondylosis"
     ],
-    "Integumentary Issues": [],
+    "Integumentary Issues": [
+      "Atopic Dermatitis",
+      "Basal Cell Carcinoma",
+      "Wound Care"
+    ],
     "Hematological Issues": [
       "Anemia",
+      "Medication Induced Coagulopathy",
       "Sickle Cell Disease"
     ],
     "ENT Issues": [
@@ -152,7 +168,7 @@
           "New or worsening shortness of breath with usual activities"
         ]
       },
-      "online": "American Heart Association (AHA) \u2013 Atrial Fibrillation\nWebsite: https://www.heart.org/en/health-topics/atrial-fibrillation\n\nCenters for Disease Control and Prevention (CDC) \u2013 Atrial Fibrillation\nWebsite: https://www.cdc.gov/heart-disease/about/atrial-fibrillation.html\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 Atrial Fibrillation\nWebsite: https://www.nhlbi.nih.gov/health/atrial-fibrillation\n\nMedlinePlus \u2013 Atrial Fibrillation\nWebsite: https://medlineplus.gov/atrialfibrillation.html",
+      "online": "",
       "community": ""
     },
     "Congestive Heart Failure": {
@@ -208,7 +224,7 @@
           "Decreased appetite, nausea, or abdominal bloating"
         ]
       },
-      "online": "American Heart Association (AHA) \u2013 Heart Failure\nWebsite: https://www.heart.org/en/health-topics/heart-failure\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 Heart Failure\nWebsite: https://www.nhlbi.nih.gov/health/heart-failure\n\nCenters for Disease Control and Prevention (CDC) \u2013 Heart Failure\nWebsite: https://www.cdc.gov/heart-disease/about/heart-failure.html\n\nMedlinePlus \u2013 Heart Failure\nWebsite: https://medlineplus.gov/heartfailure.html",
+      "online": "",
       "community": ""
     },
     "Coronary Artery Disease": {
@@ -266,7 +282,7 @@
           "Side effects from cardiac medications"
         ]
       },
-      "online": "American Heart Association (AHA) \u2013 Coronary Artery Disease\nWebsite: https://www.heart.org/en/health-topics/consumer-healthcare/what-is-cardiovascular-disease/coronary-artery-disease\n\nCenters for Disease Control and Prevention (CDC) \u2013 Heart Disease\nWebsite: https://www.cdc.gov/heart-disease\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 Coronary Heart Disease\nWebsite: https://www.nhlbi.nih.gov/health/coronary-heart-disease\n\nMedlinePlus \u2013 Heart Diseases\nWebsite: https://medlineplus.gov/heartdiseases.html",
+      "online": "",
       "community": ""
     },
     "Dyslipidemia": {
@@ -326,7 +342,7 @@
           "Questions about medication interactions"
         ]
       },
-      "online": "Centers for Disease Control and Prevention (CDC) \u2013 Cholesterol\nWebsite: https://www.cdc.gov/cholesterol\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 High Blood Cholesterol\nWebsite: https://www.nhlbi.nih.gov/health/high-blood-cholesterol\n\nAmerican Heart Association (AHA) \u2013 Cholesterol\nWebsite: https://www.heart.org/en/health-topics/cholesterol\n\nMedlinePlus \u2013 Cholesterol\nWebsite: https://medlineplus.gov/cholesterol.html",
+      "online": "",
       "community": ""
     },
     "Hypertension": {
@@ -385,7 +401,7 @@
           "Blood in the urine"
         ]
       },
-      "online": "American Heart Association (AHA) \u2013 High Blood Pressure\nWebsite: https://www.heart.org/en/health-topics/high-blood-pressure\n\nCenters for Disease Control and Prevention (CDC) \u2013 High Blood Pressure\nWebsite: https://www.cdc.gov/high-blood-pressure/index.html\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 High Blood Pressure\nWebsite: https://www.nhlbi.nih.gov/health/high-blood-pressure\n\nMedlinePlus \u2013 High Blood Pressure\nWebsite: https://medlineplus.gov/highbloodpressure.html",
+      "online": "",
       "community": ""
     },
     "Sick Sinus Syndrome": {
@@ -439,7 +455,7 @@
           "Worsening shortness of breath with usual activities"
         ]
       },
-      "online": "American Heart Association (AHA) \u2013 Sick Sinus Syndrome\nWebsite: https://www.heart.org/en/health-topics/arrhythmia/about-arrhythmia/other-heart-rhythm-disorders\n\nAmerican Heart Association (AHA) \u2013 Pacemakers\nWebsite: https://www.heart.org/en/health-topics/arrhythmia/prevention--treatment-of-arrhythmia/pacemaker\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 Arrhythmias\nWebsite: https://www.nhlbi.nih.gov/health/arrhythmias\n\nMedlinePlus \u2013 Pacemakers and Implantable Defibrillators\nWebsite: https://medlineplus.gov/pacemakersandimplantabledefibrillators.html",
+      "online": "",
       "community": ""
     },
     "Abdominal Aortic Aneurysm": {
@@ -489,7 +505,7 @@
           "Side effects from medications"
         ]
       },
-      "online": "Society for Vascular Surgery \u2013 Abdominal Aortic Aneurysm\nWebsite: https://vascular.org/patients-and-referring-physicians/conditions/abdominal-aortic-aneurysm\n\nNational Heart, Lung, and Blood Institute (NHLBI) \u2013 Aortic Aneurysm\nWebsite: https://www.nhlbi.nih.gov/health/aortic-aneurysm\n\nMedlinePlus \u2013 Aortic Aneurysm\nWebsite: https://medlineplus.gov/aorticaneurysm.html",
+      "online": "",
       "community": ""
     },
     "PAD": {
@@ -542,7 +558,7 @@
           "Signs of infection in any foot or leg wound"
         ]
       },
-      "online": "American Heart Association \u2013 Peripheral Artery Disease\nWebsite: https://www.heart.org/en/health-topics/peripheral-artery-disease\n\nNational Heart, Lung, and Blood Institute \u2013 PAD\nWebsite: https://www.nhlbi.nih.gov/health/peripheral-artery-disease\n\nMedlinePlus \u2013 Peripheral Arterial Disease\nWebsite: https://medlineplus.gov/peripheralarterialdisease.html",
+      "online": "",
       "community": ""
     },
     "PVD": {
@@ -594,7 +610,7 @@
           "Numbness or tingling in the legs or feet"
         ]
       },
-      "online": "American Heart Association \u2013 Peripheral Vascular Disease\nWebsite: https://www.heart.org\n\nJohns Hopkins Medicine \u2013 PVD\nWebsite: https://www.hopkinsmedicine.org/health/conditions-and-diseases/peripheral-vascular-disease\n\nMedlinePlus \u2013 Peripheral Vascular Disease\nWebsite: https://medlineplus.gov/vasculardiseases.html",
+      "online": "",
       "community": ""
     },
     "Asthma": {
@@ -620,7 +636,7 @@
           "Need for rescue inhaler refills more frequently than expected"
         ]
       },
-      "online": "National Heart, Lung, and Blood Institute \u2013 Asthma\nWebsite: https://www.nhlbi.nih.gov/health/asthma\n\nCenters for Disease Control and Prevention \u2013 Asthma\nWebsite: https://www.cdc.gov/asthma\n\nAmerican Lung Association \u2013 Asthma\nWebsite: https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma",
+      "online": "",
       "community": ""
     },
     "COPD": {
@@ -648,8 +664,8 @@
           "Worsening wheezing or chest tightness"
         ]
       },
-      "online": "American Lung Association \u2013 COPD\nWebsite: https://www.lung.org/lung-health-diseases/lung-disease-lookup/copd\n\nCenters for Disease Control and Prevention \u2013 COPD\nWebsite: https://www.cdc.gov/copd\n\nNational Heart, Lung, and Blood Institute \u2013 COPD\nWebsite: https://www.nhlbi.nih.gov/health/copd\n\nMedlinePlus \u2013 COPD\nWebsite: https://medlineplus.gov/copd.html",
-      "community": "-American Lung Association's Breathers Club\nContact number: 1-800-586-4872\n\n-Kick It California\nKickitca.org\nEnglish: 1-800-300-8086\nEspanol: 1-800-600-8191"
+      "online": "",
+      "community": ""
     },
     "Cystic Fibrosis": {
       "education": "What is Cystic Fibrosis (CF)?\nCystic fibrosis is a genetic disorder that causes thick, sticky mucus to build up in the lungs, digestive tract, and other organs. The mucus clogs the airways and traps bacteria, leading to repeated lung infections, progressive lung damage, and difficulty breathing. CF also affects the pancreas, impairing digestion and nutrient absorption.\n\nSigns and Symptoms:\n\u2022Persistent cough that produces thick mucus\n\u2022Frequent lung infections such as pneumonia and bronchitis\n\u2022Wheezing or shortness of breath\n\u2022Poor growth or weight gain despite good appetite\n\u2022Very salty-tasting skin\n\u2022Frequent, greasy, or bulky stools\n\u2022Difficulty with bowel movements or intestinal blockage\n\u2022Nasal polyps or chronic sinus infections\n\u2022Clubbing of the fingers and toes\n\u2022Male infertility\n\nRisk Factors:\n\u2022Family history of cystic fibrosis (inherited genetic condition)\n\u2022Both parents must carry the CF gene mutation\n\u2022Most commonly affects Caucasian individuals\n\nTreatment and Self-Management:\n\u2022Take all prescribed medications as directed, including CFTR modulators, mucus-thinning medications, bronchodilators, and antibiotics.\n\u2022Perform airway clearance techniques daily as directed.\n\u2022Take pancreatic enzyme replacements with meals and snacks as prescribed.\n\u2022Take prescribed vitamins and nutritional supplements.\n\u2022Maintain a high-calorie, high-fat diet as recommended.\n\u2022Stay physically active as tolerated.\n\u2022Avoid exposure to cigarette smoke, air pollution, and people who are sick.\n\u2022Maintain good hand hygiene.\n\u2022Keep all scheduled pulmonology, gastroenterology, and CF clinic appointments.\n\u2022Receive recommended vaccinations.\n\nReferences:\nCystic Fibrosis Foundation. (2024). About cystic fibrosis. https://www.cff.org\nNational Heart, Lung, and Blood Institute. (2022). Cystic fibrosis. https://www.nhlbi.nih.gov/health/cystic-fibrosis\nCenters for Disease Control and Prevention. (2024). Cystic fibrosis. https://www.cdc.gov/cystic-fibrosis/about/index.html",
@@ -700,7 +716,7 @@
           "Blood-streaked mucus"
         ]
       },
-      "online": "Cystic Fibrosis Foundation\nWebsite: https://www.cff.org\n\nNational Heart, Lung, and Blood Institute \u2013 Cystic Fibrosis\nWebsite: https://www.nhlbi.nih.gov/health/cystic-fibrosis\n\nMedlinePlus \u2013 Cystic Fibrosis\nWebsite: https://medlineplus.gov/cysticfibrosis.html",
+      "online": "",
       "community": ""
     },
     "OSA": {
@@ -725,7 +741,7 @@
           "Equipment malfunction"
         ]
       },
-      "online": "National Heart, Lung, and Blood Institute \u2013 Sleep Apnea\nWebsite: https://www.nhlbi.nih.gov/health/sleep-apnea\n\nAmerican Academy of Sleep Medicine\nWebsite: https://sleepeducation.org\n\nAmerican Lung Association \u2013 Sleep Apnea\nWebsite: https://www.lung.org/lung-health-diseases/lung-disease-lookup/sleep-apnea\n\nMedlinePlus \u2013 Sleep Apnea\nWebsite: https://medlineplus.gov/sleepapnea.html",
+      "online": "",
       "community": ""
     },
     "Pulmonary Fibrosis": {
@@ -752,7 +768,7 @@
           "Unintended weight loss"
         ]
       },
-      "online": "Pulmonary Fibrosis Foundation\nWebsite: https://www.pulmonaryfibrosis.org\n\nAmerican Lung Association \u2013 Pulmonary Fibrosis\nWebsite: https://www.lung.org/lung-health-diseases/lung-disease-lookup/pulmonary-fibrosis\n\nNational Heart, Lung, and Blood Institute \u2013 Pulmonary Fibrosis\nWebsite: https://www.nhlbi.nih.gov/health/pulmonary-fibrosis",
+      "online": "",
       "community": ""
     },
     "Diabetes": {
@@ -810,7 +826,7 @@
           "Persistent dizziness or weakness"
         ]
       },
-      "online": "Centers for Disease Control and Prevention \u2013 Diabetes\nWebsite: https://www.cdc.gov/diabetes\n\nAmerican Diabetes Association\nWebsite: https://diabetes.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 Diabetes\nWebsite: https://www.niddk.nih.gov/health-information/diabetes\n\nMedlinePlus \u2013 Diabetes\nWebsite: https://medlineplus.gov/diabetes.html",
+      "online": "",
       "community": ""
     },
     "Hyperparathyroidism": {
@@ -861,7 +877,7 @@
           "Fractures from minor trauma"
         ]
       },
-      "online": "National Institute of Diabetes and Digestive and Kidney Diseases \u2013 Hyperparathyroidism\nWebsite: https://www.niddk.nih.gov/health-information/endocrine-diseases/primary-hyperparathyroidism\n\nMedlinePlus \u2013 Parathyroid Disorders\nWebsite: https://medlineplus.gov/parathyroiddisorders.html",
+      "online": "",
       "community": ""
     },
     "Hypothyroidism": {
@@ -918,7 +934,7 @@
           "Difficulty concentrating or memory problems"
         ]
       },
-      "online": "American Thyroid Association \u2013 Hypothyroidism\nWebsite: https://www.thyroid.org/hypothyroidism\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 Hypothyroidism\nWebsite: https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism\n\nMedlinePlus \u2013 Hypothyroidism\nWebsite: https://medlineplus.gov/hypothyroidism.html",
+      "online": "",
       "community": ""
     },
     "CKD": {
@@ -976,7 +992,7 @@
           "Worsening shortness of breath with usual activities"
         ]
       },
-      "online": "National Kidney Foundation\nWebsite: https://www.kidney.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 CKD\nWebsite: https://www.niddk.nih.gov/health-information/kidney-disease\n\nCenters for Disease Control and Prevention \u2013 Kidney Disease\nWebsite: https://www.cdc.gov/kidney-disease\n\nMedlinePlus \u2013 Chronic Kidney Disease\nWebsite: https://medlineplus.gov/chronickidneydisease.html",
+      "online": "",
       "community": ""
     },
     "BPH": {
@@ -1001,7 +1017,7 @@
           "Side effects from BPH medications"
         ]
       },
-      "online": "Urology Care Foundation \u2013 BPH\nWebsite: https://www.urologyhealth.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 BPH\nWebsite: https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/prostate-enlargement-benign-prostatic-hyperplasia\n\nMedlinePlus \u2013 Enlarged Prostate\nWebsite: https://medlineplus.gov/enlargedprostatebph.html",
+      "online": "",
       "community": ""
     },
     "Urinary Incontinence": {
@@ -1029,7 +1045,7 @@
           "Leakage that is not controlled by current treatment"
         ]
       },
-      "online": "National Institute on Aging \u2013 Urinary Incontinence\nWebsite: https://www.nia.nih.gov/health/bladder-health-and-incontinence/urinary-incontinence\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 Urinary Incontinence\nWebsite: https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-incontinence\n\nMedlinePlus \u2013 Urinary Incontinence\nWebsite: https://medlineplus.gov/urinaryincontinence.html",
+      "online": "",
       "community": ""
     },
     "CVA/Stroke": {
@@ -1086,7 +1102,7 @@
           "Side effects from medications"
         ]
       },
-      "online": "American Stroke Association\nWebsite: https://www.stroke.org\n\nCenters for Disease Control and Prevention \u2013 Stroke\nWebsite: https://www.cdc.gov/stroke\n\nNational Institute of Neurological Disorders and Stroke\nWebsite: https://www.ninds.nih.gov/health-information/disorders/stroke\n\nMedlinePlus \u2013 Stroke\nWebsite: https://medlineplus.gov/stroke.html",
+      "online": "",
       "community": ""
     },
     "Multiple Sclerosis": {
@@ -1115,7 +1131,7 @@
           "Side effects from disease-modifying therapy"
         ]
       },
-      "online": "National Multiple Sclerosis Society\nWebsite: https://www.nationalmssociety.org\n\nNational Institute of Neurological Disorders and Stroke \u2013 MS\nWebsite: https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis\n\nMedlinePlus \u2013 Multiple Sclerosis\nWebsite: https://medlineplus.gov/multiplesclerosis.html",
+      "online": "",
       "community": ""
     },
     "Parkinson Disease": {
@@ -1170,7 +1186,7 @@
           "Sleep disturbances or excessive daytime sleepiness"
         ]
       },
-      "online": "Parkinson's Foundation\nWebsite: https://www.parkinson.org\n\nNational Institute of Neurological Disorders and Stroke \u2013 Parkinson's\nWebsite: https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease\n\nMedlinePlus \u2013 Parkinson's Disease\nWebsite: https://medlineplus.gov/parkinsonsdisease.html",
+      "online": "",
       "community": ""
     },
     "Seizure Disorders": {
@@ -1199,7 +1215,7 @@
           "Questions about activity restrictions or safety precautions"
         ]
       },
-      "online": "Epilepsy Foundation\nWebsite: https://www.epilepsy.com\n\nNational Institute of Neurological Disorders and Stroke \u2013 Epilepsy\nWebsite: https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures\n\nCenters for Disease Control and Prevention \u2013 Epilepsy\nWebsite: https://www.cdc.gov/epilepsy\n\nMedlinePlus \u2013 Epilepsy\nWebsite: https://medlineplus.gov/epilepsy.html",
+      "online": "",
       "community": ""
     },
     "Spinal Cord Injury": {
@@ -1251,7 +1267,7 @@
           "Worsening respiratory function"
         ]
       },
-      "online": "Christopher & Dana Reeve Foundation\nWebsite: https://www.christopherreeve.org\n\nNational Institute of Neurological Disorders and Stroke \u2013 SCI\nWebsite: https://www.ninds.nih.gov/health-information/disorders/spinal-cord-injury\n\nUnited Spinal Association\nWebsite: https://unitedspinal.org\n\nMedlinePlus \u2013 Spinal Cord Injuries\nWebsite: https://medlineplus.gov/spinalcordinjuries.html",
+      "online": "",
       "community": ""
     },
     "Traumatic Brain Injury": {
@@ -1283,7 +1299,7 @@
           "New or worsening symptoms weeks or months after injury"
         ]
       },
-      "online": "Centers for Disease Control and Prevention \u2013 TBI\nWebsite: https://www.cdc.gov/traumatic-brain-injury\n\nBrainLine\nWebsite: https://www.brainline.org\n\nNational Institute of Neurological Disorders and Stroke \u2013 TBI\nWebsite: https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury\n\nMedlinePlus \u2013 Traumatic Brain Injury\nWebsite: https://medlineplus.gov/traumaticbraininjury.html",
+      "online": "",
       "community": ""
     },
     "Alzheimer's": {
@@ -1340,7 +1356,7 @@
           "Caregiver stress or need for additional support resources"
         ]
       },
-      "online": "Alzheimer's Association\nWebsite: https://www.alz.org\n\nNational Institute on Aging \u2013 Alzheimer's\nWebsite: https://www.nia.nih.gov/health/alzheimers-and-dementia\n\nMedlinePlus \u2013 Alzheimer's Disease\nWebsite: https://medlineplus.gov/alzheimersdisease.html",
+      "online": "",
       "community": ""
     },
     "Anxiety": {
@@ -1367,7 +1383,7 @@
           "Physical symptoms of anxiety that are persistent (headaches, GI problems, muscle tension)"
         ]
       },
-      "online": "National Institute of Mental Health \u2013 Anxiety\nWebsite: https://www.nimh.nih.gov/health/topics/anxiety-disorders\n\nAnxiety and Depression Association of America\nWebsite: https://adaa.org\n\nMedlinePlus \u2013 Anxiety\nWebsite: https://medlineplus.gov/anxiety.html\n\n988 Suicide & Crisis Lifeline\nWebsite: https://988lifeline.org",
+      "online": "",
       "community": ""
     },
     "Bipolar Disorder": {
@@ -1395,7 +1411,7 @@
           "Withdrawal from activities or social isolation"
         ]
       },
-      "online": "National Institute of Mental Health \u2013 Bipolar Disorder\nWebsite: https://www.nimh.nih.gov/health/topics/bipolar-disorder\n\nNational Alliance on Mental Illness \u2013 Bipolar Disorder\nWebsite: https://www.nami.org\n\nMedlinePlus \u2013 Bipolar Disorder\nWebsite: https://medlineplus.gov/bipolardisorder.html\n\n988 Suicide & Crisis Lifeline\nWebsite: https://988lifeline.org",
+      "online": "",
       "community": ""
     },
     "Dementia": {
@@ -1452,7 +1468,7 @@
           "Caregiver stress or need for support"
         ]
       },
-      "online": "Alzheimer's Association\nWebsite: https://www.alz.org\n\nNational Institute on Aging \u2013 Dementia\nWebsite: https://www.nia.nih.gov/health/alzheimers-and-dementia\n\nMedlinePlus \u2013 Dementia\nWebsite: https://medlineplus.gov/dementia.html",
+      "online": "",
       "community": ""
     },
     "Depression": {
@@ -1480,7 +1496,7 @@
           "Physical symptoms that are persistent and unexplained"
         ]
       },
-      "online": "National Institute of Mental Health \u2013 Depression\nWebsite: https://www.nimh.nih.gov/health/topics/depression\n\nNational Alliance on Mental Illness \u2013 Depression\nWebsite: https://www.nami.org\n\nSubstance Abuse and Mental Health Services Administration\nWebsite: https://www.samhsa.gov\n\n988 Suicide & Crisis Lifeline\nWebsite: https://988lifeline.org\n\nMedlinePlus \u2013 Depression\nWebsite: https://medlineplus.gov/depression.html",
+      "online": "",
       "community": ""
     },
     "PTSD": {
@@ -1507,7 +1523,7 @@
           "Side effects from medications"
         ]
       },
-      "online": "National Institute of Mental Health \u2013 PTSD\nWebsite: https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd\n\nU.S. Department of Veterans Affairs \u2013 PTSD\nWebsite: https://www.ptsd.va.gov\n\n988 Suicide & Crisis Lifeline\nWebsite: https://988lifeline.org\n\nMedlinePlus \u2013 PTSD\nWebsite: https://medlineplus.gov/posttraumaticstressdisorder.html",
+      "online": "",
       "community": ""
     },
     "Schizophrenia": {
@@ -1536,7 +1552,7 @@
           "Changes in cognitive functioning"
         ]
       },
-      "online": "National Institute of Mental Health \u2013 Schizophrenia\nWebsite: https://www.nimh.nih.gov/health/topics/schizophrenia\n\nNational Alliance on Mental Illness\nWebsite: https://www.nami.org\n\nMedlinePlus \u2013 Schizophrenia\nWebsite: https://medlineplus.gov/schizophrenia.html\n\n988 Suicide & Crisis Lifeline\nWebsite: https://988lifeline.org",
+      "online": "",
       "community": ""
     },
     "Substance-Related Disorders": {
@@ -1564,7 +1580,7 @@
           "Social, legal, or occupational problems related to substance use"
         ]
       },
-      "online": "Substance Abuse and Mental Health Services Administration\nWebsite: https://www.samhsa.gov\nNational Helpline: 1-800-662-4357\n\nNational Institute on Drug Abuse\nWebsite: https://nida.nih.gov\n\n988 Suicide & Crisis Lifeline\nWebsite: https://988lifeline.org\n\nMedlinePlus \u2013 Drug Use and Addiction\nWebsite: https://medlineplus.gov/druguseandaddiction.html",
+      "online": "",
       "community": ""
     },
     "Cirrhosis": {
@@ -1620,7 +1636,7 @@
           "Loss of appetite or nausea"
         ]
       },
-      "online": "American Liver Foundation\nWebsite: https://liverfoundation.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 Cirrhosis\nWebsite: https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis\n\nMedlinePlus \u2013 Cirrhosis\nWebsite: https://medlineplus.gov/cirrhosis.html",
+      "online": "",
       "community": ""
     },
     "Crohn's Disease": {
@@ -1679,7 +1695,7 @@
           "Symptoms not responding to current treatment"
         ]
       },
-      "online": "Crohn's & Colitis Foundation\nWebsite: https://www.crohnscolitisfoundation.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 Crohn's Disease\nWebsite: https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease\n\nMedlinePlus \u2013 Crohn's Disease\nWebsite: https://medlineplus.gov/crohnsdisease.html",
+      "online": "",
       "community": ""
     },
     "Inflammatory Bowel Disease": {
@@ -1736,7 +1752,7 @@
           "Symptoms not responding to treatment"
         ]
       },
-      "online": "Crohn's & Colitis Foundation\nWebsite: https://www.crohnscolitisfoundation.org\n\nCenters for Disease Control and Prevention \u2013 IBD\nWebsite: https://www.cdc.gov/ibd\n\nMedlinePlus \u2013 Inflammatory Bowel Disease\nWebsite: https://medlineplus.gov/inflammatoryboweldiseases.html",
+      "online": "",
       "community": ""
     },
     "Liver Disease": {
@@ -1789,7 +1805,7 @@
           "Fever"
         ]
       },
-      "online": "American Liver Foundation\nWebsite: https://liverfoundation.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 Liver Disease\nWebsite: https://www.niddk.nih.gov/health-information/liver-disease\n\nMedlinePlus \u2013 Liver Diseases\nWebsite: https://medlineplus.gov/liverdiseases.html",
+      "online": "",
       "community": ""
     },
     "NASH": {
@@ -1845,7 +1861,7 @@
           "Difficulty controlling blood sugar or cholesterol"
         ]
       },
-      "online": "American Liver Foundation\nWebsite: https://liverfoundation.org\n\nNational Institute of Diabetes and Digestive and Kidney Diseases \u2013 NAFLD & NASH\nWebsite: https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash\n\nMedlinePlus \u2013 NAFLD\nWebsite: https://medlineplus.gov/nonalcoholicfattyliverdisease.html",
+      "online": "",
       "community": ""
     },
     "Arthritis": {
@@ -1900,7 +1916,7 @@
           "Fever with joint symptoms"
         ]
       },
-      "online": "Arthritis Foundation\nWebsite: https://www.arthritis.org\n\nCenters for Disease Control and Prevention \u2013 Arthritis\nWebsite: https://www.cdc.gov/arthritis\n\nNational Institute of Arthritis and Musculoskeletal and Skin Diseases\nWebsite: https://www.niams.nih.gov/health-topics/arthritis",
+      "online": "",
       "community": ""
     },
     "Back Pain": {
@@ -1926,7 +1942,7 @@
           "Back pain after starting a new medication"
         ]
       },
-      "online": "National Institute of Neurological Disorders and Stroke \u2013 Low Back Pain\nWebsite: https://www.ninds.nih.gov/health-information/disorders/low-back-pain\n\nNational Institute of Arthritis and Musculoskeletal and Skin Diseases \u2013 Back Pain\nWebsite: https://www.niams.nih.gov/health-topics/back-pain\n\nMedlinePlus \u2013 Back Pain\nWebsite: https://medlineplus.gov/backpain.html",
+      "online": "",
       "community": ""
     },
     "DDD": {
@@ -1951,7 +1967,7 @@
           "Side effects from medications"
         ]
       },
-      "online": "American Academy of Orthopaedic Surgeons \u2013 Spine Conditions\nWebsite: https://orthoinfo.aaos.org\n\nNational Institute of Arthritis and Musculoskeletal and Skin Diseases\nWebsite: https://www.niams.nih.gov/health-topics/back-pain\n\nMedlinePlus \u2013 Degenerative Disc Disease\nWebsite: https://medlineplus.gov/genetics/condition/intervertebral-disc-disease/",
+      "online": "",
       "community": ""
     },
     "Osteoporosis": {
@@ -2001,7 +2017,7 @@
           "Increased frequency of falls"
         ]
       },
-      "online": "Bone Health & Osteoporosis Foundation\nWebsite: https://www.bonehealthandosteoporosis.org\n\nNational Institute of Arthritis and Musculoskeletal and Skin Diseases \u2013 Osteoporosis\nWebsite: https://www.niams.nih.gov/health-topics/osteoporosis\n\nMedlinePlus \u2013 Osteoporosis\nWebsite: https://medlineplus.gov/osteoporosis.html",
+      "online": "",
       "community": ""
     },
     "Anemia": {
@@ -2054,7 +2070,7 @@
           "Persistent headaches"
         ]
       },
-      "online": "National Heart, Lung, and Blood Institute \u2013 Anemia\nWebsite: https://www.nhlbi.nih.gov/health/anemia\n\nAmerican Society of Hematology \u2013 Anemia\nWebsite: https://www.hematology.org/education/patients/anemia\n\nMedlinePlus \u2013 Anemia\nWebsite: https://medlineplus.gov/anemia.html",
+      "online": "",
       "community": ""
     },
     "Sickle Cell Disease": {
@@ -2112,7 +2128,7 @@
           "Swelling of hands or feet"
         ]
       },
-      "online": "Centers for Disease Control and Prevention \u2013 Sickle Cell Disease\nWebsite: https://www.cdc.gov/sickle-cell\n\nNational Heart, Lung, and Blood Institute \u2013 Sickle Cell Disease\nWebsite: https://www.nhlbi.nih.gov/health/sickle-cell-disease\n\nSickle Cell Disease Association of America\nWebsite: https://www.sicklecelldisease.org\n\nMedlinePlus \u2013 Sickle Cell Disease\nWebsite: https://medlineplus.gov/sicklecelldisease.html",
+      "online": "",
       "community": ""
     },
     "Hearing Issues": {
@@ -2138,7 +2154,7 @@
           "New sensitivity to sounds"
         ]
       },
-      "online": "National Institute on Deafness and Other Communication Disorders\nWebsite: https://www.nidcd.nih.gov/health/hearing-loss\n\nHearing Loss Association of America\nWebsite: https://www.hearingloss.org\n\nMedlinePlus \u2013 Hearing Disorders\nWebsite: https://medlineplus.gov/hearingdisordersanddeafness.html",
+      "online": "",
       "community": ""
     },
     "Cancer": {
@@ -2198,7 +2214,7 @@
           "Emotional distress or difficulty coping"
         ]
       },
-      "online": "American Cancer Society\nWebsite: https://www.cancer.org\n\nNational Cancer Institute\nWebsite: https://www.cancer.gov\n\nCenters for Disease Control and Prevention \u2013 Cancer\nWebsite: https://www.cdc.gov/cancer\n\nCancerCare\nWebsite: https://www.cancercare.org",
+      "online": "",
       "community": ""
     },
     "Hx of Renal Cancer": {
@@ -2248,7 +2264,7 @@
           "Swelling of the legs"
         ]
       },
-      "online": "American Cancer Society \u2013 Kidney Cancer\nWebsite: https://www.cancer.org/cancer/types/kidney-cancer.html\n\nNational Cancer Institute \u2013 Kidney Cancer\nWebsite: https://www.cancer.gov/types/kidney\n\nKidney Cancer Association\nWebsite: https://www.kidneycancer.org\n\nMedlinePlus \u2013 Kidney Cancer\nWebsite: https://medlineplus.gov/kidneycancer.html",
+      "online": "",
       "community": ""
     },
     "Laryngeal Cancer": {
@@ -2302,7 +2318,7 @@
           "Fever during treatment"
         ]
       },
-      "online": "American Cancer Society \u2013 Laryngeal Cancer\nWebsite: https://www.cancer.org/cancer/types/laryngeal-and-hypopharyngeal-cancer.html\n\nNational Cancer Institute \u2013 Laryngeal Cancer\nWebsite: https://www.cancer.gov/types/head-and-neck\n\nMedlinePlus \u2013 Throat Cancer\nWebsite: https://medlineplus.gov/throatcancer.html",
+      "online": "",
       "community": ""
     },
     "Skin Cancer": {
@@ -2329,7 +2345,7 @@
           "Questions about skin protection"
         ]
       },
-      "online": "American Cancer Society \u2013 Skin Cancer\nWebsite: https://www.cancer.org/cancer/types/skin-cancer.html\n\nAmerican Academy of Dermatology \u2013 Skin Cancer\nWebsite: https://www.aad.org/public/diseases/skin-cancer\n\nSkin Cancer Foundation\nWebsite: https://www.skincancer.org\n\nCenters for Disease Control and Prevention \u2013 Skin Cancer\nWebsite: https://www.cdc.gov/skin-cancer",
+      "online": "",
       "community": ""
     },
     "HIV/AIDS": {
@@ -2390,7 +2406,590 @@
           "New sexual health concerns"
         ]
       },
-      "online": "HIV.gov\nWebsite: https://www.hiv.gov\n\nCenters for Disease Control and Prevention \u2013 HIV\nWebsite: https://www.cdc.gov/hiv\n\nNational Institute of Allergy and Infectious Diseases \u2013 HIV/AIDS\nWebsite: https://www.niaid.nih.gov/diseases-conditions/hivaids\n\nMedlinePlus \u2013 HIV/AIDS\nWebsite: https://medlineplus.gov/hivaids.html",
+      "online": "",
+      "community": ""
+    },
+    "Pulmonary Hypertension": {
+      "education": "What is Pulmonary Hypertension?\nPulmonary hypertension is a condition in which the blood pressure in the arteries of the lungs is higher than normal. This makes the heart work harder to pump blood through the lungs, which can damage the heart over time. Pulmonary hypertension can develop on its own or be caused by another disease or condition.\n\nSigns and Symptoms:\n\u2022Shortness of breath, especially with physical activity\n\u2022Fatigue or weakness\n\u2022Dizziness or fainting (syncope)\n\u2022Chest pain or pressure\n\u2022Swelling (edema) of the ankles, legs, or abdomen\n\u2022Rapid heartbeat or palpitations\n\u2022Bluish color of the lips or skin (cyanosis)\n\u2022Decreased exercise tolerance\n\nRisk Factors:\n\u2022Left-sided heart disease such as heart failure or valve disease\n\u2022Chronic lung diseases such as COPD, emphysema, or pulmonary fibrosis\n\u2022Sleep apnea\n\u2022Blood clots in the lungs (chronic thromboembolic pulmonary hypertension)\n\u2022Connective tissue diseases such as scleroderma or lupus\n\u2022Congenital heart defects\n\u2022Family history of pulmonary hypertension\n\u2022Living at high altitudes\n\u2022Certain medications or illegal drug use\n\u2022HIV infection\n\u2022Liver disease (portal hypertension)\n\nTreatment and Self-Management:\n\u2022Take all prescribed medications as directed, including vasodilators, endothelin receptor antagonists, phosphodiesterase inhibitors, or other pulmonary hypertension-specific therapies.\n\u2022Use supplemental oxygen if prescribed.\n\u2022Follow sodium and fluid restrictions as directed by the healthcare provider.\n\u2022Stay physically active as tolerated and approved by the healthcare provider; participate in pulmonary rehabilitation if recommended.\n\u2022Weigh yourself daily and report sudden weight gain.\n\u2022Receive recommended vaccinations, including influenza and pneumococcal vaccines.\n\u2022Avoid pregnancy if advised by the healthcare provider, as it can be life-threatening with pulmonary hypertension.\n\u2022Avoid high altitudes unless discussed with the healthcare provider.\n\u2022Keep all scheduled cardiology, pulmonology, and PCP appointments.\n\u2022Report new or worsening symptoms promptly.\n\nReferences:\nNational Heart, Lung, and Blood Institute. (2022). Pulmonary hypertension. https://www.nhlbi.nih.gov/health/pulmonary-hypertension\nAmerican Lung Association. (2024). Learn about pulmonary hypertension. https://www.lung.org/lung-health-diseases/lung-disease-lookup/pulmonary-hypertension\nMedlinePlus. (2024). Pulmonary hypertension. https://medlineplus.gov/pulmonaryhypertension.html",
+      "diet": {
+        "eat_more": [
+          "Fruits and vegetables",
+          "Whole grains",
+          "Lean proteins",
+          "Foods high in iron if anemia is present",
+          "Adequate fluids unless restricted"
+        ],
+        "limit": [
+          "Sodium to less than 2,000 mg per day or as directed by the healthcare provider",
+          "Fluid intake as directed by the healthcare provider",
+          "Caffeine",
+          "Alcohol"
+        ],
+        "avoid": [
+          "Adding extra salt to food",
+          "Processed and high-sodium foods",
+          "Excessive fluid intake if restricted",
+          "Dehydration"
+        ],
+        "guidelines": [
+          "Follow the healthcare provider's specific sodium and fluid restrictions",
+          "Read nutrition labels for sodium content",
+          "Weigh yourself daily to monitor fluid retention",
+          "Follow any individualized dietary recommendations from the healthcare provider"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe shortness of breath or difficulty breathing that does not improve with rest",
+          "Fainting or loss of consciousness",
+          "Chest pain or pressure",
+          "Severe dizziness or lightheadedness",
+          "Blue or gray lips, fingernails, or skin",
+          "Coughing up blood",
+          "Rapid or irregular heartbeat with severe symptoms",
+          "Signs of right heart failure (severe swelling, difficulty breathing)"
+        ],
+        "call_provider": [
+          "Worsening shortness of breath with usual activities",
+          "Increased fatigue or decreased exercise tolerance",
+          "New or worsening swelling of ankles, legs, or abdomen",
+          "Weight gain of more than 2-3 pounds in a day or 5 pounds in a week",
+          "Increasing dizziness or lightheadedness",
+          "New or worsening palpitations",
+          "Worsening cough",
+          "Side effects from medications"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Bronchiectasis": {
+      "education": "What is Bronchiectasis?\nBronchiectasis is a chronic condition in which the bronchial tubes (airways) of the lungs become permanently widened, damaged, and thickened. This damage allows mucus to build up, making the lungs more vulnerable to infection. Bronchiectasis can result from a variety of conditions that damage the airways.\n\nSigns and Symptoms:\n\u2022Chronic cough that produces large amounts of mucus (sputum) daily\n\u2022Mucus that may be thick, discolored, or foul-smelling\n\u2022Shortness of breath\n\u2022Wheezing\n\u2022Recurrent respiratory infections\n\u2022Coughing up blood (hemoptysis)\n\u2022Chest pain\n\u2022Fatigue\n\u2022Clubbing of the fingertips (in advanced cases)\n\nRisk Factors:\n\u2022History of severe or recurrent lung infections (pneumonia, tuberculosis, whooping cough)\n\u2022Cystic fibrosis\n\u2022Immune system deficiencies\n\u2022Chronic aspiration of food or stomach acid\n\u2022Allergic bronchopulmonary aspergillosis (ABPA)\n\u2022Chronic obstructive pulmonary disease (COPD)\n\u2022Autoimmune or connective tissue diseases\n\u2022Primary ciliary dyskinesia\n\u2022Airway obstruction (tumor, foreign body)\n\nTreatment and Self-Management:\n\u2022Take prescribed medications as directed, including antibiotics, bronchodilators, and mucus-thinning agents.\n\u2022Perform airway clearance techniques daily as directed by the healthcare provider or respiratory therapist.\n\u2022Use prescribed nebulizer treatments or inhaled medications consistently.\n\u2022Stay well-hydrated to help thin mucus.\n\u2022Stay physically active as tolerated.\n\u2022Receive recommended vaccinations, including influenza, pneumococcal, and COVID-19 vaccines.\n\u2022Avoid smoking and exposure to lung irritants.\n\u2022Seek prompt treatment for respiratory infections.\n\u2022Keep all scheduled pulmonology and PCP appointments.\n\u2022Report changes in mucus color, volume, or consistency, or worsening symptoms.\n\nReferences:\nNational Heart, Lung, and Blood Institute. (2022). Bronchiectasis. https://www.nhlbi.nih.gov/health/bronchiectasis\nAmerican Lung Association. (2024). Bronchiectasis. https://www.lung.org/lung-health-diseases/lung-disease-lookup/bronchiectasis\nMedlinePlus. (2024). Bronchiectasis. https://medlineplus.gov/bronchiectasis.html",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Coughing up large amounts of blood",
+          "Severe difficulty breathing or respiratory distress",
+          "Chest pain with difficulty breathing",
+          "Blue or gray lips or fingernails",
+          "Loss of consciousness",
+          "High fever with severe confusion or weakness"
+        ],
+        "call_provider": [
+          "Increased cough or change in mucus color, amount, or odor",
+          "Fever or signs of respiratory infection",
+          "Worsening shortness of breath",
+          "Coughing up blood-streaked mucus",
+          "Increased fatigue or decreased activity tolerance",
+          "Wheezing that does not improve with treatment",
+          "Unintended weight loss"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Emphysema": {
+      "education": "What is Emphysema?\nEmphysema is a chronic lung condition in which the air sacs (alveoli) in the lungs are damaged, making it progressively harder to breathe. The walls of the air sacs break down, creating larger air spaces instead of many small ones. This reduces the surface area of the lungs and the amount of oxygen that reaches the bloodstream. Emphysema is one of the conditions that falls under the umbrella of chronic obstructive pulmonary disease (COPD).\n\nSigns and Symptoms:\n\u2022Shortness of breath, especially with activity (gradually worsens over time)\n\u2022Chronic cough\n\u2022Wheezing\n\u2022Chest tightness or barrel-shaped chest\n\u2022Fatigue\n\u2022Reduced exercise tolerance\n\u2022Unintended weight loss (in advanced cases)\n\u2022Bluish discoloration of the lips or fingernails (cyanosis)\n\nRisk Factors:\n\u2022Smoking (most significant risk factor)\n\u2022Long-term exposure to secondhand smoke\n\u2022Occupational exposure to dust, fumes, or chemical vapors\n\u2022Air pollution\n\u2022Alpha-1 antitrypsin deficiency (a genetic condition)\n\u2022Older age\n\u2022History of childhood respiratory infections\n\nTreatment and Self-Management:\n\u2022Stop smoking and avoid exposure to lung irritants.\n\u2022Take prescribed medications as directed, including bronchodilators, inhaled corticosteroids, and other COPD medications.\n\u2022Use supplemental oxygen if prescribed.\n\u2022Participate in pulmonary rehabilitation if recommended.\n\u2022Stay physically active as tolerated.\n\u2022Practice breathing techniques such as pursed-lip breathing and diaphragmatic breathing.\n\u2022Receive recommended vaccinations, including influenza, pneumococcal, and COVID-19 vaccines.\n\u2022Maintain good nutrition and a healthy weight.\n\u2022Seek prompt treatment for respiratory infections.\n\u2022Keep all scheduled pulmonology and PCP appointments.\n\nReferences:\nAmerican Lung Association. (2024). Emphysema. https://www.lung.org/lung-health-diseases/lung-disease-lookup/emphysema\nNational Heart, Lung, and Blood Institute. (2022). COPD. https://www.nhlbi.nih.gov/health/copd\nMedlinePlus. (2024). Emphysema. https://medlineplus.gov/emphysema.html",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Severe shortness of breath or difficulty breathing that does not improve",
+          "Blue or gray lips or fingernails (cyanosis)",
+          "Chest pain",
+          "Confusion, extreme drowsiness, or loss of consciousness",
+          "Difficulty speaking due to severe shortness of breath",
+          "Rapid, shallow breathing that does not improve with rest"
+        ],
+        "call_provider": [
+          "Worsening shortness of breath beyond usual baseline",
+          "Increased cough or change in mucus",
+          "Fever or signs of respiratory infection",
+          "Rescue inhaler not providing usual relief",
+          "Increased fatigue or decreased ability to perform daily activities",
+          "New or worsening swelling of ankles or legs",
+          "Unintended weight loss"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Thyroid Nodules": {
+      "education": "What are Thyroid Nodules?\nThyroid nodules are growths or lumps that form within the thyroid gland, located in the front of the neck. Most thyroid nodules are benign (not cancerous) and do not cause symptoms. However, some nodules can become large enough to cause problems, produce excess thyroid hormone, or in rare cases, be cancerous.\n\nSigns and Symptoms:\n\u2022Most thyroid nodules cause no symptoms and are found incidentally during a physical exam or imaging study\n\u2022A visible or palpable lump in the front of the neck\n\u2022Difficulty swallowing or a feeling of fullness in the throat\n\u2022Difficulty breathing if the nodule is large\n\u2022Hoarseness or voice changes\n\u2022Neck pain\n\u2022If the nodule produces excess thyroid hormone, symptoms of hyperthyroidism may occur (rapid heartbeat, weight loss, nervousness, tremor, increased sweating)\n\nRisk Factors:\n\u2022Being female\n\u2022Older age\n\u2022History of radiation exposure to the head or neck\n\u2022Family history of thyroid nodules or thyroid cancer\n\u2022Iodine deficiency\n\u2022Hashimoto's thyroiditis or other thyroid conditions\n\u2022Certain genetic syndromes\n\nTreatment and Self-Management:\n\u2022Follow the healthcare provider's recommendations for monitoring with regular thyroid ultrasounds and blood tests.\n\u2022Take thyroid hormone medication as prescribed if indicated.\n\u2022Complete fine-needle aspiration biopsy if recommended by the healthcare provider.\n\u2022Report any changes in the size of the nodule, new difficulty swallowing or breathing, hoarseness, or neck pain.\n\u2022Discuss the need for surgery (thyroidectomy) with the healthcare provider if the nodule is large, suspicious, or causing symptoms.\n\u2022Keep all scheduled endocrinology and PCP appointments.\n\u2022Complete recommended thyroid function laboratory tests (TSH, free T4) as ordered.\n\nReferences:\nAmerican Thyroid Association. (2024). Thyroid nodules. https://www.thyroid.org/thyroid-nodules\nNational Institute of Diabetes and Digestive and Kidney Diseases. (2024). Thyroid tests. https://www.niddk.nih.gov/health-information/diagnostic-tests/thyroid\nMedlinePlus. (2024). Thyroid nodule. https://medlineplus.gov/ency/article/007265.htm",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Severe difficulty breathing or airway obstruction",
+          "Severe allergic reaction to medication",
+          "Sudden severe neck swelling",
+          "Loss of consciousness",
+          "Signs of thyroid storm if hyperthyroid (extremely rapid heartbeat, high fever, agitation, confusion)"
+        ],
+        "call_provider": [
+          "Rapid growth of a thyroid nodule",
+          "New difficulty swallowing or breathing",
+          "Hoarseness or voice changes",
+          "Neck pain or tenderness",
+          "Symptoms of hyperthyroidism (rapid heartbeat, weight loss, nervousness, tremor)",
+          "Symptoms of hypothyroidism (fatigue, weight gain, cold intolerance)",
+          "New lumps or swelling in the neck",
+          "Changes noted on thyroid ultrasound"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Diverticulitis": {
+      "education": "What is Diverticulitis?\nDiverticulitis occurs when small pouches (diverticula) that form in the walls of the colon become inflamed or infected. Diverticula are common, especially after age 40, and usually do not cause problems. When they become inflamed, the condition is called diverticulitis and can range from mild to severe.\n\nSigns and Symptoms:\n\u2022Pain in the lower left side of the abdomen (most common)\n\u2022Fever and chills\n\u2022Nausea and vomiting\n\u2022Changes in bowel habits (constipation or diarrhea)\n\u2022Abdominal tenderness\n\u2022Bloating\n\u2022Rectal bleeding (less common)\n\u2022Urinary symptoms if the inflamed area is near the bladder\n\nRisk Factors:\n\u2022Older age (especially over 40)\n\u2022Low-fiber diet\n\u2022Obesity\n\u2022Smoking\n\u2022Lack of physical activity\n\u2022Certain medications (NSAIDs, steroids, opioids)\n\u2022Family history of diverticular disease\n\nTreatment and Self-Management:\n\u2022Take prescribed antibiotics as directed during acute episodes.\n\u2022Follow the healthcare provider's dietary recommendations during and after acute episodes.\n\u2022Increase dietary fiber gradually when recommended by the healthcare provider.\n\u2022Stay well-hydrated.\n\u2022Stay physically active.\n\u2022Maintain a healthy weight.\n\u2022Avoid smoking.\n\u2022Complete recommended imaging and follow-up appointments.\n\u2022Report recurring abdominal pain, fever, or changes in bowel habits.\n\u2022Keep all scheduled gastroenterology and PCP appointments.\n\nReferences:\nNational Institute of Diabetes and Digestive and Kidney Diseases. (2024). Diverticular disease. https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis\nAmerican College of Gastroenterology. (2024). Diverticulosis and diverticulitis. https://gi.org/topics/diverticulosis-and-diverticulitis\nMedlinePlus. (2024). Diverticulosis and diverticulitis. https://medlineplus.gov/diverticulosisanddiverticulitis.html",
+      "diet": {
+        "eat_more": [
+          "High-fiber foods when not in an acute flare (whole grains, fruits, vegetables, beans, legumes)",
+          "Adequate fluids to support fiber intake",
+          "Lean proteins",
+          "Probiotic-rich foods if tolerated (yogurt, kefir)"
+        ],
+        "limit": [
+          "Red meat",
+          "Highly processed foods",
+          "Refined grains during recovery",
+          "Foods that cause individual discomfort"
+        ],
+        "avoid": [
+          "Solid foods during acute flare if directed by the healthcare provider (clear liquid diet may be recommended initially)",
+          "Foods that consistently trigger symptoms"
+        ],
+        "guidelines": [
+          "During acute diverticulitis, follow the healthcare provider's instructions regarding diet progression (clear liquids to low-fiber to regular diet)",
+          "Gradually increase fiber intake to 25-35 grams per day when the acute episode resolves",
+          "Drink adequate water when increasing fiber",
+          "Follow any individualized dietary recommendations from the healthcare provider"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe abdominal pain that is sudden or worsening",
+          "High fever with severe abdominal pain and rigidity",
+          "Signs of peritonitis (severe abdominal tenderness, rigid abdomen, fever)",
+          "Large amounts of rectal bleeding",
+          "Signs of sepsis (fever, confusion, rapid heartbeat, rapid breathing)",
+          "Loss of consciousness",
+          "Severe vomiting with inability to keep fluids down"
+        ],
+        "call_provider": [
+          "Persistent or recurring lower abdominal pain",
+          "Fever or chills",
+          "Changes in bowel habits (new constipation or diarrhea)",
+          "Mild rectal bleeding",
+          "Bloating or abdominal distension",
+          "Nausea or vomiting",
+          "Symptoms not improving with prescribed treatment",
+          "Urinary symptoms accompanying abdominal pain"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "GI Bleed": {
+      "education": "What is a Gastrointestinal (GI) Bleed?\nA gastrointestinal bleed is bleeding that occurs anywhere in the gastrointestinal tract, from the esophagus to the rectum. GI bleeds can be acute (sudden and severe) or chronic (slow and ongoing). Upper GI bleeds originate from the esophagus, stomach, or upper small intestine. Lower GI bleeds originate from the lower small intestine, colon, or rectum.\n\nSigns and Symptoms:\n\u2022Vomiting blood (bright red or dark, coffee-ground appearance)\n\u2022Black, tarry stools (melena)\n\u2022Bright red blood in the stool or from the rectum (hematochezia)\n\u2022Abdominal pain or cramping\n\u2022Weakness, dizziness, or lightheadedness\n\u2022Fatigue\n\u2022Pale skin\n\u2022Shortness of breath\n\u2022Rapid heartbeat\n\u2022Decreased urine output\n\u2022Fainting\n\nRisk Factors:\n\u2022Peptic ulcer disease\n\u2022Use of NSAIDs (ibuprofen, naproxen, aspirin)\n\u2022Anticoagulant or antiplatelet medications\n\u2022Esophageal varices (often from liver disease or cirrhosis)\n\u2022Inflammatory bowel disease\n\u2022Diverticular disease\n\u2022Hemorrhoids or anal fissures\n\u2022Cancer of the GI tract\n\u2022Gastritis or esophagitis\n\u2022Heavy alcohol use\n\u2022Older age\n\u2022History of prior GI bleed\n\nTreatment and Self-Management:\n\u2022Take all prescribed medications as directed.\n\u2022Avoid NSAIDs unless approved by the healthcare provider.\n\u2022Take prescribed proton pump inhibitors or other acid-reducing medications if indicated.\n\u2022Avoid alcohol.\n\u2022Report any signs of bleeding (blood in stool, black stools, vomiting blood) immediately.\n\u2022Follow dietary recommendations from the healthcare provider.\n\u2022Complete recommended endoscopy, colonoscopy, or other diagnostic procedures.\n\u2022If on anticoagulant therapy, follow the healthcare provider's instructions carefully and complete required blood tests.\n\u2022Keep all scheduled gastroenterology and PCP appointments.\n\nReferences:\nNational Institute of Diabetes and Digestive and Kidney Diseases. (2024). GI bleeding. https://www.niddk.nih.gov/health-information/digestive-diseases/gastrointestinal-bleeding\nAmerican College of Gastroenterology. (2024). GI bleeding. https://gi.org/topics/gi-bleeding\nMedlinePlus. (2024). Gastrointestinal bleeding. https://medlineplus.gov/gastrointestinalbleeding.html",
+      "diet": {
+        "eat_more": [
+          "Soft, bland foods during recovery",
+          "Iron-rich foods if anemia is present (lean meats, spinach, beans, fortified cereals)",
+          "Adequate fluids",
+          "Small, frequent meals"
+        ],
+        "limit": [
+          "Spicy foods",
+          "Caffeine",
+          "Alcohol",
+          "Acidic foods (tomatoes, citrus) if they worsen symptoms",
+          "Rough or hard-to-digest foods during recovery"
+        ],
+        "avoid": [
+          "Alcohol",
+          "NSAIDs (ibuprofen, naproxen) unless specifically approved by the healthcare provider",
+          "Foods that cause individual discomfort or irritation"
+        ],
+        "guidelines": [
+          "Follow the healthcare provider's dietary instructions during and after a GI bleed",
+          "Gradually advance diet as tolerated",
+          "Take iron supplements as prescribed if anemia is present",
+          "Report any recurrence of bleeding symptoms immediately"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Vomiting blood or material that looks like coffee grounds",
+          "Large amounts of bright red blood from the rectum",
+          "Black, tarry stools",
+          "Severe abdominal pain",
+          "Signs of shock (rapid heartbeat, low blood pressure, cold clammy skin, confusion)",
+          "Dizziness, fainting, or loss of consciousness",
+          "Severe weakness or inability to stand"
+        ],
+        "call_provider": [
+          "Small amounts of blood in the stool",
+          "Dark or black stools",
+          "Persistent abdominal pain or cramping",
+          "Increasing fatigue or weakness",
+          "Persistent nausea",
+          "Dizziness or lightheadedness",
+          "Decreased urine output",
+          "Shortness of breath with usual activities"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Gallstones": {
+      "education": "What are Gallstones?\nGallstones are hard, pebble-like pieces of material, usually made of cholesterol or bilirubin, that form in the gallbladder. The gallbladder is a small organ beneath the liver that stores bile, a digestive fluid. Gallstones can range in size from a grain of sand to a golf ball and may cause no symptoms or severe pain when they block the bile ducts.\n\nSigns and Symptoms:\n\u2022Many people with gallstones have no symptoms (silent gallstones)\n\u2022Sudden, intense pain in the upper right abdomen or center of the abdomen (biliary colic)\n\u2022Pain that radiates to the right shoulder or back between the shoulder blades\n\u2022Nausea and vomiting\n\u2022Fever and chills (if infection is present)\n\u2022Yellowing of the skin or eyes (jaundice)\n\u2022Clay-colored stools\n\u2022Dark urine\n\u2022Bloating or indigestion, especially after fatty meals\n\nRisk Factors:\n\u2022Being female\n\u2022Age 40 or older\n\u2022Overweight or obesity\n\u2022Rapid weight loss or crash dieting\n\u2022Pregnancy\n\u2022Family history of gallstones\n\u2022High-fat, high-cholesterol, low-fiber diet\n\u2022Diabetes\n\u2022Certain medications (hormone therapy, cholesterol-lowering drugs)\n\u2022Native American or Hispanic descent\n\u2022Liver disease\n\nTreatment and Self-Management:\n\u2022Follow the healthcare provider's treatment recommendations.\n\u2022If surgery (cholecystectomy) is recommended, follow pre- and post-operative instructions.\n\u2022Follow dietary recommendations, especially reducing fat intake if symptomatic.\n\u2022Maintain a healthy weight; avoid rapid weight loss or crash diets.\n\u2022Report recurrent abdominal pain, fever, jaundice, or changes in stool color.\n\u2022Complete recommended imaging and laboratory tests.\n\u2022Keep all scheduled gastroenterology, surgery, and PCP appointments.\n\nReferences:\nNational Institute of Diabetes and Digestive and Kidney Diseases. (2024). Gallstones. https://www.niddk.nih.gov/health-information/digestive-diseases/gallstones\nAmerican College of Gastroenterology. (2024). Gallstones. https://gi.org/topics/gallstones\nMedlinePlus. (2024). Gallstones. https://medlineplus.gov/gallstones.html",
+      "diet": {
+        "eat_more": [
+          "Fruits and vegetables",
+          "Whole grains",
+          "Lean proteins",
+          "Foods high in fiber",
+          "Healthy fats in moderation (olive oil, nuts, avocado)"
+        ],
+        "limit": [
+          "High-fat foods, especially saturated and trans fats",
+          "Fried foods",
+          "Large meals",
+          "Refined carbohydrates and sugary foods"
+        ],
+        "avoid": [
+          "Crash diets or very low-calorie diets",
+          "High-fat, greasy, or fried foods that trigger symptoms",
+          "Excessive cholesterol-rich foods"
+        ],
+        "guidelines": [
+          "Maintain a healthy weight through balanced nutrition and regular exercise",
+          "If weight loss is needed, aim for gradual loss of 1-2 pounds per week",
+          "Eat regular, balanced meals and avoid skipping meals",
+          "Follow post-surgical dietary guidelines if cholecystectomy is performed",
+          "Follow any individualized dietary recommendations from the healthcare provider"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe, persistent abdominal pain lasting more than a few hours",
+          "High fever with severe abdominal pain and chills",
+          "Jaundice (yellowing of skin or eyes) with abdominal pain and fever",
+          "Severe nausea and vomiting with inability to keep fluids down",
+          "Signs of pancreatitis (severe upper abdominal pain radiating to the back)",
+          "Loss of consciousness"
+        ],
+        "call_provider": [
+          "Recurrent episodes of upper abdominal pain",
+          "Pain after eating fatty meals",
+          "Nausea, bloating, or indigestion that persists",
+          "Mild fever",
+          "Clay-colored stools or dark urine",
+          "Mild jaundice",
+          "Changes in appetite"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Dysphagia": {
+      "education": "What is Dysphagia?\nDysphagia is difficulty swallowing, meaning it takes more time and effort to move food or liquid from the mouth to the stomach. Dysphagia can occur at any age but is more common in older adults. It may be caused by conditions affecting the muscles, nerves, or structures involved in swallowing.\n\nSigns and Symptoms:\n\u2022Difficulty initiating a swallow\n\u2022Food or liquid getting stuck in the throat or chest\n\u2022Pain when swallowing (odynophagia)\n\u2022Coughing or choking during or after eating or drinking\n\u2022Bringing food back up (regurgitation)\n\u2022Recurrent heartburn\n\u2022Drooling\n\u2022Hoarseness\n\u2022Sensation of a lump in the throat\n\u2022Unintended weight loss\n\u2022Recurrent pneumonia (from aspiration)\n\u2022Avoidance of certain foods due to difficulty swallowing\n\nRisk Factors:\n\u2022Neurological conditions (stroke, Parkinson's disease, multiple sclerosis, ALS, dementia)\n\u2022Head and neck cancer or radiation therapy\n\u2022Esophageal conditions (strictures, tumors, eosinophilic esophagitis)\n\u2022Gastroesophageal reflux disease (GERD)\n\u2022Aging and muscle weakness\n\u2022Surgery involving the head, neck, or esophagus\n\u2022Certain medications that cause dry mouth or esophageal injury\n\nTreatment and Self-Management:\n\u2022Follow the speech-language pathologist's and healthcare provider's swallowing recommendations.\n\u2022Follow the prescribed diet texture and liquid consistency (regular, mechanical soft, pureed, thickened liquids).\n\u2022Sit upright during meals and remain upright for at least 30 minutes after eating.\n\u2022Eat slowly and take small bites and sips.\n\u2022Avoid talking while eating.\n\u2022Follow swallowing exercises as prescribed.\n\u2022Maintain adequate nutrition and hydration.\n\u2022Report new or worsening difficulty swallowing, choking, coughing during meals, or unintended weight loss.\n\u2022Keep all scheduled speech therapy, gastroenterology, and PCP appointments.\n\nReferences:\nNational Institute on Deafness and Other Communication Disorders. (2024). Dysphagia. https://www.nidcd.nih.gov/health/dysphagia\nAmerican Speech-Language-Hearing Association. (2024). Swallowing disorders. https://www.asha.org/public/speech/swallowing\nMedlinePlus. (2024). Swallowing disorders. https://medlineplus.gov/swallowingdisorders.html",
+      "diet": {
+        "eat_more": [
+          "Foods consistent with the prescribed diet texture (regular, mechanical soft, chopped, pureed)",
+          "Moist foods that are easier to swallow",
+          "Nutrient-dense foods to maintain weight",
+          "Thickened liquids if prescribed"
+        ],
+        "limit": [
+          "Dry, crumbly, or hard foods if difficult to swallow",
+          "Sticky foods (peanut butter, bread) if they cause difficulty",
+          "Mixed-consistency foods (soup with chunks) if directed",
+          "Very hot or very cold foods if they trigger coughing"
+        ],
+        "avoid": [
+          "Foods and liquids not consistent with the prescribed swallowing diet",
+          "Straws if not recommended by the speech pathologist",
+          "Eating while lying down",
+          "Rushing through meals"
+        ],
+        "guidelines": [
+          "Follow the specific diet texture and liquid consistency prescribed by the speech-language pathologist",
+          "Sit fully upright during meals and for 30 minutes after eating",
+          "Take small bites and sips, chew thoroughly",
+          "Use adaptive utensils or cups if recommended",
+          "Report any choking episodes, aspiration pneumonia symptoms, or weight loss"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Choking with inability to breathe, speak, or cough",
+          "Severe difficulty breathing during or after eating",
+          "Loss of consciousness",
+          "Signs of aspiration pneumonia (sudden fever, cough, difficulty breathing after eating)",
+          "Severe chest pain",
+          "Food completely lodged in the throat blocking the airway"
+        ],
+        "call_provider": [
+          "Increasing difficulty swallowing",
+          "Coughing or choking during meals that is worsening",
+          "Unintended weight loss",
+          "Recurrent fevers or respiratory infections",
+          "Pain with swallowing",
+          "Feeling of food getting stuck",
+          "Drooling or difficulty managing saliva",
+          "Dehydration symptoms"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Amputation": {
+      "education": "What is Amputation Aftercare?\nAmputation is the surgical removal of a limb or part of a limb. Common reasons include peripheral vascular disease, diabetes-related complications, trauma, infection, or cancer. After amputation, ongoing care is essential for healing, rehabilitation, and maintaining quality of life.\n\nSigns and Symptoms to Monitor After Amputation:\n\u2022Pain at the surgical site or phantom limb pain (sensation of pain in the limb that was removed)\n\u2022Swelling of the residual limb (stump)\n\u2022Skin changes, redness, or breakdown on the residual limb\n\u2022Wound drainage or signs of infection\n\u2022Emotional changes including grief, depression, or anxiety\n\u2022Difficulty with balance or mobility\n\u2022Phantom limb sensations (feeling as if the removed limb is still present)\n\nRisk Factors for Amputation:\n\u2022Peripheral arterial disease (PAD) or peripheral vascular disease (PVD)\n\u2022Diabetes with poorly controlled blood sugar\n\u2022Non-healing wounds or ulcers\n\u2022Severe infection (gangrene, osteomyelitis)\n\u2022Severe trauma or crush injury\n\u2022Cancer involving the limb\n\u2022Smoking\n\nTreatment and Self-Management:\n\u2022Follow wound care instructions exactly as directed by the healthcare provider.\n\u2022Keep the residual limb clean, dry, and properly bandaged or wrapped.\n\u2022Inspect the residual limb daily for redness, swelling, skin breakdown, blisters, or drainage.\n\u2022Participate in physical and occupational therapy as recommended.\n\u2022Use prescribed prosthetic devices and follow the prosthetist's fitting and care instructions.\n\u2022Perform prescribed exercises to maintain strength, flexibility, and range of motion.\n\u2022Position the residual limb as directed to prevent contractures.\n\u2022Manage pain with prescribed medications and non-drug strategies.\n\u2022Discuss phantom limb pain management with the healthcare provider.\n\u2022Address emotional and mental health needs; seek counseling or support groups.\n\u2022Manage underlying conditions (diabetes, vascular disease) to prevent complications in the remaining limb.\n\u2022Keep all scheduled surgery, rehabilitation, prosthetics, and PCP appointments.\n\nReferences:\nAmputee Coalition. (2024). Managing your limb loss. https://www.amputee-coalition.org\nMedlinePlus. (2024). Amputation. https://medlineplus.gov/amputation.html\nAmerican Academy of Orthopaedic Surgeons. (2024). Amputation. https://orthoinfo.aaos.org",
+      "diet": {
+        "eat_more": [
+          "Protein-rich foods to support wound healing (lean meats, fish, eggs, beans, dairy)",
+          "Fruits and vegetables rich in vitamins A and C",
+          "Foods high in zinc (nuts, seeds, whole grains)",
+          "Adequate fluids to support healing",
+          "Iron-rich foods if anemia is present"
+        ],
+        "limit": [
+          "Sodium if blood pressure management is needed",
+          "Added sugars and refined carbohydrates, especially if diabetic",
+          "Saturated fats"
+        ],
+        "avoid": [
+          "Tobacco products, which impair wound healing",
+          "Excessive alcohol",
+          "Skipping meals"
+        ],
+        "guidelines": [
+          "Maintain adequate caloric and protein intake to support wound healing",
+          "Follow diabetic diet guidelines if diabetes is present",
+          "Follow any individualized dietary recommendations from the healthcare provider or dietitian",
+          "Monitor weight to ensure adequate nutrition during recovery"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe bleeding from the residual limb that cannot be controlled",
+          "Signs of severe infection (high fever, confusion, rapid heartbeat)",
+          "Chest pain or severe shortness of breath (possible blood clot or pulmonary embolism)",
+          "Sudden swelling, pain, and redness in the remaining leg (possible deep vein thrombosis)",
+          "Loss of consciousness",
+          "Fall with suspected fracture or head injury"
+        ],
+        "call_provider": [
+          "Signs of wound infection (increased redness, warmth, swelling, drainage, foul odor)",
+          "Fever",
+          "Pain that is worsening or not controlled by prescribed medications",
+          "Skin breakdown, blisters, or sores on the residual limb",
+          "Phantom limb pain that is severe or worsening",
+          "Difficulty with prosthetic fit or skin irritation from the prosthesis",
+          "Depression, anxiety, or difficulty coping",
+          "Changes in the remaining limb (pain, color changes, non-healing wounds)",
+          "Swelling of the residual limb that does not improve"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Carpal Tunnel Syndrome": {
+      "education": "What is Carpal Tunnel Syndrome?\nCarpal tunnel syndrome is a common condition that causes numbness, tingling, and weakness in the hand and wrist. It occurs when the median nerve, which runs from the forearm through a narrow passageway in the wrist called the carpal tunnel, becomes compressed or squeezed.\n\nSigns and Symptoms:\n\u2022Numbness, tingling, or burning in the thumb, index, middle, and ring fingers\n\u2022Pain in the hand, wrist, or forearm\n\u2022Weakness in the hand, especially difficulty gripping objects\n\u2022Dropping objects\n\u2022Sensation of swollen fingers even when no swelling is visible\n\u2022Symptoms often worse at night or upon waking\n\u2022Symptoms may worsen with activities that involve flexing the wrist (driving, reading, typing)\n\u2022In advanced cases, loss of sensation and muscle wasting at the base of the thumb\n\nRisk Factors:\n\u2022Repetitive hand and wrist motions (typing, assembly line work)\n\u2022Wrist injuries or fractures\n\u2022Being female (women are more likely to develop CTS)\n\u2022Pregnancy\n\u2022Diabetes\n\u2022Rheumatoid arthritis\n\u2022Hypothyroidism\n\u2022Obesity\n\u2022Fluid retention\n\u2022Older age\n\nTreatment and Self-Management:\n\u2022Wear a wrist splint as prescribed, especially at night.\n\u2022Take prescribed medications (anti-inflammatory drugs, corticosteroid injections) as directed.\n\u2022Modify activities that aggravate symptoms; take frequent breaks from repetitive hand motions.\n\u2022Perform prescribed hand and wrist stretching exercises.\n\u2022Apply cold packs to reduce swelling if recommended.\n\u2022Maintain proper wrist positioning during work and daily activities.\n\u2022Use ergonomic tools and workstation modifications.\n\u2022Discuss surgical options (carpal tunnel release) with the healthcare provider if conservative treatment does not provide relief.\n\u2022Manage underlying conditions that may contribute to CTS (diabetes, thyroid disease).\n\u2022Keep all scheduled orthopedic, neurology, and PCP appointments.\n\nReferences:\nNational Institute of Neurological Disorders and Stroke. (2024). Carpal tunnel syndrome. https://www.ninds.nih.gov/health-information/disorders/carpal-tunnel-syndrome\nAmerican Academy of Orthopaedic Surgeons. (2024). Carpal tunnel syndrome. https://orthoinfo.aaos.org\nMedlinePlus. (2024). Carpal tunnel syndrome. https://medlineplus.gov/carpaltunnelsyndrome.html",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Sudden severe hand or arm pain with weakness or inability to move (possible stroke if one-sided)",
+          "Severe allergic reaction to medication",
+          "Loss of consciousness"
+        ],
+        "call_provider": [
+          "Numbness or tingling that is worsening or persistent",
+          "Weakness in the hand or difficulty gripping objects",
+          "Dropping objects frequently",
+          "Symptoms interfering with work or daily activities",
+          "Pain that disrupts sleep despite wearing a splint",
+          "Loss of sensation in the fingers",
+          "Muscle wasting at the base of the thumb",
+          "Symptoms not improving with conservative treatment"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Spondylosis": {
+      "education": "What is Spondylosis?\nSpondylosis is a general term for age-related wear and tear (degeneration) of the spinal discs and joints. It is a form of osteoarthritis that affects the spine. Spondylosis is very common, especially in people over 60, and can occur in the cervical (neck), thoracic (mid-back), or lumbar (lower back) spine.\n\nSigns and Symptoms:\n\u2022Stiffness and pain in the neck or back\n\u2022Pain that worsens with activity or prolonged sitting/standing\n\u2022Headaches (cervical spondylosis)\n\u2022Grinding or popping sensation with movement\n\u2022Numbness, tingling, or weakness in the arms, hands, legs, or feet if nerves are compressed\n\u2022Difficulty with balance or coordination (in severe cervical cases)\n\u2022Reduced range of motion in the spine\n\u2022Muscle spasms\n\u2022Some people have no symptoms\n\nRisk Factors:\n\u2022Aging (most significant factor)\n\u2022Prior spinal injuries\n\u2022Repetitive stress on the spine from occupation or activities\n\u2022Obesity\n\u2022Smoking\n\u2022Genetic predisposition\n\u2022Sedentary lifestyle\n\u2022Heavy lifting or manual labor\n\nTreatment and Self-Management:\n\u2022Take prescribed pain medications, anti-inflammatories, or muscle relaxants as directed.\n\u2022Participate in physical therapy to improve flexibility, strength, and posture.\n\u2022Stay physically active with low-impact exercises such as walking, swimming, or yoga.\n\u2022Maintain proper posture and body mechanics.\n\u2022Use ergonomic supports when sitting or sleeping.\n\u2022Apply heat or cold therapy as recommended.\n\u2022Maintain a healthy weight to reduce stress on the spine.\n\u2022Stop smoking.\n\u2022Consider epidural steroid injections or surgical options if recommended by the healthcare provider.\n\u2022Keep all scheduled orthopedic, neurosurgery, and PCP appointments.\n\nReferences:\nAmerican Academy of Orthopaedic Surgeons. (2024). Cervical spondylosis. https://orthoinfo.aaos.org\nNational Institute of Arthritis and Musculoskeletal and Skin Diseases. (2024). Back pain. https://www.niams.nih.gov/health-topics/back-pain\nMedlinePlus. (2024). Cervical spondylosis. https://medlineplus.gov/ency/article/000436.htm",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Sudden loss of bladder or bowel control with back or neck pain",
+          "Sudden severe weakness or numbness in arms or legs",
+          "Inability to walk or severe loss of coordination",
+          "Severe pain after trauma or fall",
+          "Signs of spinal cord compression (progressive weakness, loss of sensation below a certain level)"
+        ],
+        "call_provider": [
+          "Persistent or worsening neck or back pain despite treatment",
+          "New numbness, tingling, or weakness in arms, hands, legs, or feet",
+          "Reduced range of motion in the neck or back",
+          "Difficulty with fine motor tasks (buttoning, writing)",
+          "Headaches that are worsening (cervical spondylosis)",
+          "Balance or coordination problems",
+          "Pain that significantly limits daily activities",
+          "Side effects from medications"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Wound Care": {
+      "education": "What is Wound Care?\nWound care involves the management and treatment of wounds to promote healing and prevent complications such as infection. Wounds can include surgical incisions, pressure injuries (bedsores), diabetic ulcers, venous or arterial ulcers, traumatic wounds, and burns. Proper wound care is essential for preventing infection and promoting tissue repair.\n\nSigns and Symptoms to Monitor:\n\u2022Redness, warmth, or swelling around the wound\n\u2022Increased pain or tenderness at the wound site\n\u2022Drainage from the wound (clear, yellow, green, or foul-smelling)\n\u2022Wound edges that are separating or not closing\n\u2022Darkening or discoloration of the wound or surrounding skin\n\u2022Fever or chills\n\u2022Slow or stalled healing progress\n\u2022Numbness around the wound\n\nRisk Factors for Poor Wound Healing:\n\u2022Diabetes with poorly controlled blood sugar\n\u2022Peripheral vascular disease or poor circulation\n\u2022Obesity\n\u2022Malnutrition or protein deficiency\n\u2022Smoking\n\u2022Immunosuppression (medications, medical conditions)\n\u2022Older age\n\u2022Prolonged immobility or pressure on the skin\n\u2022Chronic kidney disease\n\u2022Certain medications (corticosteroids, anticoagulants)\n\nTreatment and Self-Management:\n\u2022Follow wound care instructions exactly as directed by the healthcare provider or wound care specialist.\n\u2022Keep the wound clean using prescribed cleansing solutions.\n\u2022Change dressings at the recommended frequency using the prescribed materials.\n\u2022Wash hands thoroughly before and after wound care.\n\u2022Monitor the wound daily for signs of infection or changes.\n\u2022Keep the wound protected and avoid unnecessary touching.\n\u2022Maintain adequate nutrition, especially protein, vitamins A and C, and zinc.\n\u2022Keep blood sugar well-controlled if diabetic.\n\u2022Avoid smoking, which impairs wound healing.\n\u2022Reposition frequently to prevent pressure injuries if mobility is limited.\n\u2022Follow activity restrictions as directed (weight-bearing, lifting).\n\u2022Keep all scheduled wound care, surgery, and PCP appointments.\n\nReferences:\nAgency for Healthcare Research and Quality. (2024). Pressure ulcer prevention and treatment. https://www.ahrq.gov\nAmerican Academy of Dermatology. (2024). Wound care. https://www.aad.org/public/everyday-care/injured-skin/wound-care\nMedlinePlus. (2024). Wounds and injuries. https://medlineplus.gov/woundsandinjuries.html",
+      "diet": {
+        "eat_more": [
+          "Protein-rich foods to support tissue repair (lean meats, fish, eggs, beans, dairy)",
+          "Fruits and vegetables rich in vitamin C (oranges, strawberries, bell peppers, broccoli)",
+          "Vitamin A-rich foods (sweet potatoes, carrots, spinach)",
+          "Zinc-rich foods (nuts, seeds, whole grains, lean meats)",
+          "Adequate fluids to support healing"
+        ],
+        "limit": [
+          "Added sugars and refined carbohydrates, especially if diabetic",
+          "Excessive sodium",
+          "Highly processed foods"
+        ],
+        "avoid": [
+          "Tobacco products, which significantly impair wound healing",
+          "Excessive alcohol",
+          "Skipping meals or inadequate caloric intake"
+        ],
+        "guidelines": [
+          "Maintain adequate caloric and protein intake for wound healing",
+          "Follow diabetic diet guidelines if applicable",
+          "Discuss nutritional supplementation with the healthcare provider if intake is inadequate",
+          "Stay well-hydrated"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe, uncontrolled bleeding from a wound",
+          "Signs of severe infection or sepsis (high fever, confusion, rapid heartbeat, rapid breathing, low blood pressure)",
+          "Sudden severe pain with wound discoloration and swelling (possible necrotizing infection)",
+          "Loss of consciousness",
+          "Severe allergic reaction to wound care products or medications"
+        ],
+        "call_provider": [
+          "Signs of wound infection (increasing redness, warmth, swelling, drainage, foul odor)",
+          "Fever",
+          "Wound that is not improving or is getting larger",
+          "Wound edges separating",
+          "Increased pain at the wound site",
+          "Darkening or discoloration of skin around the wound",
+          "Numbness around the wound",
+          "Foul-smelling drainage",
+          "Delayed healing despite following wound care instructions"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Atopic Dermatitis": {
+      "education": "What is Atopic Dermatitis?\nAtopic dermatitis, commonly known as eczema, is a chronic skin condition that causes dry, itchy, and inflamed skin. It is the most common type of eczema and often begins in childhood but can occur at any age. Atopic dermatitis tends to flare up periodically and then subside.\n\nSigns and Symptoms:\n\u2022Dry, cracked skin\n\u2022Itching, which may be severe, especially at night\n\u2022Red to brownish-gray patches on the skin\n\u2022Small, raised bumps that may leak fluid when scratched\n\u2022Thickened, scaly skin from repeated scratching (lichenification)\n\u2022Raw, sensitive, or swollen skin from scratching\n\u2022Common locations: hands, feet, ankles, wrists, neck, upper chest, eyelids, inside the bend of elbows and knees, and in infants, the face and scalp\n\nRisk Factors:\n\u2022Family history of eczema, allergies, hay fever, or asthma\n\u2022Personal history of allergies or asthma\n\u2022Childhood onset (most common)\n\u2022Living in dry or cold climates\n\u2022Living in urban areas\n\u2022Exposure to environmental irritants\n\nTreatment and Self-Management:\n\u2022Apply prescribed moisturizers (emollients) liberally and frequently, especially after bathing.\n\u2022Use prescribed topical medications (corticosteroids, calcineurin inhibitors, PDE4 inhibitors) as directed.\n\u2022Take prescribed oral or injectable medications (immunomodulators, biologics) if indicated.\n\u2022Bathe in lukewarm water for short periods and pat skin dry gently.\n\u2022Avoid known triggers (harsh soaps, fragrances, certain fabrics, allergens, stress, extreme temperatures).\n\u2022Use mild, fragrance-free soaps, detergents, and skin care products.\n\u2022Wear soft, breathable clothing (cotton).\n\u2022Keep fingernails trimmed to reduce skin damage from scratching.\n\u2022Use wet wrap therapy if recommended by the healthcare provider.\n\u2022Manage stress, which can trigger flares.\n\u2022Keep all scheduled dermatology and PCP appointments.\n\nReferences:\nNational Institute of Arthritis and Musculoskeletal and Skin Diseases. (2024). Atopic dermatitis. https://www.niams.nih.gov/health-topics/atopic-dermatitis\nAmerican Academy of Dermatology. (2024). Eczema. https://www.aad.org/public/diseases/eczema\nMedlinePlus. (2024). Eczema. https://medlineplus.gov/eczema.html",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Severe allergic reaction (difficulty breathing, swelling of face/lips/tongue/throat)",
+          "Signs of severe widespread skin infection (high fever, rapidly spreading redness, confusion)",
+          "Loss of consciousness"
+        ],
+        "call_provider": [
+          "Signs of skin infection (increased redness, warmth, swelling, pus, crusting, pain)",
+          "Fever with worsening skin symptoms",
+          "Eczema that is not responding to prescribed treatment",
+          "Severe itching that disrupts sleep or daily activities",
+          "Eczema flare that is spreading or worsening rapidly",
+          "Painful skin cracks or fissures",
+          "Side effects from eczema medications",
+          "Emotional distress or anxiety related to the condition"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Basal Cell Carcinoma": {
+      "education": "What is Basal Cell Carcinoma?\nBasal cell carcinoma (BCC) is the most common type of skin cancer. It arises from the basal cells, which are found in the deepest layer of the outer skin (epidermis). BCC typically grows slowly and rarely spreads to other parts of the body, but it can cause significant local damage if not treated.\n\nSigns and Symptoms:\n\u2022A pearly or waxy bump on the face, ears, or neck\n\u2022A flat, flesh-colored or brown scar-like lesion on the chest or back\n\u2022A sore that bleeds, oozes, crusts, and does not heal, or heals and returns\n\u2022A pink growth with a slightly raised, rolled border and a crusted center\n\u2022A shiny bump or nodule that is translucent and may have visible blood vessels\n\u2022An area that looks like a scar without a known injury\n\nRisk Factors:\n\u2022Chronic or excessive sun exposure (UV radiation)\n\u2022History of sunburns, especially blistering sunburns\n\u2022Fair skin, light hair, and light eyes\n\u2022Older age\n\u2022Male sex\n\u2022History of prior skin cancer\n\u2022Use of tanning beds\n\u2022Exposure to radiation therapy\n\u2022Immunosuppression\n\u2022Exposure to arsenic\n\u2022Certain genetic conditions (basal cell nevus syndrome)\n\nTreatment and Self-Management:\n\u2022Follow the dermatologist's treatment plan (surgical excision, Mohs surgery, cryotherapy, topical treatments, or other therapies).\n\u2022Attend regular follow-up skin examinations as recommended.\n\u2022Perform monthly skin self-examinations.\n\u2022Protect skin from UV exposure: use broad-spectrum sunscreen (SPF 30 or higher), wear protective clothing, seek shade, and avoid peak sun hours.\n\u2022Avoid tanning beds.\n\u2022Report any new, changing, or non-healing skin lesions promptly.\n\u2022Keep all scheduled dermatology and PCP appointments.\n\nReferences:\nAmerican Cancer Society. (2024). Basal and squamous cell skin cancer. https://www.cancer.org/cancer/types/basal-and-squamous-cell-skin-cancer.html\nSkin Cancer Foundation. (2024). Basal cell carcinoma. https://www.skincancer.org/skin-cancer-information/basal-cell-carcinoma\nAmerican Academy of Dermatology. (2024). Basal cell carcinoma. https://www.aad.org/public/diseases/skin-cancer/types/common/bcc",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Severe allergic reaction to treatment",
+          "Severe bleeding from a skin lesion that cannot be stopped",
+          "Signs of infection after surgery (high fever, severe confusion, spreading redness)",
+          "Loss of consciousness"
+        ],
+        "call_provider": [
+          "A sore that does not heal or keeps returning",
+          "A new or changing growth, bump, or lesion on the skin",
+          "Bleeding, oozing, or crusting of a skin lesion",
+          "Redness, swelling, or drainage at a surgical site",
+          "Pain at the treatment site",
+          "New skin changes in previously treated areas",
+          "Questions about sun protection or skin monitoring"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Medication Induced Coagulopathy": {
+      "education": "What is Medication Induced Coagulopathy?\nMedication induced coagulopathy is a condition in which medications, most commonly anticoagulants (blood thinners) or antiplatelet agents, interfere with the blood's normal ability to clot. While these medications are prescribed to prevent harmful blood clots, they can increase the risk of bleeding. Careful monitoring and management are essential to balance the benefits of the medication with the risk of bleeding.\n\nSigns and Symptoms:\n\u2022Easy bruising or bruising that is larger than expected\n\u2022Prolonged bleeding from cuts or wounds\n\u2022Nosebleeds that are frequent or difficult to stop\n\u2022Bleeding gums\n\u2022Blood in the urine (pink, red, or cola-colored)\n\u2022Blood in the stool (bright red or black, tarry stools)\n\u2022Heavy or prolonged menstrual bleeding\n\u2022Vomiting blood or material that looks like coffee grounds\n\u2022Unexplained or excessive bleeding after dental work, surgery, or minor procedures\n\u2022Coughing up blood\n\u2022Severe headache, dizziness, or weakness (possible internal bleeding)\n\nRisk Factors:\n\u2022Use of anticoagulant medications (warfarin, heparin, enoxaparin, apixaban, rivaroxaban, dabigatran)\n\u2022Use of antiplatelet medications (aspirin, clopidogrel, ticagrelor, prasugrel)\n\u2022Older age\n\u2022Kidney or liver disease affecting drug metabolism\n\u2022Drug interactions (antibiotics, antifungals, NSAIDs, herbal supplements)\n\u2022Frequent falls\n\u2022History of GI bleeding or peptic ulcer disease\n\u2022Uncontrolled high blood pressure\n\u2022Low body weight\n\u2022Excessive alcohol use\n\nTreatment and Self-Management:\n\u2022Take anticoagulant or antiplatelet medications exactly as prescribed at the same time each day.\n\u2022Do not stop, skip, or double doses without consulting the healthcare provider.\n\u2022Complete all required blood tests (INR/PT for warfarin; CBC as indicated) on schedule.\n\u2022Inform all healthcare providers, dentists, and pharmacists that you are taking blood thinners.\n\u2022Wear medical identification indicating anticoagulant use.\n\u2022Avoid over-the-counter NSAIDs (ibuprofen, naproxen) unless approved by the healthcare provider.\n\u2022Discuss all new medications, supplements, vitamins, and herbal products with the healthcare provider before starting them.\n\u2022Use a soft-bristled toothbrush and electric razor to reduce injury risk.\n\u2022Avoid activities with a high risk of injury or falls.\n\u2022Apply direct pressure to cuts and hold for several minutes until bleeding stops.\n\u2022If on warfarin, maintain consistent vitamin K intake (do not drastically change intake of green leafy vegetables).\n\u2022Report any signs of unusual bleeding promptly.\n\u2022Keep all scheduled PCP, hematology, and anticoagulation clinic appointments.\n\nReferences:\nAmerican Heart Association. (2024). Anticoagulants. https://www.heart.org/en/health-topics/arrhythmia/prevention--treatment-of-arrhythmia/anticoagulants\nMedlinePlus. (2024). Blood thinners. https://medlineplus.gov/bloodthinners.html\nAmerican Society of Hematology. (2024). Blood clots. https://www.hematology.org/education/patients/blood-clots",
+      "diet": {
+        "eat_more": [
+          "A balanced, nutrient-rich diet",
+          "Foods consistent with current dietary habits (especially if on warfarin, maintain consistent vitamin K intake)",
+          "Lean proteins",
+          "Fruits and vegetables"
+        ],
+        "limit": [
+          "Sudden large increases or decreases in vitamin K-rich foods if on warfarin (kale, spinach, broccoli, Brussels sprouts, collard greens)",
+          "Alcohol, which can increase bleeding risk and interact with anticoagulants",
+          "Cranberry juice or cranberry products in excess if on warfarin"
+        ],
+        "avoid": [
+          "Drastic dietary changes without discussing with the healthcare provider",
+          "Excessive alcohol consumption",
+          "Herbal supplements that may interact with blood thinners (ginkgo, garlic supplements, ginger supplements, fish oil in high doses) without provider approval"
+        ],
+        "guidelines": [
+          "If on warfarin, maintain a consistent daily intake of vitamin K-containing foods rather than eliminating them",
+          "Do not start new diets or significantly change eating patterns without consulting the healthcare provider",
+          "Report dietary changes to the anticoagulation clinic",
+          "Follow any individualized dietary recommendations from the healthcare provider"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe or uncontrolled bleeding from any site",
+          "Vomiting blood or material that looks like coffee grounds",
+          "Black, tarry stools or large amounts of blood in the stool",
+          "Severe headache, vision changes, difficulty speaking, or sudden weakness (possible intracranial bleeding)",
+          "Severe abdominal pain with suspected internal bleeding",
+          "Fall with head injury while on blood thinners",
+          "Coughing up blood",
+          "Loss of consciousness",
+          "Signs of stroke"
+        ],
+        "call_provider": [
+          "Easy bruising or bruises that are unusually large",
+          "Nosebleeds that are frequent or prolonged",
+          "Bleeding gums",
+          "Blood in the urine",
+          "Minor bleeding that takes longer than usual to stop",
+          "Heavy or prolonged menstrual bleeding",
+          "INR result outside the target range (if on warfarin)",
+          "New medications, supplements, or dietary changes that may interact with blood thinners",
+          "Upcoming dental procedures or surgeries",
+          "Missed doses of anticoagulant medication"
+        ]
+      },
+      "online": "",
       "community": ""
     }
   },
