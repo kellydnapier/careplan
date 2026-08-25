@@ -5,14 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Care Plan Builder</title>
+<title>Care Plan Education</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f5f5f0;--card:#fff;--border:#d1d1c7;--text:#2c2c2c;--text2:#5a5a5a;--accent:#2a6496;--accent2:#1a4a6e;--accent-bg:#e8f0f8;--red:#c0392b;--red-bg:#fdecea;--green:#27ae60;--green-bg:#eafaf1;--orange:#d4760a;--orange-bg:#fef5e7;--tab-bg:#e8e8e0;--tab-active:#2a6496;--tab-text:#fff;--shadow:0 1px 3px rgba(0,0,0,.08)}
+:root{--bg:#f5f5f0;--card:#fff;--border:#d1d1c7;--text:#2c2c2c;--text2:#5a5a5a;--accent:#2a6496;--accent2:#1a4a6e;--accent-bg:#e8f0f8;--red:#c0392b;--red-bg:#fdecea;--green:#27ae60;--green-bg:#eafaf1;--orange:#d4760a;--orange-bg:#fef5e7;--tab-bg:#e8e8e0;--tab-active:#2a6496;--tab-text:#fff;--shadow:0 1px 3px rgba(0,0,0,.08);--qc-blue:#2b3990;--qc-green:#00904a}
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.5}
 .app{max-width:1100px;margin:0 auto;padding:8px}
-h1{font-size:1.3em;color:var(--accent2);padding:12px 0 4px;text-align:center}
-.subtitle{text-align:center;color:var(--text2);font-size:.85em;margin-bottom:10px}
+
+/* Header with logo */
+.app-header{display:flex;align-items:center;gap:14px;padding:10px 0 4px;justify-content:center;flex-wrap:wrap}
+.app-header img{height:48px;width:auto}
+.header-text{text-align:left}
+.header-text h1{font-size:1.2em;color:var(--qc-blue);margin:0;line-height:1.2}
+.header-text .subtitle{color:var(--text2);font-size:.8em;margin:0}
 
 /* Main Tabs */
 .main-tabs{display:flex;gap:2px;margin-bottom:8px;border-bottom:2px solid var(--accent)}
@@ -20,7 +25,7 @@ h1{font-size:1.3em;color:var(--accent2);padding:12px 0 4px;text-align:center}
 .main-tab.active{background:var(--accent);color:var(--tab-text)}
 .main-tab:hover:not(.active){background:#d0d0c8}
 
-/* System Tabs - scrollable */
+/* System Tabs */
 .sys-tabs{display:flex;overflow-x:auto;gap:3px;padding:4px 0;margin-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
 .sys-tab{padding:5px 10px;cursor:pointer;white-space:nowrap;font-size:.8em;border-radius:4px;background:var(--tab-bg);color:var(--text2);border:1px solid var(--border);transition:all .15s;flex-shrink:0}
 .sys-tab.active{background:var(--accent);color:var(--tab-text);border-color:var(--accent)}
@@ -40,6 +45,10 @@ h1{font-size:1.3em;color:var(--accent2);padding:12px 0 4px;text-align:center}
 .note-body{padding:12px 14px;font-size:.88em;white-space:pre-wrap;word-wrap:break-word;line-height:1.6;max-height:400px;overflow-y:auto}
 .note-body.collapsed{display:none}
 
+/* Condition title in multi-select */
+.cond-title{font-weight:700;font-size:1em;color:var(--accent2);margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+.cond-divider{border:none;border-top:1px dashed var(--border);margin:12px 0}
+
 /* Emergency sections */
 .emergency-section{margin-bottom:10px}
 .emergency-label{font-weight:700;padding:6px 10px;border-radius:4px;margin-bottom:4px;font-size:.9em}
@@ -49,6 +58,8 @@ h1{font-size:1.3em;color:var(--accent2);padding:12px 0 4px;text-align:center}
 .emergency-list li{margin-bottom:3px}
 
 /* Diet sections */
+.diet-overview{background:var(--accent-bg);border:1px solid #c5d8e8;border-radius:5px;padding:10px 12px;margin-bottom:10px;font-size:.9em;line-height:1.5;color:var(--text)}
+.diet-overview-title{font-weight:700;color:var(--accent2);margin-bottom:4px}
 .diet-cat{margin-bottom:8px}
 .diet-cat-label{font-weight:600;font-size:.9em;padding:3px 8px;border-radius:3px;margin-bottom:3px;display:inline-block}
 .eat-more-label{background:var(--green-bg);color:var(--green)}
@@ -78,18 +89,22 @@ h1{font-size:1.3em;color:var(--accent2);padding:12px 0 4px;text-align:center}
 .btn-sm{padding:3px 8px;font-size:.8em}
 .btn-group{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
 
-/* Print */
-@media print{.main-tabs,.sys-tabs,.cond-list,.btn,.btn-group,.editor-section{display:none!important}.note-body.collapsed{display:block!important}.app{max-width:100%}}
-@media(max-width:600px){.main-tab{padding:6px 10px;font-size:.8em}.note-body{font-size:.82em;max-height:300px}}
+@media print{.main-tabs,.sys-tabs,.cond-list,.btn,.btn-group,.editor-section,.app-header{display:none!important}.note-body.collapsed{display:block!important}.app{max-width:100%}}
+@media(max-width:600px){.main-tab{padding:6px 10px;font-size:.8em}.note-body{font-size:.82em;max-height:300px}.app-header img{height:36px}}
 </style>
 </head>
 <body>
 <div class="app">
-<h1>Care Plan Builder</h1>
-<p class="subtitle">Clinical Reference for Nurse Case Managers</p>
+<div class="app-header">
+  <img src="logo.png" alt="QualCare">
+  <div class="header-text">
+    <h1>Care Plan Education</h1>
+    <p class="subtitle">Clinical Reference for Complex Case Management</p>
+  </div>
+</div>
 
 <div class="main-tabs">
-  <div class="main-tab active" onclick="switchMain('builder')">Care Plan Builder</div>
+  <div class="main-tab active" onclick="switchMain('builder')">Knowledge Deficit</div>
   <div class="main-tab" onclick="switchMain('editor')">Data Editor</div>
 </div>
 
@@ -115,118 +130,43 @@ h1{font-size:1.3em;color:var(--accent2);padding:12px 0 4px;text-align:center}
 </div>
 
 <script>
-let DATA = null;
-let originalData = null;
-let activeSys = 0;
-let selectedConds = {};
-let collapsedSections = {};
-let edActiveSys = 0;
-let edActiveCond = null;
+let DATA=null,originalData=null,activeSys=0,selectedConds={},collapsedSections={},edActiveSys=0,edActiveCond=null;
 
-// Load data
 async function loadData(){
-  try{
-    const r = await fetch('data.json');
-    DATA = await r.json();
-  }catch(e){
-    DATA = {"body_systems":["No Data"],"conditions":{"No Data":[]},"condition_data":{},"intervention_labels":[],"care_plan_templates":{}};
-  }
-  originalData = JSON.parse(JSON.stringify(DATA));
-  initApp();
+  try{const r=await fetch('data.json');DATA=await r.json()}catch(e){DATA={body_systems:["No Data"],conditions:{"No Data":[]},condition_data:{},intervention_labels:[],care_plan_templates:{}}}
+  originalData=JSON.parse(JSON.stringify(DATA));initApp();
 }
+function initApp(){renderSysTabs();renderEdSysTabs();selectSystem(0)}
+function switchMain(v){document.querySelectorAll('.main-tab').forEach((t,i)=>t.classList.toggle('active',v==(i==0?'builder':'editor')));document.getElementById('builder-view').style.display=v=='builder'?'':'none';document.getElementById('editor-view').style.display=v=='editor'?'':'none'}
+function renderSysTabs(){const c=document.getElementById('sys-tabs');c.innerHTML=DATA.body_systems.map((s,i)=>`<div class="sys-tab${i==activeSys?' active':''}" onclick="selectSystem(${i})">${s}</div>`).join('')}
+function selectSystem(i){activeSys=i;selectedConds={};document.querySelectorAll('#sys-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));renderConditions();renderNotes()}
+function renderConditions(){const sys=DATA.body_systems[activeSys],conds=DATA.conditions[sys]||[],c=document.getElementById('cond-list');if(!conds.length){c.innerHTML='<div class="empty-state">No conditions in this category yet.</div>';return}c.innerHTML=conds.map(cn=>{const chk=selectedConds[cn]?'checked':'';return`<label class="cond-item${chk?' checked':''}"><input type="checkbox" ${chk} onchange="toggleCond('${cn.replace(/'/g,"\\'")}',this.checked)">${cn}</label>`}).join('')}
+function toggleCond(cn,v){if(v)selectedConds[cn]=true;else delete selectedConds[cn];renderConditions();renderNotes()}
 
-function initApp(){
-  renderSysTabs();
-  renderEdSysTabs();
-  selectSystem(0);
-}
+function dedup(arr){const seen=new Set();return arr.filter(item=>{const k=item.toLowerCase().replace(/[^a-z0-9]/g,'');if(seen.has(k))return false;seen.add(k);return true})}
+function mergeDietLists(conds,field){const items=[];conds.forEach(cn=>{const d=DATA.condition_data[cn]?.diet;if(d&&d[field])items.push(...d[field])});return dedup(items)}
+function mergeEmergency(conds,field){const items=[];conds.forEach(cn=>{const e=DATA.condition_data[cn]?.emergency;if(e&&e[field])items.push(...e[field])});return dedup(items)}
 
-// === MAIN TABS ===
-function switchMain(view){
-  document.querySelectorAll('.main-tab').forEach((t,i)=>t.classList.toggle('active',view==(i==0?'builder':'editor')));
-  document.getElementById('builder-view').style.display=view=='builder'?'':'none';
-  document.getElementById('editor-view').style.display=view=='editor'?'':'none';
-}
-
-// === SYSTEM TABS ===
-function renderSysTabs(){
-  const c=document.getElementById('sys-tabs');
-  c.innerHTML=DATA.body_systems.map((s,i)=>`<div class="sys-tab${i==activeSys?' active':''}" onclick="selectSystem(${i})">${s}</div>`).join('');
-}
-function selectSystem(i){
-  activeSys=i;
-  selectedConds={};
-  document.querySelectorAll('#sys-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));
-  renderConditions();
-  renderNotes();
-}
-
-// === CONDITIONS ===
-function renderConditions(){
-  const sys=DATA.body_systems[activeSys];
-  const conds=DATA.conditions[sys]||[];
-  const c=document.getElementById('cond-list');
-  if(!conds.length){c.innerHTML='<div class="empty-state">No conditions in this category yet.</div>';return}
-  c.innerHTML=conds.map(cn=>{
-    const chk=selectedConds[cn]?'checked':'';
-    return `<label class="cond-item${chk?' checked':''}"><input type="checkbox" ${chk} onchange="toggleCond('${cn.replace(/'/g,"\\'")}',this.checked)">${cn}</label>`;
-  }).join('');
-}
-function toggleCond(cn,v){
-  if(v)selectedConds[cn]=true;else delete selectedConds[cn];
-  renderConditions();
-  renderNotes();
-}
-
-// === MERGE HELPERS ===
-function dedup(arr){
-  const seen=new Set();
-  return arr.filter(item=>{
-    const k=item.toLowerCase().replace(/[^a-z0-9]/g,'');
-    if(seen.has(k))return false;
-    seen.add(k);return true;
-  });
-}
-function mergeDietLists(conds,field){
-  const items=[];
-  conds.forEach(cn=>{
-    const d=DATA.condition_data[cn]?.diet;
-    if(d&&d[field])items.push(...d[field]);
-  });
-  return dedup(items);
-}
-function mergeEmergency(conds,field){
-  const items=[];
-  conds.forEach(cn=>{
-    const e=DATA.condition_data[cn]?.emergency;
-    if(e&&e[field])items.push(...e[field]);
-  });
-  return dedup(items);
-}
-
-// === RENDER NOTES ===
 function renderNotes(){
   const area=document.getElementById('notes-area');
   const sel=Object.keys(selectedConds);
   if(!sel.length){area.innerHTML='<div class="empty-state">Select one or more conditions above to generate care plan notes.</div>';return}
-  
   let html='';
   
   // 1. Education
-  html+=renderSection('Education and Self Management',sel.map(cn=>{
+  const eduContent=sel.map(cn=>{
     const ed=DATA.condition_data[cn]?.education||'No education content available.';
-    return sel.length>1?`<strong>${cn}</strong>\n${ed}`:ed;
-  }).join('\n\n---\n\n'));
+    if(sel.length>1)return`<div class="cond-title">${escHtml(cn)}</div>\n${escHtml(ed)}`;
+    return escHtml(ed);
+  }).join(sel.length>1?'\n<hr class="cond-divider">\n':'\n');
+  html+=renderSectionHtml('Education and Self Management',eduContent);
   
-  // 2. Diet (only if any selected condition has diet data)
+  // 2. Diet
   const dietConds=sel.filter(cn=>DATA.condition_data[cn]?.diet);
   if(dietConds.length){
     let dietHtml='';
-    if(dietConds.length===1){
-      dietHtml=renderDietSingle(dietConds[0]);
-    }else{
-      dietHtml=renderDietMerged(dietConds);
-    }
+    if(dietConds.length===1){dietHtml=renderDietSingle(dietConds[0])}
+    else{dietHtml=renderDietMerged(dietConds)}
     html+=renderSectionHtml('Dietary Education',dietHtml);
   }
   
@@ -234,118 +174,79 @@ function renderNotes(){
   const emergConds=sel.filter(cn=>DATA.condition_data[cn]?.emergency);
   if(emergConds.length){
     let emergHtml='';
-    if(emergConds.length===1){
-      emergHtml=renderEmergSingle(emergConds[0]);
-    }else{
-      emergHtml=renderEmergMerged(emergConds);
-    }
+    if(emergConds.length===1){emergHtml=renderEmergSingle(emergConds[0])}
+    else{emergHtml=renderEmergMerged(emergConds)}
     html+=renderSectionHtml('When to Call 911 vs When to Call Provider',emergHtml);
   }
   
   // 4. Educational Materials
-  html+=renderSection('Educational Materials',sel.map(cn=>{
-    const o=DATA.condition_data[cn]?.online||'';
-    return o?(sel.length>1?`<strong>${cn}</strong>\n${o}`:o):'';
-  }).filter(Boolean).join('\n\n')||'No educational materials available.');
+  const matContent=sel.map(cn=>{const o=DATA.condition_data[cn]?.online||'';return o?(sel.length>1?`<div class="cond-title">${escHtml(cn)}</div>\n${escHtml(o)}`:escHtml(o)):''}).filter(Boolean).join('\n<hr class="cond-divider">\n');
+  html+=renderSectionHtml('Educational Materials',matContent||'To be added.');
   
   // 5. Community Resources
-  html+=renderSection('Community Resources',sel.map(cn=>{
-    const c=DATA.condition_data[cn]?.community||'';
-    return c?(sel.length>1?`<strong>${cn}</strong>\n${c}`:c):'';
-  }).filter(Boolean).join('\n\n')||'Community resources will be added based on member location.');
+  const comContent=sel.map(cn=>{const c=DATA.condition_data[cn]?.community||'';return c?(sel.length>1?`<div class="cond-title">${escHtml(cn)}</div>\n${escHtml(c)}`:escHtml(c)):''}).filter(Boolean).join('\n<hr class="cond-divider">\n');
+  html+=renderSectionHtml('Community Resources',comContent||'To be added.');
   
   area.innerHTML=html;
 }
 
-function renderSection(title,content){
-  const id='sec_'+title.replace(/\W/g,'');
-  const collapsed=collapsedSections[id];
-  return `<div class="note-section"><div class="note-header" onclick="toggleSection('${id}')"><span>${title}</span><span class="toggle">${collapsed?'▶':'▼'}</span></div><div class="note-body${collapsed?' collapsed':''}" id="${id}">${escHtml(content)}</div></div>`;
-}
 function renderSectionHtml(title,html){
   const id='sec_'+title.replace(/\W/g,'');
   const collapsed=collapsedSections[id];
-  return `<div class="note-section"><div class="note-header" onclick="toggleSection('${id}')"><span>${title}</span><span class="toggle">${collapsed?'▶':'▼'}</span></div><div class="note-body${collapsed?' collapsed':''}" id="${id}">${html}</div></div>`;
+  return`<div class="note-section"><div class="note-header" onclick="toggleSection('${id}')"><span>${title}</span><span class="toggle">${collapsed?'▶':'▼'}</span></div><div class="note-body${collapsed?' collapsed':''}" id="${id}">${html}</div></div>`;
 }
-function toggleSection(id){
-  collapsedSections[id]=!collapsedSections[id];
-  const el=document.getElementById(id);
-  if(el)el.classList.toggle('collapsed');
-  const hdr=el?.previousElementSibling;
-  if(hdr){const t=hdr.querySelector('.toggle');if(t)t.textContent=collapsedSections[id]?'▶':'▼';}
-}
+function toggleSection(id){collapsedSections[id]=!collapsedSections[id];const el=document.getElementById(id);if(el)el.classList.toggle('collapsed');const hdr=el?.previousElementSibling;if(hdr){const t=hdr.querySelector('.toggle');if(t)t.textContent=collapsedSections[id]?'▶':'▼'}}
 
 function renderDietSingle(cn){
   const d=DATA.condition_data[cn]?.diet;
   if(!d)return'No dietary information available.';
-  return buildDietHtml(d.eat_more,d.limit,d.avoid,d.guidelines);
+  let html='';
+  if(d.overview)html+=`<div class="diet-overview"><div class="diet-overview-title">${escHtml(cn)} — Dietary Overview</div>${escHtml(d.overview)}</div>`;
+  html+=buildDietHtml(d.eat_more,d.limit,d.avoid,d.guidelines);
+  return html;
 }
 function renderDietMerged(conds){
-  const em=mergeDietLists(conds,'eat_more');
-  const lm=mergeDietLists(conds,'limit');
-  const av=mergeDietLists(conds,'avoid');
-  const gl=mergeDietLists(conds,'guidelines');
+  // Show each condition's diet overview separately, then merged lists
   let html=`<p style="margin-bottom:8px;font-style:italic;color:var(--text2)">Combined dietary guidelines for: ${conds.join(', ')}</p>`;
+  conds.forEach(cn=>{
+    const d=DATA.condition_data[cn]?.diet;
+    if(d?.overview)html+=`<div class="diet-overview"><div class="diet-overview-title">${escHtml(cn)} — Dietary Overview</div>${escHtml(d.overview)}</div>`;
+  });
+  const em=mergeDietLists(conds,'eat_more'),lm=mergeDietLists(conds,'limit'),av=mergeDietLists(conds,'avoid'),gl=mergeDietLists(conds,'guidelines');
   html+=buildDietHtml(em,lm,av,gl);
   return html;
 }
 function buildDietHtml(eatMore,limit,avoid,guidelines){
   let h='';
-  if(eatMore?.length){h+=`<div class="diet-cat"><div class="diet-cat-label eat-more-label">Eat More</div><ul class="diet-list">${eatMore.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;}
-  if(limit?.length){h+=`<div class="diet-cat"><div class="diet-cat-label limit-label">Limit</div><ul class="diet-list">${limit.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;}
-  if(avoid?.length){h+=`<div class="diet-cat"><div class="diet-cat-label avoid-label">Avoid</div><ul class="diet-list">${avoid.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;}
-  if(guidelines?.length){h+=`<div class="diet-cat"><div class="diet-cat-label guidelines-label">Guidelines</div><ul class="diet-list">${guidelines.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;}
+  if(eatMore?.length)h+=`<div class="diet-cat"><div class="diet-cat-label eat-more-label">Eat More</div><ul class="diet-list">${eatMore.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;
+  if(limit?.length)h+=`<div class="diet-cat"><div class="diet-cat-label limit-label">Limit</div><ul class="diet-list">${limit.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;
+  if(avoid?.length)h+=`<div class="diet-cat"><div class="diet-cat-label avoid-label">Avoid</div><ul class="diet-list">${avoid.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;
+  if(guidelines?.length)h+=`<div class="diet-cat"><div class="diet-cat-label guidelines-label">Guidelines</div><ul class="diet-list">${guidelines.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;
   return h||'No dietary information available.';
 }
 
-function renderEmergSingle(cn){
-  const e=DATA.condition_data[cn]?.emergency;
-  if(!e)return'No emergency information available.';
-  return buildEmergHtml(e.call_911,e.call_provider);
-}
+function renderEmergSingle(cn){const e=DATA.condition_data[cn]?.emergency;if(!e)return'No emergency information available.';return buildEmergHtml(e.call_911,e.call_provider)}
 function renderEmergMerged(conds){
-  const c911=mergeEmergency(conds,'call_911');
-  const cprov=mergeEmergency(conds,'call_provider');
+  const c911=mergeEmergency(conds,'call_911'),cprov=mergeEmergency(conds,'call_provider');
   let html=`<p style="margin-bottom:8px;font-style:italic;color:var(--text2)">Combined emergency guidelines for: ${conds.join(', ')}</p>`;
-  html+=buildEmergHtml(c911,cprov);
-  return html;
+  html+=buildEmergHtml(c911,cprov);return html;
 }
 function buildEmergHtml(call911,callProv){
   let h='';
-  if(call911?.length){h+=`<div class="emergency-section"><div class="emergency-label label-911">When to Call 911</div><p style="margin-bottom:4px;font-size:.85em">Call 911 or go to the nearest emergency department immediately if you experience:</p><ul class="emergency-list">${call911.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;}
-  if(callProv?.length){h+=`<div class="emergency-section"><div class="emergency-label label-provider">When to Call Provider</div><p style="margin-bottom:4px;font-size:.85em">Contact the healthcare provider if you experience:</p><ul class="emergency-list">${callProv.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;}
+  if(call911?.length)h+=`<div class="emergency-section"><div class="emergency-label label-911">When to Call 911</div><p style="margin-bottom:4px;font-size:.85em">Call 911 or go to the nearest emergency department immediately if you experience:</p><ul class="emergency-list">${call911.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;
+  if(callProv?.length)h+=`<div class="emergency-section"><div class="emergency-label label-provider">When to Call Provider</div><p style="margin-bottom:4px;font-size:.85em">Contact the healthcare provider if you experience:</p><ul class="emergency-list">${callProv.map(i=>`<li>${escHtml(i)}</li>`).join('')}</ul></div>`;
   return h||'No emergency information available.';
 }
 
-function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
 // === EDITOR ===
-function renderEdSysTabs(){
-  const c=document.getElementById('ed-sys-tabs');
-  c.innerHTML=DATA.body_systems.map((s,i)=>`<div class="sys-tab${i==edActiveSys?' active':''}" onclick="edSelectSystem(${i})">${s}</div>`).join('');
-}
-function edSelectSystem(i){
-  edActiveSys=i;
-  edActiveCond=null;
-  document.querySelectorAll('#ed-sys-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));
-  renderEdConds();
-  document.getElementById('ed-form').innerHTML='';
-}
-function renderEdConds(){
-  const sys=DATA.body_systems[edActiveSys];
-  const conds=DATA.conditions[sys]||[];
-  const c=document.getElementById('ed-cond-list');
-  c.innerHTML=conds.map(cn=>`<div class="cond-item${edActiveCond==cn?' checked':''}" onclick="edSelectCond('${cn.replace(/'/g,"\\'")}')" style="cursor:pointer">${cn}</div>`).join('')+
-    `<button class="btn btn-sm btn-primary" onclick="edAddCond()">+ Add Condition</button>`;
-}
-function edSelectCond(cn){
-  edActiveCond=cn;
-  renderEdConds();
-  renderEdForm(cn);
-}
+function renderEdSysTabs(){const c=document.getElementById('ed-sys-tabs');c.innerHTML=DATA.body_systems.map((s,i)=>`<div class="sys-tab${i==edActiveSys?' active':''}" onclick="edSelectSystem(${i})">${s}</div>`).join('')}
+function edSelectSystem(i){edActiveSys=i;edActiveCond=null;document.querySelectorAll('#ed-sys-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));renderEdConds();document.getElementById('ed-form').innerHTML=''}
+function renderEdConds(){const sys=DATA.body_systems[edActiveSys],conds=DATA.conditions[sys]||[],c=document.getElementById('ed-cond-list');c.innerHTML=conds.map(cn=>`<div class="cond-item${edActiveCond==cn?' checked':''}" onclick="edSelectCond('${cn.replace(/'/g,"\\'")}')" style="cursor:pointer">${cn}</div>`).join('')+`<button class="btn btn-sm btn-primary" onclick="edAddCond()">+ Add Condition</button>`}
+function edSelectCond(cn){edActiveCond=cn;renderEdConds();renderEdForm(cn)}
 function renderEdForm(cn){
-  const d=DATA.condition_data[cn]||{};
-  const hasDiet=d.diet!=null;
+  const d=DATA.condition_data[cn]||{};const hasDiet=d.diet!=null;
   const f=document.getElementById('ed-form');
   f.innerHTML=`
     <h3 style="margin-bottom:10px">Editing: ${cn}</h3>
@@ -353,6 +254,8 @@ function renderEdForm(cn){
     <div class="editor-row"><textarea id="ed-edu" rows="10">${d.education||''}</textarea></div>
     <div class="editor-row"><label><input type="checkbox" id="ed-has-diet" ${hasDiet?'checked':''} onchange="toggleEdDiet()"> Has Dietary Guidelines</label></div>
     <div id="ed-diet-fields" style="display:${hasDiet?'block':'none'}">
+      <div class="editor-row"><label>Diet Overview:</label></div>
+      <div class="editor-row"><textarea id="ed-diet-overview" rows="3">${(d.diet?.overview||'')}</textarea></div>
       <div class="editor-row"><label>Eat More (one per line):</label></div>
       <div class="editor-row"><textarea id="ed-eat-more" rows="4">${(d.diet?.eat_more||[]).join('\n')}</textarea></div>
       <div class="editor-row"><label>Limit (one per line):</label></div>
@@ -375,58 +278,20 @@ function renderEdForm(cn){
       <button class="btn btn-danger" onclick="edDeleteCond()">Delete Condition</button>
     </div>`;
 }
-function toggleEdDiet(){
-  document.getElementById('ed-diet-fields').style.display=document.getElementById('ed-has-diet').checked?'block':'none';
-}
-function linesToArr(id){return document.getElementById(id).value.split('\n').map(s=>s.trim()).filter(Boolean);}
+function toggleEdDiet(){document.getElementById('ed-diet-fields').style.display=document.getElementById('ed-has-diet').checked?'block':'none'}
+function linesToArr(id){return document.getElementById(id).value.split('\n').map(s=>s.trim()).filter(Boolean)}
 function edSave(){
   if(!edActiveCond)return;
   const hasDiet=document.getElementById('ed-has-diet').checked;
-  DATA.condition_data[edActiveCond]={
-    education:document.getElementById('ed-edu').value,
-    diet:hasDiet?{eat_more:linesToArr('ed-eat-more'),limit:linesToArr('ed-limit'),avoid:linesToArr('ed-avoid'),guidelines:linesToArr('ed-guidelines')}:null,
-    emergency:{call_911:linesToArr('ed-911'),call_provider:linesToArr('ed-prov')},
-    online:document.getElementById('ed-online').value,
-    community:document.getElementById('ed-community').value
-  };
+  const dietObj=hasDiet?{overview:document.getElementById('ed-diet-overview').value,eat_more:linesToArr('ed-eat-more'),limit:linesToArr('ed-limit'),avoid:linesToArr('ed-avoid'),guidelines:linesToArr('ed-guidelines')}:null;
+  DATA.condition_data[edActiveCond]={education:document.getElementById('ed-edu').value,diet:dietObj,emergency:{call_911:linesToArr('ed-911'),call_provider:linesToArr('ed-prov')},online:document.getElementById('ed-online').value,community:document.getElementById('ed-community').value};
   alert('Saved! Changes are session-only. Export to save permanently.');
 }
-function edAddCond(){
-  const name=prompt('Enter new condition name:');
-  if(!name||!name.trim())return;
-  const sys=DATA.body_systems[edActiveSys];
-  if(!DATA.conditions[sys])DATA.conditions[sys]=[];
-  DATA.conditions[sys].push(name.trim());
-  DATA.condition_data[name.trim()]={education:'',diet:null,emergency:{call_911:[],call_provider:[]},online:'',community:''};
-  renderEdConds();
-  renderConditions();
-}
-function edDeleteCond(){
-  if(!edActiveCond||!confirm(`Delete "${edActiveCond}"?`))return;
-  const sys=DATA.body_systems[edActiveSys];
-  DATA.conditions[sys]=DATA.conditions[sys].filter(c=>c!==edActiveCond);
-  delete DATA.condition_data[edActiveCond];
-  edActiveCond=null;
-  renderEdConds();
-  renderConditions();
-  document.getElementById('ed-form').innerHTML='';
-}
-function exportData(){
-  const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);
-  a.download='data.json';
-  a.click();
-}
-function revertData(){
-  if(!confirm('Revert all changes?'))return;
-  DATA=JSON.parse(JSON.stringify(originalData));
-  selectedConds={};
-  edActiveCond=null;
-  initApp();
-}
+function edAddCond(){const name=prompt('Enter new condition name:');if(!name||!name.trim())return;const sys=DATA.body_systems[edActiveSys];if(!DATA.conditions[sys])DATA.conditions[sys]=[];DATA.conditions[sys].push(name.trim());DATA.condition_data[name.trim()]={education:'',diet:null,emergency:{call_911:[],call_provider:[]},online:'',community:''};renderEdConds();renderConditions()}
+function edDeleteCond(){if(!edActiveCond||!confirm(`Delete "${edActiveCond}"?`))return;const sys=DATA.body_systems[edActiveSys];DATA.conditions[sys]=DATA.conditions[sys].filter(c=>c!==edActiveCond);delete DATA.condition_data[edActiveCond];edActiveCond=null;renderEdConds();renderConditions();document.getElementById('ed-form').innerHTML=''}
+function exportData(){const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='data.json';a.click()}
+function revertData(){if(!confirm('Revert all changes?'))return;DATA=JSON.parse(JSON.stringify(originalData));selectedConds={};edActiveCond=null;initApp()}
 
-// Init
 loadData();
 </script>
 </body>

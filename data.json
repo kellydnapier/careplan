@@ -41,6 +41,7 @@
       "Pulmonary Fibrosis"
     ],
     "Endocrine Issues": [
+      "Addison's Disease",
       "Diabetes",
       "Hyperparathyroidism",
       "Hypothyroidism",
@@ -51,6 +52,8 @@
     ],
     "Urogenital Issues": [
       "BPH",
+      "Bladder Retraining and Kegel",
+      "Overactive Bladder",
       "Urinary Incontinence"
     ],
     "Neurological Issues": [
@@ -77,6 +80,7 @@
       "Diverticulitis",
       "Dysphagia",
       "Gallstones",
+      "GERD",
       "GI Bleed",
       "Inflammatory Bowel Disease",
       "Liver Disease",
@@ -144,7 +148,9 @@
           "Read nutrition labels and choose foods lower in sodium",
           "Maintain adequate hydration unless fluids are restricted",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "diet_education": "Heart-Healthy Diet:\nA heart-healthy diet emphasizes foods that support cardiovascular function and reduce the risk of complications. This includes eating plenty of fruits, vegetables, whole grains, and lean proteins while limiting sodium, saturated fats, and added sugars. The DASH (Dietary Approaches to Stop Hypertension) and Mediterranean diets are both evidence-based heart-healthy eating plans. Limiting caffeine and alcohol is especially important for AFib, as both can trigger or worsen episodes of irregular heartbeat.",
+        "overview": "Heart-Healthy Diet and DASH Diet: The DASH (Dietary Approaches to Stop Hypertension) and heart-healthy eating plans emphasize fruits, vegetables, whole grains, lean proteins, and low-fat dairy while limiting sodium, saturated fats, and added sugars. These eating patterns support cardiovascular health by helping manage blood pressure, cholesterol, and weight \u2014 all of which are important for managing atrial fibrillation and reducing the risk of stroke."
       },
       "emergency": {
         "call_911": [
@@ -200,7 +206,9 @@
           "Prepare meals at home to control sodium content",
           "Weigh yourself daily and report sudden weight gain",
           "Follow any individualized dietary recommendations from the healthcare provider or dietitian"
-        ]
+        ],
+        "diet_education": "Heart-Healthy and Low-Sodium Diet:\nThe dietary approach for heart failure centers on strict sodium restriction to prevent fluid retention and reduce the workload on the heart. The DASH diet provides a framework for heart-healthy eating. Key principles include limiting sodium to less than 1,500-2,000 mg per day, monitoring fluid intake as directed, reading nutrition labels carefully, avoiding processed and packaged foods high in sodium, and using herbs, spices, and lemon instead of salt for flavor.",
+        "overview": "Heart Failure Diet: Managing diet is a critical part of heart failure care. A low-sodium diet helps prevent fluid retention and reduces the workload on the heart. Fluid intake may also be restricted. The goal is to minimize swelling, shortness of breath, and hospitalizations while maintaining adequate nutrition."
       },
       "emergency": {
         "call_911": [
@@ -258,7 +266,9 @@
           "Prepare meals at home using healthy cooking methods such as baking, grilling, or steaming",
           "Control portion sizes",
           "Follow any individualized dietary recommendations from the healthcare provider or dietitian"
-        ]
+        ],
+        "diet_education": "Heart-Healthy Diet \u2014 DASH and Mediterranean Diets:\nThe DASH (Dietary Approaches to Stop Hypertension) diet and the Mediterranean diet are both evidence-based eating plans that reduce cardiovascular risk. The DASH diet emphasizes fruits, vegetables, whole grains, lean proteins, and low-fat dairy while limiting sodium, saturated fat, and added sugars. The Mediterranean diet emphasizes olive oil, fish, nuts, fruits, vegetables, and whole grains while limiting red meat and processed foods. Both diets have been shown to lower cholesterol, reduce blood pressure, and decrease the risk of heart attack and stroke.",
+        "overview": "Heart-Healthy Diet: A heart-healthy eating plan \u2014 such as the DASH or Mediterranean diet \u2014 focuses on reducing saturated fat, trans fat, cholesterol, and sodium while increasing fruits, vegetables, whole grains, and lean proteins. This approach helps slow the progression of plaque buildup in the arteries, lower cholesterol, and reduce the risk of heart attack and stroke."
       },
       "emergency": {
         "call_911": [
@@ -319,7 +329,9 @@
           "Choose lean cuts of meat and remove visible fat and skin",
           "Use healthy cooking methods such as baking, broiling, grilling, or steaming",
           "Follow any individualized dietary recommendations from the healthcare provider or dietitian"
-        ]
+        ],
+        "diet_education": "Heart-Healthy and Cholesterol-Lowering Diet:\nA cholesterol-lowering diet focuses on reducing LDL ('bad') cholesterol and increasing HDL ('good') cholesterol. Key strategies include replacing saturated fats with unsaturated fats, increasing soluble fiber intake (found in oats, beans, and fruits), eating fatty fish rich in omega-3s at least twice per week, and limiting dietary cholesterol. The Mediterranean and DASH diets are both effective frameworks for managing cholesterol through nutrition.",
+        "overview": "Cholesterol-Lowering Diet: The primary dietary goal for dyslipidemia is to lower LDL (\"bad\") cholesterol and raise HDL (\"good\") cholesterol. The Mediterranean and DASH eating patterns are recommended. Emphasis is on reducing saturated fat, eliminating trans fats, increasing soluble fiber (oats, beans, fruits), and incorporating omega-3 fatty acids (fatty fish, walnuts, flaxseed)."
       },
       "emergency": {
         "call_911": [
@@ -376,7 +388,9 @@
           "Use herbs, spices, lemon, and vinegar to season food instead of salt",
           "Limit canned, packaged, processed, and fast foods that are high in sodium",
           "Follow any individualized dietary recommendations provided by the healthcare provider"
-        ]
+        ],
+        "diet_education": "DASH Diet (Dietary Approaches to Stop Hypertension):\nThe DASH diet is an evidence-based eating plan specifically designed to lower blood pressure. It emphasizes fruits (4-5 servings/day), vegetables (4-5 servings/day), whole grains (6-8 servings/day), lean proteins, and low-fat dairy (2-3 servings/day) while significantly limiting sodium intake. Research has shown that the DASH diet can lower systolic blood pressure by 8-14 mm Hg. The diet is rich in potassium, calcium, magnesium, and fiber \u2014 nutrients that help regulate blood pressure.",
+        "overview": "DASH Diet (Dietary Approaches to Stop Hypertension): The DASH diet is a clinically proven eating plan specifically designed to lower blood pressure. It emphasizes fruits (4-5 servings/day), vegetables (4-5 servings/day), whole grains (6-8 servings/day), low-fat dairy (2-3 servings/day), lean meats, and nuts, while significantly reducing sodium, saturated fat, and added sugars. Studies show the DASH diet can lower systolic blood pressure by 8-14 mm Hg."
       },
       "emergency": {
         "call_911": [
@@ -431,7 +445,9 @@
           "Maintain adequate hydration unless fluids are restricted",
           "Read nutrition labels and choose foods lower in sodium",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "diet_education": "Heart-Healthy Diet:\nA heart-healthy diet supports overall cardiovascular function and helps manage conditions that may affect heart rhythm. This includes eating plenty of fruits, vegetables, whole grains, and lean proteins while limiting sodium, caffeine, and alcohol. Caffeine and alcohol may trigger or worsen arrhythmias in some individuals and should be consumed in moderation or avoided as recommended by the healthcare provider.",
+        "overview": "Heart-Healthy Diet: A heart-healthy eating plan supports overall cardiovascular function and helps manage conditions that may worsen arrhythmias. Focus on balanced nutrition with limited sodium, caffeine, and alcohol, as these can trigger or worsen irregular heart rhythms."
       },
       "emergency": {
         "call_911": [
@@ -483,7 +499,8 @@
           "Follow a heart-healthy diet to help manage blood pressure and cholesterol",
           "Read nutrition labels for sodium and fat content",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "overview": "Heart-Healthy Diet: A heart-healthy eating pattern helps manage blood pressure and cholesterol, which are critical for slowing the growth of an aortic aneurysm. Focus on reducing sodium and saturated fats while increasing fruits, vegetables, whole grains, and omega-3 rich foods."
       },
       "emergency": {
         "call_911": [
@@ -537,7 +554,8 @@
           "Maintain a healthy weight",
           "Read nutrition labels for sodium and fat content",
           "Follow dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "overview": "Heart-Healthy Diet: Peripheral arterial disease is caused by atherosclerosis, so a heart-healthy diet is essential. Reducing saturated fat, cholesterol, and sodium while increasing fiber and omega-3 fatty acids helps slow plaque progression and improve circulation."
       },
       "emergency": {
         "call_911": [
@@ -590,7 +608,8 @@
           "Maintain adequate hydration",
           "Read nutrition labels",
           "Follow dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "overview": "Heart-Healthy Diet: A heart-healthy diet supports vascular health by reducing atherosclerosis risk factors. Focus on limiting sodium, saturated fat, and processed foods while eating more fruits, vegetables, whole grains, and lean proteins."
       },
       "emergency": {
         "call_911": [
@@ -693,7 +712,9 @@
           "Increase salt intake during hot weather, exercise, or illness as directed",
           "Maintain adequate hydration",
           "Work with a dietitian experienced in CF nutrition"
-        ]
+        ],
+        "diet_education": "High-Calorie, High-Fat CF Diet:\nPeople with cystic fibrosis need a high-calorie, high-fat diet because the disease impairs nutrient absorption. Caloric needs are typically 1.5 to 2 times higher than usual. Pancreatic enzyme replacements must be taken with all meals and snacks to aid digestion. Fat-soluble vitamin supplements (A, D, E, K) are essential. Salt intake should be increased during hot weather, exercise, or illness to replace losses through sweat.",
+        "overview": "Cystic Fibrosis Nutrition: People with cystic fibrosis need a high-calorie, high-fat diet because the disease impairs digestion and nutrient absorption. Pancreatic enzyme replacement must be taken with all meals and snacks to help digest food. Fat-soluble vitamin supplements (A, D, E, K) are routinely prescribed. Salt intake should be increased during hot weather, exercise, or illness to replace losses through sweat."
       },
       "emergency": {
         "call_911": [
@@ -803,7 +824,9 @@
           "Use the plate method: fill half the plate with non-starchy vegetables, one quarter with lean protein, one quarter with whole grains or starchy foods",
           "Eat meals and snacks at consistent times each day",
           "Monitor how different foods affect blood sugar levels"
-        ]
+        ],
+        "diet_education": "Diabetic Diet and the Plate Method:\nThe diabetic diet focuses on controlling blood sugar levels through balanced nutrition. The Plate Method is a simple way to plan meals: fill half of a 9-inch plate with non-starchy vegetables (salad, broccoli, green beans), one quarter with lean protein (chicken, fish, beans, tofu), and one quarter with carbohydrate foods (whole grains, starchy vegetables, fruit). Pair with water or a zero-calorie drink. Controlling portion sizes, choosing high-fiber and low-glycemic foods, spacing meals evenly throughout the day, and reading nutrition labels for carbohydrate content are key components of managing diabetes through diet.",
+        "overview": "Diabetic Diet and the Plate Method: The Diabetic Plate Method is a simple way to plan balanced meals without counting calories or carbohydrates. Fill half the plate with non-starchy vegetables (salad, broccoli, green beans), one quarter with lean protein (chicken, fish, beans, tofu), and one quarter with carbohydrate foods (whole grains, starchy vegetables, fruit). This method helps control blood sugar by managing portions and balancing nutrients. Consistency in meal timing and carbohydrate intake is important for blood sugar management."
       },
       "emergency": {
         "call_911": [
@@ -854,7 +877,9 @@
           "Stay well-hydrated throughout the day",
           "Discuss any supplement use with the healthcare provider",
           "Follow individualized dietary recommendations from the provider or dietitian"
-        ]
+        ],
+        "diet_education": "Calcium and Vitamin D Management:\nDietary management of hyperparathyroidism requires careful attention to calcium and vitamin D intake as directed by the healthcare provider. Unlike most conditions where more calcium is encouraged, hyperparathyroidism may require limiting calcium supplementation to avoid worsening hypercalcemia. Adequate hydration is important to reduce kidney stone risk.",
+        "overview": "Calcium and Bone Health Diet: Dietary management of hyperparathyroidism focuses on balancing calcium intake under the guidance of the healthcare provider. Because the condition causes elevated blood calcium, calcium supplementation is usually not recommended unless specifically directed. Adequate hydration is important to support kidney function and prevent kidney stones."
       },
       "emergency": {
         "call_911": [
@@ -909,7 +934,9 @@
           "Follow any individualized dietary recommendations from the healthcare provider",
           "Maintain regular meal times and a balanced diet",
           "Discuss any new supplements or dietary changes with the healthcare provider"
-        ]
+        ],
+        "diet_education": "Thyroid-Supportive Diet:\nA thyroid-supportive diet ensures adequate intake of nutrients important for thyroid function, including iodine, selenium, and zinc. It is important to take thyroid medication (levothyroxine) on an empty stomach, 30-60 minutes before eating, and to space it at least 4 hours from calcium or iron supplements. Large quantities of raw cruciferous vegetables may interfere with thyroid function in some individuals, though cooking reduces this effect.",
+        "overview": "Thyroid-Supportive Diet: While no specific diet cures hypothyroidism, certain nutrients support thyroid function. Iodine is essential for thyroid hormone production, and selenium supports thyroid metabolism. The timing of food and supplement intake relative to thyroid medication is important, as certain foods and supplements can interfere with medication absorption."
       },
       "emergency": {
         "call_911": [
@@ -966,7 +993,9 @@
           "Read nutrition labels for sodium, potassium, and phosphorus content",
           "Take phosphate binders with meals if prescribed",
           "Follow any fluid restrictions carefully"
-        ]
+        ],
+        "diet_education": "Renal Diet:\nThe renal diet is specifically designed to reduce the workload on damaged kidneys by controlling the intake of sodium, potassium, phosphorus, protein, and sometimes fluid. Dietary restrictions change based on the stage of CKD and whether dialysis has been initiated. Working closely with a renal dietitian is essential, as the diet must be individualized. Reading nutrition labels for sodium, potassium, and phosphorus content is critical for managing CKD through diet.",
+        "overview": "Renal Diet: The renal diet is tailored to the stage of chronic kidney disease and aims to reduce the workload on the kidneys. Key restrictions may include sodium, potassium, phosphorus, protein, and fluids. Dietary needs change as CKD progresses, so working closely with a renal dietitian is essential. The goal is to slow disease progression, manage symptoms, and prevent complications."
       },
       "emergency": {
         "call_911": [
@@ -1078,7 +1107,9 @@
           "Read nutrition labels for sodium content",
           "Prepare meals at home to control ingredients",
           "Follow any individualized dietary recommendations, especially if swallowing difficulties are present"
-        ]
+        ],
+        "diet_education": "Heart-Healthy and Stroke Prevention Diet:\nA heart-healthy diet reduces the risk of recurrent stroke by managing blood pressure, cholesterol, and blood sugar. The DASH and Mediterranean diets are both recommended. Sodium restriction is important for blood pressure control. If swallowing difficulties (dysphagia) are present after stroke, follow the speech pathologist's recommendations for modified food textures and liquid consistencies.",
+        "overview": "Heart-Healthy and DASH Diet: After a stroke, a heart-healthy eating plan such as the DASH or Mediterranean diet helps manage blood pressure, cholesterol, and other vascular risk factors to reduce the risk of a recurrent stroke. If swallowing difficulties (dysphagia) are present, diet texture and liquid consistency must be modified as directed by the speech-language pathologist."
       },
       "emergency": {
         "call_911": [
@@ -1160,7 +1191,9 @@
           "Maintain adequate hydration unless fluids are restricted",
           "Report significant weight loss, poor appetite, or difficulty eating",
           "Work with a dietitian familiar with Parkinson's disease if recommended"
-        ]
+        ],
+        "diet_education": "Nutrition and Medication Timing for Parkinson's:\nProtein can interfere with the absorption of levodopa, the primary medication for Parkinson's disease. Some healthcare providers recommend consuming most protein at the evening meal rather than with the morning or midday levodopa dose. Adequate fiber and fluids help manage constipation, which is common in Parkinson's. If swallowing difficulties develop, follow the speech pathologist's dietary recommendations.",
+        "overview": "Parkinson's Disease Nutrition: Nutrition plays an important role in managing Parkinson's disease. Adequate fiber and fluids help manage constipation, a common symptom. For patients taking levodopa, protein intake timing may need to be coordinated with medication, as protein can interfere with levodopa absorption. A balanced diet supports energy, bone health, and overall well-being."
       },
       "emergency": {
         "call_911": [
@@ -1244,7 +1277,9 @@
           "Maintain adequate protein for skin integrity",
           "Follow bowel program dietary recommendations",
           "Monitor weight regularly"
-        ]
+        ],
+        "diet_education": "Nutrition for Spinal Cord Injury:\nNutritional needs after spinal cord injury differ from the general population due to reduced mobility and changes in metabolism. Caloric needs are typically lower, but protein needs remain high to support skin integrity and prevent pressure injuries. A high-fiber diet and adequate fluids are essential for bowel management. Weight monitoring is important to prevent obesity, which can complicate transfers, mobility, and overall health.",
+        "overview": "Spinal Cord Injury Nutrition: After a spinal cord injury, caloric needs typically decrease due to reduced mobility, but protein needs remain high to support skin integrity and prevent pressure injuries. A high-fiber diet and adequate fluids are essential for bowel management. Weight management is important to prevent complications and support mobility."
       },
       "emergency": {
         "call_911": [
@@ -1331,7 +1366,9 @@
           "Ensure adequate hydration throughout the day",
           "Monitor weight and nutritional intake",
           "Simplify meal choices to reduce confusion"
-        ]
+        ],
+        "diet_education": "MIND Diet:\nThe MIND diet (Mediterranean-DASH Intervention for Neurodegenerative Delay) combines elements of the Mediterranean and DASH diets with a focus on foods associated with brain health. It emphasizes leafy green vegetables, other vegetables, berries (especially blueberries), nuts, whole grains, fish, poultry, olive oil, and beans. It limits red meat, butter/margarine, cheese, pastries/sweets, and fried/fast food. Research suggests the MIND diet may help slow cognitive decline.",
+        "overview": "MIND Diet (Mediterranean-DASH Intervention for Neurodegenerative Delay): The MIND diet combines elements of the Mediterranean and DASH diets and emphasizes foods that research suggests may support brain health. It focuses on leafy greens, other vegetables, berries, nuts, whole grains, fish, poultry, olive oil, and beans, while limiting red meat, butter, cheese, pastries, and fried foods. As the disease progresses, meal simplification and modified textures may be needed."
       },
       "emergency": {
         "call_911": [
@@ -1443,7 +1480,9 @@
           "Ensure adequate hydration",
           "Monitor weight and nutritional status",
           "Simplify meal choices"
-        ]
+        ],
+        "diet_education": "MIND Diet:\nThe MIND diet (Mediterranean-DASH Intervention for Neurodegenerative Delay) is designed to support brain health. It emphasizes leafy greens, vegetables, berries, nuts, whole grains, fish, poultry, olive oil, and beans while limiting red meat, butter, cheese, sweets, and fried foods. As dementia progresses, dietary management focuses on ensuring adequate nutrition, simplifying meals, and adapting food textures as swallowing difficulties may develop.",
+        "overview": "MIND Diet and Dementia Nutrition: The MIND diet, which combines the Mediterranean and DASH diets, emphasizes brain-healthy foods including leafy greens, berries, nuts, whole grains, fish, and olive oil. As dementia progresses, feeding strategies may need to adapt \u2014 offering finger foods, simplifying choices, and ensuring consistent meal times can help maintain adequate nutrition."
       },
       "emergency": {
         "call_911": [
@@ -1610,7 +1649,9 @@
           "Eat small, frequent meals if appetite is poor",
           "Read nutrition labels for sodium content",
           "Take prescribed vitamins and supplements"
-        ]
+        ],
+        "diet_education": "Liver-Friendly Diet:\nA liver-friendly diet supports the remaining liver function and helps manage complications such as fluid retention and hepatic encephalopathy. Key principles include strict sodium restriction (less than 2,000 mg/day) to control ascites and edema, maintaining adequate calories and nutrition to prevent malnutrition, eating small and frequent meals, and avoiding all alcohol. Protein may need to be adjusted based on the healthcare provider's recommendations.",
+        "overview": "Liver-Friendly Diet: The dietary goals for cirrhosis include limiting sodium to manage fluid retention (ascites), ensuring adequate but not excessive protein intake, and preventing malnutrition. Alcohol must be completely avoided. Small, frequent meals help maintain energy and nutrition. In some cases, protein may need to be adjusted to help manage hepatic encephalopathy."
       },
       "emergency": {
         "call_911": [
@@ -1671,7 +1712,9 @@
           "Dietary needs may differ during flares vs. remission",
           "Take prescribed nutritional supplements",
           "Stay well-hydrated, especially during flares"
-        ]
+        ],
+        "diet_education": "IBD Nutrition \u2014 Flare vs. Remission:\nNutritional needs differ during active flares compared to periods of remission. During a flare, a low-residue or low-fiber diet with soft, easily digestible foods may help reduce symptoms. During remission, a well-balanced diet that gradually reintroduces fiber and a wider variety of foods is encouraged. Keeping a food diary helps identify individual trigger foods. Working with a dietitian experienced in inflammatory bowel disease is recommended.",
+        "overview": "IBD Nutrition: Dietary needs for Crohn's disease differ during flares versus remission. During flares, a low-residue or low-fiber diet may help reduce symptoms. During remission, a varied, nutrient-rich diet with gradual fiber reintroduction is recommended. Keeping a food diary helps identify personal trigger foods. Working with a dietitian experienced in IBD is highly recommended."
       },
       "emergency": {
         "call_911": [
@@ -1729,7 +1772,9 @@
           "Work with a dietitian experienced in IBD",
           "Take prescribed supplements",
           "Stay well-hydrated"
-        ]
+        ],
+        "diet_education": "IBD Nutrition \u2014 Flare vs. Remission:\nNutritional management of IBD varies depending on whether the disease is active (flare) or in remission. During flares, a low-fiber, bland diet with small frequent meals may be better tolerated. During remission, a balanced, nutrient-rich diet is recommended. No single diet works for everyone with IBD \u2014 identifying personal trigger foods through a food diary is essential. Nutritional deficiencies are common and may require supplementation.",
+        "overview": "IBD Nutrition: Dietary management of inflammatory bowel disease involves adjusting food choices based on disease activity. During flares, soft, well-cooked, low-fiber foods are generally better tolerated. During remission, a balanced diet with gradual fiber reintroduction supports gut health. Individual tolerance varies, and a food diary can help identify trigger foods."
       },
       "emergency": {
         "call_911": [
@@ -1781,7 +1826,9 @@
           "Work with a dietitian experienced in liver disease",
           "Read nutrition labels for sodium content",
           "Take prescribed vitamins and supplements"
-        ]
+        ],
+        "diet_education": "Liver-Friendly Diet:\nA liver-friendly diet minimizes the strain on the liver while ensuring adequate nutrition. Sodium restriction is essential to manage fluid retention. Meals should be small and frequent to support energy levels. All alcohol must be avoided, as it further damages the liver. Adequate protein intake supports liver repair, though specific protein recommendations vary depending on the type and stage of liver disease.",
+        "overview": "Liver-Friendly Diet: A liver-friendly diet limits sodium and unhealthy fats, avoids alcohol completely, and emphasizes lean proteins, fruits, vegetables, and whole grains. Adequate nutrition is important because liver disease can cause malnutrition. Small, frequent meals may be better tolerated than large meals."
       },
       "emergency": {
         "call_911": [
@@ -1839,7 +1886,9 @@
           "Read nutrition labels for added sugars and saturated fat",
           "Work with a dietitian to develop an individualized meal plan",
           "Control portion sizes"
-        ]
+        ],
+        "diet_education": "Mediterranean Diet for Liver Health:\nThe Mediterranean diet is the eating pattern most strongly supported by evidence for improving NASH. It emphasizes fruits, vegetables, whole grains, olive oil, nuts, fish, and legumes while limiting processed foods, added sugars, and saturated fats. Gradual weight loss of 7-10% of body weight has been shown to improve liver inflammation and fibrosis in NASH. Avoiding all alcohol and limiting fructose (found in sugar-sweetened beverages and high-fructose corn syrup) are also important.",
+        "overview": "NASH Diet and Weight Management: For NASH, dietary intervention is a cornerstone of treatment. The Mediterranean eating pattern is recommended. Gradual weight loss of 7-10% of body weight can significantly improve liver inflammation and fibrosis. The focus is on reducing added sugars (especially fructose), saturated fats, and highly processed foods while increasing whole foods, fiber, and healthy fats."
       },
       "emergency": {
         "call_911": [
@@ -1894,7 +1943,9 @@
           "Maintain a healthy weight to reduce stress on joints",
           "Discuss any supplements (glucosamine, chondroitin, fish oil) with the healthcare provider",
           "Stay well-hydrated"
-        ]
+        ],
+        "diet_education": "Anti-Inflammatory Diet:\nAn anti-inflammatory diet may help reduce joint inflammation and manage arthritis symptoms. The Mediterranean diet is one of the most well-studied anti-inflammatory eating patterns. It emphasizes fruits, vegetables, whole grains, fish, nuts, and olive oil while limiting processed foods, red meat, and added sugars. Omega-3 fatty acids, found in fatty fish, walnuts, and flaxseed, have been shown to help reduce inflammation.",
+        "overview": "Anti-Inflammatory Diet: The anti-inflammatory diet \u2014 often modeled on the Mediterranean eating pattern \u2014 emphasizes foods that help reduce inflammation throughout the body. Key components include omega-3 rich fish, colorful fruits and vegetables, whole grains, nuts, and olive oil, while limiting processed foods, refined sugars, saturated fats, and red meat. This eating pattern may help reduce joint pain and stiffness."
       },
       "emergency": {
         "call_911": [
@@ -1995,7 +2046,9 @@
           "Take calcium and vitamin D supplements as prescribed",
           "Spread calcium intake throughout the day for better absorption",
           "Discuss supplement needs with the healthcare provider"
-        ]
+        ],
+        "diet_education": "Bone Health Diet:\nA bone health diet focuses on adequate calcium and vitamin D intake to maintain bone density and reduce fracture risk. The recommended daily calcium intake is 1,000-1,200 mg depending on age and sex, ideally obtained through food sources. Vitamin D (600-800 IU/day or as directed) helps the body absorb calcium. Protein also plays an important role in maintaining bone and muscle strength.",
+        "overview": "Bone Health Diet: Adequate calcium and vitamin D are the foundation of a bone-healthy diet. Adults generally need 1,000-1,200 mg of calcium and 600-800 IU of vitamin D daily (or as directed by the healthcare provider). Calcium is best obtained from food sources and absorbed most effectively when spread throughout the day. Protein is also important for bone and muscle health."
       },
       "emergency": {
         "call_911": [
@@ -2046,7 +2099,9 @@
           "Space iron supplements away from calcium and antacids by at least 2 hours",
           "Follow the healthcare provider's dietary recommendations based on the type of anemia",
           "Work with a dietitian if needed"
-        ]
+        ],
+        "diet_education": "Iron-Rich Diet:\nAn iron-rich diet is essential for preventing and managing iron deficiency anemia. There are two types of dietary iron: heme iron (found in animal sources like red meat, poultry, and fish, which is more easily absorbed) and non-heme iron (found in plant sources like beans, spinach, and fortified cereals). Pairing iron-rich foods with vitamin C enhances absorption. Avoid taking iron supplements with calcium, coffee, or tea, which reduce absorption.",
+        "overview": "Iron-Rich Diet: The dietary approach to anemia depends on the type, but iron deficiency is the most common. Iron-rich foods include red meat, poultry, fish, beans, lentils, fortified cereals, and dark leafy greens. Vitamin C enhances iron absorption when consumed with iron-rich foods. Certain substances (calcium, coffee, tea) can inhibit iron absorption and should be separated from iron-rich meals and supplements."
       },
       "emergency": {
         "call_911": [
@@ -2100,7 +2155,9 @@
           "Follow a balanced, nutrient-rich diet",
           "Carry water at all times",
           "Work with a dietitian familiar with sickle cell disease"
-        ]
+        ],
+        "diet_education": "Hydration and Nutrition for Sickle Cell Disease:\nAdequate hydration is the most critical dietary factor for managing sickle cell disease, as dehydration can trigger sickle cell crises. Aim for 8-10 glasses of water daily and increase intake during hot weather, exercise, or illness. A balanced, nutrient-rich diet with adequate folic acid, zinc, and vitamin D supports red blood cell production and overall health.",
+        "overview": "Sickle Cell Disease Nutrition: Adequate hydration is the single most important dietary factor for people with sickle cell disease, as dehydration can trigger a pain crisis. A balanced, nutrient-rich diet supports overall health and immune function. Folic acid supplementation is commonly prescribed to support red blood cell production. Increased caloric needs may be present due to the body's ongoing effort to produce new red blood cells."
       },
       "emergency": {
         "call_911": [
@@ -2188,7 +2245,9 @@
           "Stay hydrated, especially during treatment",
           "Work with a dietitian experienced in oncology nutrition",
           "Discuss any supplements with the oncology team before use"
-        ]
+        ],
+        "diet_education": "Oncology Nutrition:\nNutritional needs during cancer treatment depend on the type of cancer, treatment being received, and individual symptoms. Maintaining adequate protein and caloric intake supports healing, immune function, and treatment tolerance. Small, frequent meals may help when appetite is poor or nausea is present. During chemotherapy, food safety is critical due to immunosuppression. Always discuss supplements with the oncology team before use.",
+        "overview": "Oncology Nutrition: Nutrition plays an important role during cancer treatment. The goals are to maintain weight, preserve muscle mass, support immune function, and manage treatment side effects. Adequate protein is especially important for healing and recovery. During chemotherapy, food safety practices should be followed to reduce infection risk. The oncology dietitian can provide individualized guidance based on the type of cancer and treatment."
       },
       "emergency": {
         "call_911": [
@@ -2241,7 +2300,9 @@
           "Work with a dietitian if kidney function is impaired",
           "Maintain adequate hydration",
           "Follow oncology team recommendations"
-        ]
+        ],
+        "diet_education": "Post-Cancer Nutrition and Kidney Health:\nAfter kidney cancer treatment, dietary recommendations depend on remaining kidney function. If kidney function is reduced, follow renal diet guidelines as directed. Maintaining a healthy weight, eating a balanced diet rich in fruits, vegetables, and lean proteins, and staying well-hydrated support overall health and recovery.",
+        "overview": "Post-Renal Cancer Diet: After kidney cancer treatment, dietary guidelines focus on supporting the remaining kidney function. If kidney function is reduced, dietary adjustments for sodium, protein, and potassium may be needed, similar to chronic kidney disease dietary management. Maintaining a healthy weight and following a balanced diet supports overall recovery and surveillance."
       },
       "emergency": {
         "call_911": [
@@ -2294,7 +2355,9 @@
           "Eat small, frequent meals",
           "Maintain adequate caloric and protein intake",
           "Discuss nutritional supplementation with the oncology team"
-        ]
+        ],
+        "diet_education": "Nutrition During and After Head/Neck Cancer Treatment:\nTreatment for laryngeal cancer can significantly affect swallowing, taste, and appetite. Working with a speech pathologist and dietitian is essential. Soft, moist foods and high-protein nutritional supplements may be needed. If a feeding tube is required, follow the healthcare team's instructions for tube feeding and oral intake progression.",
+        "overview": "Head and Neck Cancer Nutrition: After treatment for laryngeal cancer, swallowing difficulties are common. The speech pathologist and dietitian work together to determine safe food textures and liquid consistencies. Adequate caloric and protein intake is critical for healing. Nutritional supplements or enteral feeding may be needed if oral intake is insufficient."
       },
       "emergency": {
         "call_911": [
@@ -2378,7 +2441,9 @@
           "Work with a dietitian experienced in HIV care",
           "Discuss any supplement or herbal remedy use with the provider",
           "Eat regular, balanced meals to support immune function"
-        ]
+        ],
+        "diet_education": "Immune-Supportive Nutrition:\nProper nutrition supports immune function and helps maintain a healthy weight in people living with HIV. Adequate protein, calories, and micronutrients are essential. Food safety is especially important due to increased infection risk \u2014 avoid raw or undercooked meats, unpasteurized dairy, and raw sprouts. Some antiretroviral medications interact with certain foods; discuss dietary considerations with the healthcare provider.",
+        "overview": "HIV Nutrition: Good nutrition supports immune function and helps the body fight infections. People with HIV may have increased caloric and protein needs. Food safety is particularly important because a weakened immune system increases the risk of foodborne illness. Maintaining a healthy weight and adequate muscle mass supports overall health and medication effectiveness."
       },
       "emergency": {
         "call_911": [
@@ -2436,7 +2501,9 @@
           "Read nutrition labels for sodium content",
           "Weigh yourself daily to monitor fluid retention",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "diet_education": "Low-Sodium Diet for Pulmonary Hypertension:\nA low-sodium diet helps manage fluid retention and reduce the workload on the heart in pulmonary hypertension. Sodium restriction (typically less than 2,000 mg/day) is a key component of management. Fluid intake may also be restricted as directed by the healthcare provider. Daily weight monitoring helps detect fluid retention early.",
+        "overview": "Low-Sodium Diet for Pulmonary Hypertension: Sodium restriction is a key dietary intervention for pulmonary hypertension. Excess sodium causes fluid retention, which increases the workload on the heart and worsens symptoms such as swelling and shortness of breath. The goal is to keep sodium intake below 2,000 mg per day or as directed by the healthcare provider."
       },
       "emergency": {
         "call_911": [
@@ -2562,7 +2629,9 @@
           "Gradually increase fiber intake to 25-35 grams per day when the acute episode resolves",
           "Drink adequate water when increasing fiber",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "diet_education": "High-Fiber Diet (When Not in Active Flare):\nDuring periods of remission, a high-fiber diet (25-35 grams per day) is recommended to prevent future episodes of diverticulitis. Fiber helps keep stool soft and reduces pressure in the colon. Good sources include whole grains, fruits, vegetables, and legumes. During an acute flare, the healthcare provider may recommend a clear liquid diet progressing to low-fiber foods until symptoms resolve, then gradually increasing fiber.",
+        "overview": "High-Fiber Diet (When Not in Acute Flare): After an acute episode of diverticulitis resolves, a high-fiber diet (25-35 grams per day) is recommended to promote regular bowel movements and reduce the risk of future episodes. During an acute flare, the healthcare provider may recommend a clear liquid or low-fiber diet initially, with gradual progression back to a regular high-fiber diet as symptoms improve."
       },
       "emergency": {
         "call_911": [
@@ -2614,7 +2683,9 @@
           "Gradually advance diet as tolerated",
           "Take iron supplements as prescribed if anemia is present",
           "Report any recurrence of bleeding symptoms immediately"
-        ]
+        ],
+        "diet_education": "Gentle Diet for GI Recovery:\nDuring and after a GI bleed, dietary management focuses on avoiding irritation to the GI tract. A soft, bland diet is typically recommended initially, with gradual advancement as tolerated. Iron-rich foods help replenish blood stores if anemia is present. Avoiding NSAIDs, alcohol, and spicy or acidic foods reduces the risk of further irritation.",
+        "overview": "Post-GI Bleed Diet: Following a gastrointestinal bleed, the diet is advanced gradually as directed by the healthcare provider \u2014 often starting with clear liquids, then progressing to soft, bland foods, and eventually a regular diet. Iron-rich foods are important to help recover from anemia caused by blood loss. Avoiding NSAIDs, alcohol, and irritating foods helps prevent recurrence."
       },
       "emergency": {
         "call_911": [
@@ -2667,7 +2738,9 @@
           "Eat regular, balanced meals and avoid skipping meals",
           "Follow post-surgical dietary guidelines if cholecystectomy is performed",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "diet_education": "Low-Fat Diet for Gallbladder Health:\nA low-fat diet helps reduce gallbladder contractions that can trigger gallstone pain. Focus on lean proteins, fruits, vegetables, and whole grains. High-fat, greasy, and fried foods are common triggers for gallbladder attacks. Maintaining a healthy weight is important, but rapid weight loss or crash diets can actually increase the risk of gallstones. Gradual, steady weight loss of 1-2 pounds per week is recommended.",
+        "overview": "Low-Fat Diet: Dietary management for gallstones focuses on reducing fat intake to minimize gallbladder contractions and pain. A balanced diet rich in fiber, fruits, vegetables, and lean proteins supports digestive health. Maintaining a healthy weight is important, but crash diets and rapid weight loss can actually increase the risk of forming gallstones."
       },
       "emergency": {
         "call_911": [
@@ -2718,7 +2791,8 @@
           "Take small bites and sips, chew thoroughly",
           "Use adaptive utensils or cups if recommended",
           "Report any choking episodes, aspiration pneumonia symptoms, or weight loss"
-        ]
+        ],
+        "overview": "Texture-Modified Diet: The International Dysphagia Diet Standardisation Initiative (IDDSI) provides a framework for modified food textures and liquid consistencies for people with swallowing difficulties. The speech-language pathologist will determine the appropriate diet level (regular, soft and bite-sized, minced and moist, pureed, or liquidized) and liquid consistency (thin, slightly thick, mildly thick, moderately thick, or extremely thick). Following the prescribed diet is critical to prevent choking and aspiration pneumonia."
       },
       "emergency": {
         "call_911": [
@@ -2768,7 +2842,9 @@
           "Follow diabetic diet guidelines if diabetes is present",
           "Follow any individualized dietary recommendations from the healthcare provider or dietitian",
           "Monitor weight to ensure adequate nutrition during recovery"
-        ]
+        ],
+        "diet_education": "Nutrition for Wound Healing:\nAdequate nutrition is critical for wound healing after amputation. Protein is the most important macronutrient for tissue repair \u2014 aim for lean meats, fish, eggs, dairy, and beans. Vitamins A and C and the mineral zinc also support wound healing. If diabetes is the underlying cause, blood sugar control through diet is essential for healing. Adequate caloric intake prevents the body from breaking down muscle for energy.",
+        "overview": "Wound Healing Diet: After amputation, the body requires increased calories and protein to support tissue healing. Vitamins A, C, and zinc also play important roles in wound repair. Adequate hydration supports the healing process. If diabetes or vascular disease is present, following the appropriate disease-specific dietary guidelines is also essential."
       },
       "emergency": {
         "call_911": [
@@ -2867,7 +2943,9 @@
           "Follow diabetic diet guidelines if applicable",
           "Discuss nutritional supplementation with the healthcare provider if intake is inadequate",
           "Stay well-hydrated"
-        ]
+        ],
+        "diet_education": "Nutrition for Wound Healing:\nProper nutrition accelerates wound healing and reduces the risk of complications. Protein is essential for tissue repair and should be prioritized at every meal. Vitamin C supports collagen formation, vitamin A promotes cell growth, and zinc supports immune function and tissue repair. Adequate calories are needed to fuel the healing process. Malnutrition is one of the most common preventable causes of delayed wound healing.",
+        "overview": "Wound Healing Nutrition: Proper nutrition is one of the most important factors in wound healing. The body requires additional calories, protein, and specific micronutrients (vitamins A and C, zinc) during the healing process. Malnutrition and dehydration significantly delay wound healing and increase infection risk. Maintaining blood sugar control in diabetic patients is particularly important for wound healing."
       },
       "emergency": {
         "call_911": [
@@ -2962,7 +3040,9 @@
           "Do not start new diets or significantly change eating patterns without consulting the healthcare provider",
           "Report dietary changes to the anticoagulation clinic",
           "Follow any individualized dietary recommendations from the healthcare provider"
-        ]
+        ],
+        "diet_education": "Consistent Diet for Anticoagulant Management:\nIf taking warfarin, maintaining a consistent daily intake of vitamin K is essential for stable anticoagulation. Vitamin K is found in green leafy vegetables (kale, spinach, broccoli, Brussels sprouts, collard greens). The goal is not to eliminate these foods but to eat a consistent amount each day so that the warfarin dose can be adjusted accordingly. Sudden large changes in vitamin K intake can cause the INR to fluctuate, increasing the risk of bleeding or clotting. For newer anticoagulants (DOACs), vitamin K consistency is not required, but a balanced diet and limited alcohol intake are still recommended.",
+        "overview": "Vitamin K and Anticoagulant Diet: For patients on warfarin, maintaining a consistent daily intake of vitamin K is essential \u2014 the goal is not to eliminate vitamin K-rich foods but to eat a consistent amount each day so the medication dose can be calibrated accordingly. Sudden increases or decreases in vitamin K intake can cause dangerous fluctuations in blood clotting. For patients on newer anticoagulants (DOACs), dietary restrictions are generally less strict, but alcohol should still be limited."
       },
       "emergency": {
         "call_911": [
@@ -2987,6 +3067,173 @@
           "New medications, supplements, or dietary changes that may interact with blood thinners",
           "Upcoming dental procedures or surgeries",
           "Missed doses of anticoagulant medication"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Addison's Disease": {
+      "education": "What is Addison's Disease?\nAddison's disease, also known as primary adrenal insufficiency, is a condition in which the adrenal glands do not produce enough of certain hormones, particularly cortisol and aldosterone. Cortisol helps the body respond to stress, maintain blood pressure, regulate metabolism, and reduce inflammation. Aldosterone helps regulate sodium and potassium levels. Addison's disease can be life-threatening if not treated.\n\nSigns and Symptoms:\n\u2022Extreme fatigue and weakness\n\u2022Unintended weight loss and decreased appetite\n\u2022Darkening of the skin (hyperpigmentation), especially in skin folds, scars, and gums\n\u2022Low blood pressure, including dizziness or fainting when standing\n\u2022Salt cravings\n\u2022Low blood sugar (hypoglycemia)\n\u2022Nausea, vomiting, diarrhea, or abdominal pain\n\u2022Muscle or joint pain\n\u2022Irritability or depression\n\u2022Body hair loss or sexual dysfunction (in women)\n\nAdrenal Crisis (Emergency):\n\u2022Severe weakness\n\u2022Severe pain in the lower back, abdomen, or legs\n\u2022Severe nausea, vomiting, and diarrhea leading to dehydration\n\u2022Low blood pressure and loss of consciousness\n\u2022High potassium and low sodium levels\n\nRisk Factors:\n\u2022Autoimmune disorders (most common cause)\n\u2022Tuberculosis\n\u2022Other infections affecting the adrenal glands\n\u2022Bleeding into the adrenal glands\n\u2022Cancer that has spread to the adrenal glands\n\u2022Surgical removal of the adrenal glands\n\u2022Long-term use of corticosteroids followed by sudden discontinuation\n\u2022Family history of autoimmune conditions\n\nTreatment and Self-Management:\n\u2022Take prescribed hormone replacement medications (hydrocortisone, prednisone, or fludrocortisone) exactly as directed.\n\u2022Never skip or stop taking medications without consulting the healthcare provider.\n\u2022Learn to adjust medication doses during illness, injury, or surgery (stress dosing) as directed by the healthcare provider.\n\u2022Carry a medical alert identification card and wear medical alert jewelry.\n\u2022Carry an emergency injectable corticosteroid kit and know how to use it.\n\u2022Maintain adequate sodium intake as recommended.\n\u2022Keep all scheduled endocrinology and PCP appointments.\n\u2022Inform all healthcare providers, dentists, and emergency personnel about the diagnosis.\n\u2022Report signs of adrenal crisis immediately.\n\u2022Receive recommended vaccinations.\n\nReferences:\nNational Institute of Diabetes and Digestive and Kidney Diseases. (2024). Adrenal insufficiency and Addison's disease. https://www.niddk.nih.gov/health-information/endocrine-diseases/adrenal-insufficiency-addisons-disease\nMedlinePlus. (2024). Addison disease. https://medlineplus.gov/addisondisease.html\nEndocrine Society. (2024). Adrenal insufficiency. https://www.endocrine.org/patient-engagement/endocrine-library/adrenal-insufficiency",
+      "diet": {
+        "eat_more": [
+          "Foods with adequate sodium as recommended by the healthcare provider",
+          "Calcium-rich foods (dairy, fortified plant milks, leafy greens)",
+          "Vitamin D-rich foods (fatty fish, fortified foods)",
+          "Lean proteins",
+          "Fruits and vegetables",
+          "Complex carbohydrates to help maintain blood sugar"
+        ],
+        "limit": [
+          "Potassium-rich foods only if directed by the healthcare provider (blood potassium levels should be monitored)",
+          "Excessive sugar and refined carbohydrates"
+        ],
+        "avoid": [
+          "Skipping meals, which can cause low blood sugar",
+          "Sudden changes in sodium intake without provider guidance",
+          "Grapefruit if it interacts with medications"
+        ],
+        "guidelines": [
+          "Follow the healthcare provider's recommendations regarding sodium intake (some patients need a high-sodium diet)",
+          "Ensure adequate calcium and vitamin D intake to protect bone health while on corticosteroid replacement",
+          "Eat regular meals and snacks to help prevent hypoglycemia",
+          "Carry snacks and fluids for situations where meals may be delayed",
+          "Discuss any dietary changes or supplements with the healthcare provider"
+        ],
+        "overview": "Adrenal Insufficiency Diet: People with Addison's disease may need a higher sodium intake than the general population because aldosterone deficiency causes the body to lose sodium. The healthcare provider will give specific guidance on sodium intake. Adequate calcium and vitamin D are important because long-term corticosteroid replacement can affect bone density. Regular meals help prevent hypoglycemia."
+      },
+      "emergency": {
+        "call_911": [
+          "Signs of adrenal crisis: severe weakness, severe abdominal or back pain, severe nausea and vomiting, confusion, loss of consciousness",
+          "Very low blood pressure with dizziness or fainting",
+          "Severe dehydration",
+          "High fever with severe weakness",
+          "Inability to take oral medications due to vomiting (requires emergency injectable corticosteroid)",
+          "Seizure",
+          "Shock (cold clammy skin, rapid heartbeat, confusion)"
+        ],
+        "call_provider": [
+          "Persistent nausea, vomiting, or diarrhea that may impair medication absorption",
+          "Fever or illness requiring stress dose adjustment",
+          "Worsening fatigue or weakness",
+          "Dizziness or lightheadedness when standing",
+          "Salt cravings that are increasing",
+          "Darkening of the skin",
+          "Weight loss or decreased appetite",
+          "Upcoming surgery, dental procedure, or medical procedure (stress dosing may be needed)",
+          "Side effects from hormone replacement therapy",
+          "Questions about adjusting medication doses during illness"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Overactive Bladder": {
+      "education": "What is Overactive Bladder (OAB)?\nOveractive bladder is a condition characterized by a sudden, frequent, and difficult-to-control urge to urinate. It may result in the involuntary loss of urine (urge incontinence). OAB can significantly affect quality of life but is treatable through behavioral strategies, medications, and other interventions.\n\nSigns and Symptoms:\n\u2022Urinary urgency \u2014 a sudden, strong need to urinate that is difficult to control\n\u2022Frequent urination \u2014 needing to urinate more than eight times in 24 hours\n\u2022Urge incontinence \u2014 involuntary loss of urine immediately following an urgent need to urinate\n\u2022Nocturia \u2014 waking two or more times during the night to urinate\n\nRisk Factors:\n\u2022Older age\n\u2022Menopause and estrogen deficiency\n\u2022Enlarged prostate (BPH) in men\n\u2022Neurological conditions (stroke, multiple sclerosis, Parkinson's disease, spinal cord injury)\n\u2022Diabetes\n\u2022Urinary tract infections\n\u2022Pelvic surgery or radiation\n\u2022Obesity\n\u2022Excessive caffeine or alcohol intake\n\u2022Certain medications (diuretics)\n\u2022Pregnancy and childbirth\n\u2022Weakened pelvic floor muscles\n\nTreatment and Self-Management:\n\u2022Practice bladder retraining techniques as directed by the healthcare provider.\n\u2022Perform pelvic floor muscle exercises (Kegel exercises) regularly.\n\u2022Maintain a bladder diary to track urination patterns, fluid intake, and episodes of urgency or leakage.\n\u2022Limit or avoid caffeine and alcohol, which can irritate the bladder.\n\u2022Manage fluid intake \u2014 drink adequate but not excessive amounts, and limit fluids in the evening.\n\u2022Maintain a healthy weight.\n\u2022Manage constipation, which can worsen OAB symptoms.\n\u2022Take prescribed medications (anticholinergics such as oxybutynin, or beta-3 agonists such as mirabegron) as directed.\n\u2022Discuss advanced treatment options (Botox injections, nerve stimulation, surgery) with the healthcare provider if needed.\n\u2022Keep all scheduled urology, urogynecology, and PCP appointments.\n\nReferences:\nUrology Care Foundation. (2024). Overactive bladder. https://www.urologyhealth.org/urology-a-z/o/overactive-bladder-(oab)\nMedlinePlus. (2024). Overactive bladder. https://medlineplus.gov/overactivebladder.html\nNational Institute on Aging. (2024). Bladder health. https://www.nia.nih.gov/health/bladder-health-and-incontinence",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Sudden inability to urinate with severe pain and abdominal distension",
+          "High fever with chills, confusion, or severe weakness",
+          "Large amounts of blood in the urine",
+          "Loss of consciousness",
+          "Severe pelvic or abdominal pain"
+        ],
+        "call_provider": [
+          "Urinary urgency or frequency that is worsening",
+          "New or worsening urge incontinence",
+          "Blood in the urine",
+          "Burning or pain with urination (possible UTI)",
+          "Nocturia that is increasing",
+          "Difficulty emptying the bladder",
+          "Side effects from OAB medications (dry mouth, constipation, blurred vision)",
+          "Symptoms not improving with current treatment",
+          "Fever with urinary symptoms"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Bladder Retraining and Kegel": {
+      "education": "What is Bladder Retraining and Kegel Exercise?\nBladder retraining and Kegel exercises are behavioral therapies used to improve bladder control and reduce urinary incontinence. They are often recommended for people with overactive bladder, urge incontinence, or stress incontinence.\n\nBladder Retraining Instructions:\n\u2022Empty your bladder as soon as you get up in the morning. This starts your retraining schedule.\n\u2022Go to the bathroom at the specific times you and your healthcare provider have discussed. Wait until your next scheduled time before urinating again.\n\u2022Be sure to empty your bladder at each scheduled time, even if you feel no urge to urinate.\n\u2022When you have accomplished your initial goal, gradually increase the time between emptying your bladder by 15-minute intervals.\n\u2022Try to increase your interval each week.\n\u2022If you feel the urge to urinate before your scheduled time, use relaxation techniques: stop and stand still or sit down, take slow deep breaths, squeeze your pelvic floor muscles, and wait until the urge passes before walking slowly to the bathroom.\n\u2022It should take between 6 to 12 weeks to accomplish your goal.\n\nKegel Exercise Instructions:\n\u2022To do a Kegel exercise, squeeze the muscles you would use to stop the flow of urine or prevent passing gas.\n\u2022Do not tighten the muscles of your abdomen, buttocks, or thighs. Focus only on the pelvic floor muscles.\n\u2022To complete one set, squeeze your pelvic floor muscles for a slow count of three, then relax the muscles completely for a slow count of three.\n\u2022Do not push the muscles outward during the relaxation phase.\n\u2022Repeat 10 times to complete one set (10 squeezes equal one set).\n\u2022Perform three sets each day (morning, afternoon, and evening).\n\u2022As your muscle strength improves, increase the squeeze and relaxation count to five seconds each.\n\u2022Be consistent \u2014 results require regular, daily exercise over several weeks.\n\nSigns and Symptoms That May Indicate the Need for Bladder Retraining:\n\u2022Frequent urination (more than eight times in 24 hours)\n\u2022Sudden, strong urges to urinate\n\u2022Urge incontinence (leaking urine before reaching the bathroom)\n\u2022Nocturia (waking at night to urinate)\n\u2022Stress incontinence (leaking urine with coughing, sneezing, laughing, or exercise)\n\nTreatment and Self-Management:\n\u2022Follow the bladder retraining schedule consistently.\n\u2022Perform Kegel exercises daily as recommended.\n\u2022Keep a bladder diary to track progress.\n\u2022Report improvements or difficulties to the healthcare provider.\n\u2022Combine bladder retraining and Kegel exercises with other treatments as directed.\n\u2022Be patient \u2014 improvement typically takes 6 to 12 weeks of consistent practice.\n\u2022Keep all scheduled urology, urogynecology, or PCP appointments.\n\nReferences:\nUCSF Health. (2024). Bladder training. https://www.ucsfhealth.org/education/bladder-training\nUCSF Health. (2024). Pelvic muscle exercises. https://www.ucsfhealth.org/education/pelvic-muscle-exercises\nMedlinePlus. (2024). Kegel exercises. https://medlineplus.gov/ency/article/003975.htm",
+      "diet": null,
+      "emergency": {
+        "call_911": [
+          "Sudden inability to urinate with severe pain",
+          "High fever with confusion or severe weakness",
+          "Large amounts of blood in the urine",
+          "Loss of consciousness"
+        ],
+        "call_provider": [
+          "Worsening urinary incontinence despite bladder retraining",
+          "Burning or pain with urination",
+          "Blood in the urine",
+          "Difficulty performing Kegel exercises correctly",
+          "No improvement after 6-8 weeks of consistent practice",
+          "Fever with urinary symptoms",
+          "New pelvic pain or pressure"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "GERD": {
+      "education": "What is GERD?\nGastroesophageal reflux disease (GERD) is a chronic condition in which stomach acid frequently flows back into the esophagus (the tube connecting the mouth to the stomach). This backwash of acid (acid reflux) can irritate and damage the lining of the esophagus over time.\n\nSigns and Symptoms:\n\u2022Heartburn \u2014 a burning sensation in the chest, usually after eating, that may worsen when lying down\n\u2022Acid or food coming back into the mouth (regurgitation)\n\u2022Sour or bitter taste in the mouth\n\u2022Difficulty swallowing\n\u2022Chronic cough\n\u2022Hoarseness or sore throat\n\u2022Feeling like there is a lump in the throat\n\u2022Chest pain (non-cardiac)\n\u2022Symptoms that worsen after eating or when lying down\n\u2022Worsening of asthma symptoms\n\nRisk Factors:\n\u2022Obesity or overweight\n\u2022Hiatal hernia\n\u2022Pregnancy\n\u2022Smoking\n\u2022Eating large meals or eating late at night\n\u2022Certain foods (fatty, fried, spicy, acidic)\n\u2022Certain beverages (coffee, alcohol, carbonated drinks)\n\u2022Certain medications (aspirin, NSAIDs, some blood pressure medications)\n\u2022Connective tissue disorders such as scleroderma\n\u2022Delayed stomach emptying\n\nTreatment and Self-Management:\n\u2022Take prescribed medications as directed (antacids, H2 blockers such as famotidine, or proton pump inhibitors such as omeprazole).\n\u2022Eat smaller, more frequent meals.\n\u2022Avoid eating 2-3 hours before bedtime.\n\u2022Elevate the head of the bed 6-8 inches if nighttime symptoms occur.\n\u2022Maintain a healthy weight.\n\u2022Avoid tight-fitting clothing around the waist.\n\u2022Stop smoking.\n\u2022Limit alcohol intake.\n\u2022Identify and avoid personal trigger foods.\n\u2022Stay hydrated.\n\u2022Manage stress through relaxation techniques and regular exercise.\n\u2022Report persistent or worsening symptoms, difficulty swallowing, or unintended weight loss.\n\u2022Keep all scheduled gastroenterology and PCP appointments.\n\nReferences:\nNational Institute of Diabetes and Digestive and Kidney Diseases. (2024). Acid reflux (GER and GERD). https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults\nAmerican College of Gastroenterology. (2024). Acid reflux. https://gi.org/topics/acid-reflux\nMedlinePlus. (2024). GERD. https://medlineplus.gov/gerd.html",
+      "diet": {
+        "eat_more": [
+          "Non-citrus fruits such as bananas, melons, and apples",
+          "Vegetables",
+          "Whole grains such as oatmeal, brown rice, and whole-wheat bread",
+          "Lean proteins such as chicken, turkey, fish, and seafood",
+          "Healthy fats in moderation such as avocado, olive oil, and nuts",
+          "Ginger (may help with nausea)",
+          "Non-caffeinated beverages and water"
+        ],
+        "limit": [
+          "Portion sizes \u2014 eat smaller, more frequent meals",
+          "Fatty and fried foods",
+          "Citrus fruits and juices",
+          "Tomatoes and tomato-based products",
+          "Caffeine (coffee, tea, energy drinks)",
+          "Chocolate",
+          "Alcohol",
+          "Carbonated beverages"
+        ],
+        "avoid": [
+          "Eating 2-3 hours before bedtime or lying down",
+          "Spicy foods that trigger symptoms",
+          "Peppermint (can relax the lower esophageal sphincter)",
+          "Very large meals",
+          "Foods that are personal triggers",
+          "Eating while lying down or reclining"
+        ],
+        "guidelines": [
+          "Keep a food diary to identify personal trigger foods",
+          "Eat slowly and chew food thoroughly",
+          "Remain upright for at least 2-3 hours after eating",
+          "Elevate the head of the bed 6-8 inches if nighttime symptoms occur",
+          "Follow the healthcare provider's dietary recommendations",
+          "Maintain a healthy weight"
+        ],
+        "overview": "Anti-Reflux Diet: The anti-reflux diet focuses on reducing foods and behaviors that trigger acid reflux. This includes avoiding large meals, eating 2-3 hours before lying down, limiting fatty, fried, spicy, and acidic foods, and reducing caffeine, alcohol, and carbonated beverages. Eating smaller, more frequent meals and remaining upright after eating are key strategies."
+      },
+      "emergency": {
+        "call_911": [
+          "Severe chest pain (chest pain should always be evaluated to rule out cardiac causes)",
+          "Difficulty breathing or choking",
+          "Vomiting blood or material that looks like coffee grounds",
+          "Severe difficulty swallowing or inability to swallow",
+          "Black, tarry stools",
+          "Sudden, severe abdominal pain"
+        ],
+        "call_provider": [
+          "Heartburn that is not relieved by prescribed medications",
+          "Difficulty swallowing or painful swallowing",
+          "Persistent nausea or vomiting",
+          "Unintended weight loss",
+          "Chronic cough or hoarseness not improving",
+          "Symptoms occurring more than twice per week",
+          "Worsening or new symptoms despite treatment",
+          "Need for antacid use more frequently than recommended"
         ]
       },
       "online": "",
