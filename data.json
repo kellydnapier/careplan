@@ -111,6 +111,7 @@
     ],
     "Oncological Issues": [
       "Cancer",
+      "Colorectal Cancer",
       "Hx of Renal Cancer",
       "Laryngeal Cancer",
       "Skin Cancer"
@@ -3300,6 +3301,69 @@
           "Migraine with new neurological symptoms not previously experienced",
           "Waking from sleep due to headache",
           "Persistent nausea or vomiting with migraine that prevents keeping medications or fluids down"
+        ]
+      },
+      "online": "",
+      "community": ""
+    },
+    "Colorectal Cancer": {
+      "education": "What is Colorectal Cancer?\nColorectal cancer is cancer that starts in the colon or the rectum. The colon is the first and longest part of the large intestine, and the rectum is the lower portion that connects to the anus. Most colorectal cancers begin as noncancerous growths called polyps on the inner lining of the colon or rectum. Over time, some polyps can develop into cancer. Colorectal cancer is one of the most common cancers in the United States, but early detection through screening can often lead to successful treatment.\n\nSigns and Symptoms:\n\u2022Changes in bowel habits (diarrhea, constipation, or narrowing of the stool) lasting more than a few days\n\u2022Feeling that the bowel does not empty completely\n\u2022Rectal bleeding or blood in the stool (bright red or very dark)\n\u2022Persistent abdominal discomfort such as cramps, gas, or pain\n\u2022Weakness and fatigue\n\u2022Unintended weight loss\n\u2022Nausea or vomiting\n\u2022Iron deficiency anemia without a known cause\n\u2022Many people with early colorectal cancer have no symptoms, making screening important\n\nRisk Factors:\n\u2022Age 45 or older (risk increases with age)\n\u2022Personal history of colorectal polyps or colorectal cancer\n\u2022Personal history of inflammatory bowel disease (Crohn's disease or ulcerative colitis)\n\u2022Family history of colorectal cancer or polyps\n\u2022Inherited genetic syndromes (Lynch syndrome, familial adenomatous polyposis)\n\u2022Diet high in red and processed meats\n\u2022Low-fiber diet\n\u2022Physical inactivity\n\u2022Obesity\n\u2022Smoking\n\u2022Heavy alcohol use\n\u2022Type 2 diabetes\n\u2022African American descent (higher incidence and mortality rates)\n\nTreatment and Self-Management:\n\u2022Follow the oncology team's treatment plan (surgery, chemotherapy, radiation therapy, targeted therapy, or immunotherapy).\n\u2022Take all prescribed medications as directed.\n\u2022Attend all scheduled treatment sessions and follow-up appointments.\n\u2022Complete recommended colorectal cancer surveillance (colonoscopies, imaging, CEA blood tests) on schedule.\n\u2022Maintain adequate nutrition and hydration, especially during treatment.\n\u2022Stay physically active as tolerated.\n\u2022Manage treatment side effects with the oncology team's guidance.\n\u2022Report new or worsening symptoms promptly.\n\u2022Complete age-appropriate colorectal cancer screening as recommended (colonoscopy, stool-based tests).\n\u2022Seek emotional and psychological support.\n\u2022Address advance care planning.\n\nReferences:\nAmerican Cancer Society. (2024). What is colorectal cancer? https://www.cancer.org/cancer/types/colon-rectal-cancer/about/what-is-colorectal-cancer.html\nNational Cancer Institute. (2024). Colorectal cancer. https://www.cancer.gov/types/colorectal\nMedlinePlus. (2024). Colorectal cancer. https://medlineplus.gov/colorectalcancer.html",
+      "diet": {
+        "overview": "Colorectal Cancer and Post-Treatment Diet: A balanced, high-fiber diet supports colon health and may help reduce the risk of recurrence. During active treatment, dietary needs may change \u2014 smaller, more frequent meals and easily digestible foods may be better tolerated. After treatment, gradually returning to a high-fiber diet promotes healthy bowel function. The oncology team and dietitian can provide individualized guidance.",
+        "eat_more": [
+          "High-fiber foods including fruits, vegetables, whole grains, beans, and legumes",
+          "Lean proteins such as fish, poultry, and plant-based proteins",
+          "Calcium-rich foods (low-fat dairy, fortified plant milks, leafy greens)",
+          "Foods rich in vitamin D",
+          "Adequate fluids to support fiber intake and hydration"
+        ],
+        "limit": [
+          "Red meat (beef, pork, lamb) to no more than 18 ounces per week",
+          "Processed meats (bacon, sausage, hot dogs, deli meats)",
+          "Added sugars and refined carbohydrates",
+          "Alcohol",
+          "High-fat and fried foods"
+        ],
+        "avoid": [
+          "Processed meats as much as possible",
+          "Tobacco products",
+          "Excessive alcohol consumption",
+          "Raw or undercooked foods during chemotherapy if directed",
+          "Grapefruit or grapefruit juice if it interacts with medications"
+        ],
+        "guidelines": [
+          "Follow the oncology team's specific dietary recommendations during treatment",
+          "Eat small, frequent meals if appetite is poor or nausea is present",
+          "Gradually increase fiber intake after treatment as tolerated",
+          "Maintain adequate protein for healing and recovery",
+          "Discuss any supplements with the oncology team before use",
+          "Work with a dietitian experienced in oncology nutrition"
+        ]
+      },
+      "emergency": {
+        "call_911": [
+          "Severe rectal bleeding or large amounts of blood in the stool",
+          "Severe abdominal pain with rigid abdomen",
+          "High fever with severe weakness or confusion during chemotherapy",
+          "Signs of bowel obstruction (severe cramping, vomiting, inability to pass gas or stool, abdominal distension)",
+          "Severe difficulty breathing or chest pain",
+          "Loss of consciousness",
+          "Severe allergic reaction to treatment",
+          "Signs of sepsis (high fever, confusion, rapid heartbeat, rapid breathing)"
+        ],
+        "call_provider": [
+          "Changes in bowel habits that are new or worsening",
+          "Blood in the stool",
+          "Fever of 100.4\u00b0F/38\u00b0C or higher, especially during chemotherapy",
+          "Persistent nausea, vomiting, or inability to eat",
+          "New or worsening abdominal pain",
+          "Persistent diarrhea or constipation",
+          "Signs of infection (fever, chills, redness, swelling)",
+          "Unusual bleeding or bruising",
+          "Increasing fatigue beyond baseline",
+          "Unintended weight loss",
+          "Side effects from treatment that interfere with daily activities",
+          "Emotional distress or difficulty coping"
         ]
       },
       "online": "",
