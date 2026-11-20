@@ -56,20 +56,23 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 .avoid-label{background:var(--red-bg);color:var(--red)}
 .guidelines-label{background:var(--accent-bg);color:var(--accent)}
 .empty-state{text-align:center;padding:40px;color:var(--text2);font-size:.95em}
-.editor-section{background:var(--card);padding:14px;border-radius:6px;border:1px solid var(--border);margin-bottom:10px}
-.editor-section h3{font-size:1em;margin-bottom:8px;color:var(--accent2)}
-.editor-row{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
-.editor-row label{font-size:.85em;min-width:100px}
-.editor-row input,.editor-row select,.editor-row textarea{font-size:.85em;padding:4px 8px;border:1px solid var(--border);border-radius:4px;font-family:inherit}
-.editor-row textarea{width:100%;min-height:120px;resize:vertical}
 .btn{padding:6px 14px;font-size:.85em;border:none;border-radius:4px;cursor:pointer;font-weight:600;transition:all .15s}
 .btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent2)}
 .btn-danger{background:var(--red);color:#fff}.btn-danger:hover{background:#a93226}
 .btn-secondary{background:var(--tab-bg);color:var(--text)}.btn-secondary:hover{background:#d0d0c8}
 .btn-sm{padding:3px 8px;font-size:.8em}
 .btn-group{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
-@media print{.main-tabs,.sys-tabs,.cond-list,.btn,.btn-group,.editor-section,.app-header{display:none!important}.note-body.collapsed{display:block!important}.app{max-width:100%}}
-@media(max-width:600px){.main-tab{padding:6px 10px;font-size:.8em}.note-body{font-size:.82em;max-height:300px}.pg-box{flex-direction:column}.pg-half:first-child{border-right:none;border-bottom:1px solid var(--border)}}
+/* Care Plan variable inputs */
+.var-inputs{background:var(--accent-bg);border:1px solid #c5d8e8;border-radius:6px;padding:12px 14px;margin-bottom:10px}
+.var-inputs-title{font-weight:700;font-size:.9em;color:var(--accent2);margin-bottom:8px}
+.var-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.var-row label{font-size:.85em;min-width:160px;font-weight:600;color:var(--text)}
+.var-row select,.var-row input[type="text"]{font-size:.85em;padding:5px 8px;border:1px solid var(--border);border-radius:4px;font-family:inherit;min-width:200px;max-width:400px;flex:1}
+.var-row .required-star{color:var(--red);font-weight:700}
+.var-row .optional-tag{color:var(--text2);font-size:.75em;font-style:italic}
+.generate-btn{margin-top:8px}
+@media print{.main-tabs,.sys-tabs,.cond-list,.btn,.btn-group,.app-header,.var-inputs{display:none!important}.note-body.collapsed{display:block!important}.app{max-width:100%}}
+@media(max-width:600px){.main-tab{padding:6px 10px;font-size:.8em}.note-body{font-size:.82em;max-height:300px}.pg-box{flex-direction:column}.pg-half:first-child{border-right:none;border-bottom:1px solid var(--border)}.var-row{flex-direction:column;align-items:flex-start}.var-row select,.var-row input[type="text"]{min-width:100%;max-width:100%}}
 </style>
 </head>
 <body>
@@ -81,34 +84,43 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
   </div>
 </div>
 <div class="main-tabs">
-  <div class="main-tab active" onclick="switchMain('builder')">Knowledge Deficit</div>
-  <div class="main-tab" onclick="switchMain('editor')">Data Editor</div>
+  <div class="main-tab active" onclick="switchMain('kd')">Knowledge Deficit</div>
+  <div class="main-tab" onclick="switchMain('cp')">Care Plans</div>
 </div>
-<div id="builder-view">
+<!-- Knowledge Deficit Tab -->
+<div id="kd-view">
   <div class="sys-tabs" id="sys-tabs"></div>
   <div class="cond-list" id="cond-list"></div>
   <div id="pg-area"></div>
   <div id="notes-area"></div>
 </div>
-<div id="editor-view" style="display:none">
-  <div class="editor-section">
-    <h3>Data Editor</h3>
-    <p style="font-size:.85em;color:var(--text2);margin-bottom:10px">Select a body system tab, then a condition to edit its content. Changes are session-only until exported.</p>
-    <div class="sys-tabs" id="ed-sys-tabs"></div>
-    <div id="ed-cond-list" class="cond-list" style="margin-bottom:10px"></div>
-    <div id="ed-form"></div>
-    <div class="btn-group">
-      <button class="btn btn-primary" onclick="exportData()">Export data.json</button>
-      <button class="btn btn-secondary" onclick="revertData()">Revert All Changes</button>
-    </div>
-  </div>
+<!-- Care Plans Tab -->
+<div id="cp-view" style="display:none">
+  <div class="sys-tabs" id="cp-cat-tabs"></div>
+  <div class="cond-list" id="cp-plan-list"></div>
+  <div id="cp-var-area"></div>
+  <div id="cp-pg-area"></div>
+  <div id="cp-notes-area"></div>
 </div>
 </div>
 <script>
-let DATA=null,originalData=null,activeSys=0,selectedConds={},collapsedSections={},edActiveSys=0,edActiveCond=null;
-async function loadData(){try{const r=await fetch('data.json');DATA=await r.json()}catch(e){DATA={body_systems:["No Data"],conditions:{"No Data":[]},condition_data:{},intervention_labels:[],care_plan_templates:{}}}originalData=JSON.parse(JSON.stringify(DATA));initApp()}
-function initApp(){renderSysTabs();renderEdSysTabs();selectSystem(0)}
-function switchMain(v){document.querySelectorAll('.main-tab').forEach((t,i)=>t.classList.toggle('active',v==(i==0?'builder':'editor')));document.getElementById('builder-view').style.display=v=='builder'?'':'none';document.getElementById('editor-view').style.display=v=='editor'?'':'none'}
+let DATA=null,originalData=null;
+// Knowledge Deficit state
+let activeSys=0,selectedConds={},collapsedSections={};
+// Care Plans state
+let cpActiveCat=0,cpSelectedPlan=null,cpVarValues={},cpCollapsed={};
+
+async function loadData(){try{const r=await fetch('data.json');DATA=await r.json()}catch(e){DATA={body_systems:[],conditions:{},condition_data:{},care_plan_categories:[],care_plans:{}}}originalData=JSON.parse(JSON.stringify(DATA));initApp()}
+function initApp(){renderSysTabs();selectSystem(0);renderCpCatTabs()}
+
+// =========== MAIN TAB SWITCH ===========
+function switchMain(v){
+  document.querySelectorAll('.main-tab').forEach((t,i)=>t.classList.toggle('active',(i===0&&v==='kd')||(i===1&&v==='cp')));
+  document.getElementById('kd-view').style.display=v==='kd'?'':'none';
+  document.getElementById('cp-view').style.display=v==='cp'?'':'none';
+}
+
+// =========== KNOWLEDGE DEFICIT TAB (unchanged) ===========
 function renderSysTabs(){document.getElementById('sys-tabs').innerHTML=DATA.body_systems.map((s,i)=>`<div class="sys-tab${i==activeSys?' active':''}" onclick="selectSystem(${i})">${s}</div>`).join('')}
 function selectSystem(i){activeSys=i;selectedConds={};document.querySelectorAll('#sys-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));renderConditions();renderNotes()}
 function renderConditions(){const sys=DATA.body_systems[activeSys],conds=DATA.conditions[sys]||[],c=document.getElementById('cond-list');if(!conds.length){c.innerHTML='<div class="empty-state">No conditions in this category yet.</div>';return}c.innerHTML=conds.map(cn=>{const chk=selectedConds[cn]?'checked':'';return`<label class="cond-item${chk?' checked':''}"><input type="checkbox" ${chk} onchange="toggleCond('${cn.replace(/'/g,"\\'")}',this.checked)">${cn}</label>`}).join('')}
@@ -117,9 +129,7 @@ function fmtCondList(sel){if(sel.length===1)return sel[0].toLowerCase();if(sel.l
 function dedup(arr){const seen=new Set();return arr.filter(item=>{const k=item.toLowerCase().replace(/[^a-z0-9]/g,'');if(seen.has(k))return false;seen.add(k);return true})}
 function mergeDietLists(conds,field){const items=[];conds.forEach(cn=>{const d=DATA.condition_data[cn]?.diet;if(d&&d[field])items.push(...d[field])});return dedup(items)}
 function mergeEmergency(conds,field){const items=[];conds.forEach(cn=>{const e=DATA.condition_data[cn]?.emergency;if(e&&e[field])items.push(...e[field])});return dedup(items)}
-
-// Build bullet list using text bullets so they copy/paste
-function bulletList(items){return'<div class="bullet-list">'+items.map(i=>`<div class="bullet-item">• ${escHtml(i)}</div>`).join('')+'</div>'}
+function bulletList(items){return'<div class="bullet-list">'+items.map(i=>`<div class="bullet-item">\u2022 ${escHtml(i)}</div>`).join('')+'</div>'}
 
 function renderNotes(){
   const area=document.getElementById('notes-area'),pgArea=document.getElementById('pg-area'),sel=Object.keys(selectedConds);
@@ -127,56 +137,221 @@ function renderNotes(){
   const condStr=fmtCondList(sel);
   pgArea.innerHTML=`<div class="pg-box"><div class="pg-half"><div class="pg-label">Problem</div><div class="pg-text">Knowledge deficit related to ${escHtml(condStr)} self management.</div></div><div class="pg-half"><div class="pg-label">Goal</div><div class="pg-text">Member will verbalize understanding of ${escHtml(condStr)} disease process, self management, and when to seek help.</div></div></div>`;
   let html='';
-  // 1. Education
   const eduInt=`<div class="intervention-line">Case manager to provide education on ${escHtml(condStr)} including pathophysiology, risk factors, self management, and expected outcomes.</div>`;
   const eduContent=sel.map(cn=>{const ed=DATA.condition_data[cn]?.education||'';if(sel.length>1)return`<div class="cond-title">${escHtml(cn)}</div>\n${escHtml(ed)}`;return escHtml(ed)}).join(sel.length>1?'\n<hr class="cond-divider">\n':'\n');
-  html+=renderSectionHtml('Education and Self Management',eduInt+eduContent);
-  // 2. Diet
+  html+=renderSectionHtml('Education and Self Management',eduInt+eduContent,'kd');
   const dietConds=sel.filter(cn=>DATA.condition_data[cn]?.diet);
   if(dietConds.length){
     const dietInt=`<div class="intervention-line">Case manager to educate member on proper diet and assist in dietary modifications to better manage chronic condition.</div>`;
     let dh='';if(dietConds.length===1){dh=renderDietSingle(dietConds[0])}else{dh=renderDietMerged(dietConds)}
-    html+=renderSectionHtml('Dietary Education',dietInt+dh);
+    html+=renderSectionHtml('Dietary Education',dietInt+dh,'kd');
   }
-  // 3. Emergency
   const emergConds=sel.filter(cn=>DATA.condition_data[cn]?.emergency);
   if(emergConds.length){
     const emergInt=`<div class="intervention-line">Case manager to educate member on which s/sx require emergency medical treatment and which s/sx require provider notification.</div>`;
     let eh='';if(emergConds.length===1){eh=renderEmergSingle(emergConds[0])}else{eh=renderEmergMerged(emergConds)}
-    html+=renderSectionHtml('When to Call 911 vs When to Call Provider',emergInt+eh);
+    html+=renderSectionHtml('When to Call 911 vs When to Call Provider',emergInt+eh,'kd');
   }
-  // 4. Educational Materials
   const matInt=`<div class="intervention-line">Provide or send educational resources, including online links, for disease education and management.</div>`;
   const matC=sel.map(cn=>{const o=DATA.condition_data[cn]?.online||'';return o?(sel.length>1?`<div class="cond-title">${escHtml(cn)}</div>\n${escHtml(o)}`:escHtml(o)):''}).filter(Boolean).join('\n<hr class="cond-divider">\n');
-  html+=renderSectionHtml('Educational Materials',matInt+(matC||'To be added.'));
-  // 5. Community Resources
+  html+=renderSectionHtml('Educational Materials',matInt+(matC||'To be added.'),'kd');
   const comInt=`<div class="intervention-line">Refer to Community Resources</div>`;
   const comC=sel.map(cn=>{const c=DATA.condition_data[cn]?.community||'';return c?(sel.length>1?`<div class="cond-title">${escHtml(cn)}</div>\n${escHtml(c)}`:escHtml(c)):''}).filter(Boolean).join('\n<hr class="cond-divider">\n');
-  html+=renderSectionHtml('Community Resources',comInt+(comC||'To be added.'));
+  html+=renderSectionHtml('Community Resources',comInt+(comC||'To be added.'),'kd');
   area.innerHTML=html;
 }
-function renderSectionHtml(title,html){const id='sec_'+title.replace(/\W/g,'');const col=collapsedSections[id];return`<div class="note-section"><div class="note-header" onclick="toggleSection('${id}')"><span>${title}</span><span class="toggle">${col?'▶':'▼'}</span></div><div class="note-body${col?' collapsed':''}" id="${id}">${html}</div></div>`}
-function toggleSection(id){collapsedSections[id]=!collapsedSections[id];const el=document.getElementById(id);if(el)el.classList.toggle('collapsed');const hdr=el?.previousElementSibling;if(hdr){const t=hdr.querySelector('.toggle');if(t)t.textContent=collapsedSections[id]?'▶':'▼'}}
-function renderDietSingle(cn){const d=DATA.condition_data[cn]?.diet;if(!d)return'';let h='';if(d.overview)h+=`<div class="diet-overview"><div class="diet-overview-title">${escHtml(cn)} — Dietary Overview</div>${escHtml(d.overview)}</div>`;h+=buildDietHtml(d.eat_more,d.limit,d.avoid,d.guidelines);return h}
-function renderDietMerged(conds){let h=`<p style="margin-bottom:8px;font-style:italic;color:var(--text2)">Combined dietary guidelines for: ${conds.join(', ')}</p>`;conds.forEach(cn=>{const d=DATA.condition_data[cn]?.diet;if(d?.overview)h+=`<div class="diet-overview"><div class="diet-overview-title">${escHtml(cn)} — Dietary Overview</div>${escHtml(d.overview)}</div>`});h+=buildDietHtml(mergeDietLists(conds,'eat_more'),mergeDietLists(conds,'limit'),mergeDietLists(conds,'avoid'),mergeDietLists(conds,'guidelines'));return h}
+function renderSectionHtml(title,html,prefix){const id=prefix+'_sec_'+title.replace(/\W/g,'');const store=prefix==='kd'?collapsedSections:cpCollapsed;const col=store[id];return`<div class="note-section"><div class="note-header" onclick="toggleSection('${id}','${prefix}')"><span>${title}</span><span class="toggle">${col?'\u25B6':'\u25BC'}</span></div><div class="note-body${col?' collapsed':''}" id="${id}">${html}</div></div>`}
+function toggleSection(id,prefix){const store=prefix==='kd'?collapsedSections:cpCollapsed;store[id]=!store[id];const el=document.getElementById(id);if(el)el.classList.toggle('collapsed');const hdr=el?.previousElementSibling;if(hdr){const t=hdr.querySelector('.toggle');if(t)t.textContent=store[id]?'\u25B6':'\u25BC'}}
+function renderDietSingle(cn){const d=DATA.condition_data[cn]?.diet;if(!d)return'';let h='';if(d.overview)h+=`<div class="diet-overview"><div class="diet-overview-title">${escHtml(cn)} \u2014 Dietary Overview</div>${escHtml(d.overview)}</div>`;h+=buildDietHtml(d.eat_more,d.limit,d.avoid,d.guidelines);return h}
+function renderDietMerged(conds){let h=`<p style="margin-bottom:8px;font-style:italic;color:var(--text2)">Combined dietary guidelines for: ${conds.join(', ')}</p>`;conds.forEach(cn=>{const d=DATA.condition_data[cn]?.diet;if(d?.overview)h+=`<div class="diet-overview"><div class="diet-overview-title">${escHtml(cn)} \u2014 Dietary Overview</div>${escHtml(d.overview)}</div>`});h+=buildDietHtml(mergeDietLists(conds,'eat_more'),mergeDietLists(conds,'limit'),mergeDietLists(conds,'avoid'),mergeDietLists(conds,'guidelines'));return h}
 function buildDietHtml(em,lm,av,gl){let h='';if(em?.length)h+=`<div class="diet-cat"><div class="diet-cat-label eat-more-label">Eat More</div>${bulletList(em)}</div>`;if(lm?.length)h+=`<div class="diet-cat"><div class="diet-cat-label limit-label">Limit</div>${bulletList(lm)}</div>`;if(av?.length)h+=`<div class="diet-cat"><div class="diet-cat-label avoid-label">Avoid</div>${bulletList(av)}</div>`;if(gl?.length)h+=`<div class="diet-cat"><div class="diet-cat-label guidelines-label">Guidelines</div>${bulletList(gl)}</div>`;return h||'No dietary information available.'}
 function renderEmergSingle(cn){const e=DATA.condition_data[cn]?.emergency;if(!e)return'';return buildEmergHtml(e.call_911,e.call_provider)}
 function renderEmergMerged(conds){const c9=mergeEmergency(conds,'call_911'),cp=mergeEmergency(conds,'call_provider');let h=`<p style="margin-bottom:8px;font-style:italic;color:var(--text2)">Combined emergency guidelines for: ${conds.join(', ')}</p>`;h+=buildEmergHtml(c9,cp);return h}
 function buildEmergHtml(c9,cp){let h='';if(c9?.length)h+=`<div class="emergency-section"><div class="emergency-label label-911">When to Call 911</div><p style="margin-bottom:4px;font-size:.85em">Call 911 or go to the nearest emergency department immediately if you experience:</p>${bulletList(c9)}</div>`;if(cp?.length)h+=`<div class="emergency-section"><div class="emergency-label label-provider">When to Call Provider</div><p style="margin-bottom:4px;font-size:.85em">Contact the healthcare provider if you experience:</p>${bulletList(cp)}</div>`;return h||'No emergency information available.'}
 function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
-// === EDITOR ===
-function renderEdSysTabs(){document.getElementById('ed-sys-tabs').innerHTML=DATA.body_systems.map((s,i)=>`<div class="sys-tab${i==edActiveSys?' active':''}" onclick="edSelectSystem(${i})">${s}</div>`).join('')}
-function edSelectSystem(i){edActiveSys=i;edActiveCond=null;document.querySelectorAll('#ed-sys-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));renderEdConds();document.getElementById('ed-form').innerHTML=''}
-function renderEdConds(){const sys=DATA.body_systems[edActiveSys],conds=DATA.conditions[sys]||[],c=document.getElementById('ed-cond-list');c.innerHTML=conds.map(cn=>`<div class="cond-item${edActiveCond==cn?' checked':''}" onclick="edSelectCond('${cn.replace(/'/g,"\\'")}')" style="cursor:pointer">${cn}</div>`).join('')+`<button class="btn btn-sm btn-primary" onclick="edAddCond()">+ Add Condition</button>`}
-function edSelectCond(cn){edActiveCond=cn;renderEdConds();renderEdForm(cn)}
-function renderEdForm(cn){const d=DATA.condition_data[cn]||{};const hasDiet=d.diet!=null;document.getElementById('ed-form').innerHTML=`<h3 style="margin-bottom:10px">Editing: ${cn}</h3><div class="editor-row"><label>Education:</label></div><div class="editor-row"><textarea id="ed-edu" rows="10">${d.education||''}</textarea></div><div class="editor-row"><label><input type="checkbox" id="ed-has-diet" ${hasDiet?'checked':''} onchange="toggleEdDiet()"> Has Dietary Guidelines</label></div><div id="ed-diet-fields" style="display:${hasDiet?'block':'none'}"><div class="editor-row"><label>Diet Overview:</label></div><div class="editor-row"><textarea id="ed-diet-overview" rows="3">${(d.diet?.overview||'')}</textarea></div><div class="editor-row"><label>Eat More (one per line):</label></div><div class="editor-row"><textarea id="ed-eat-more" rows="4">${(d.diet?.eat_more||[]).join('\n')}</textarea></div><div class="editor-row"><label>Limit (one per line):</label></div><div class="editor-row"><textarea id="ed-limit" rows="4">${(d.diet?.limit||[]).join('\n')}</textarea></div><div class="editor-row"><label>Avoid (one per line):</label></div><div class="editor-row"><textarea id="ed-avoid" rows="4">${(d.diet?.avoid||[]).join('\n')}</textarea></div><div class="editor-row"><label>Guidelines (one per line):</label></div><div class="editor-row"><textarea id="ed-guidelines" rows="4">${(d.diet?.guidelines||[]).join('\n')}</textarea></div></div><div class="editor-row"><label>Call 911 (one per line):</label></div><div class="editor-row"><textarea id="ed-911" rows="5">${(d.emergency?.call_911||[]).join('\n')}</textarea></div><div class="editor-row"><label>Call Provider (one per line):</label></div><div class="editor-row"><textarea id="ed-prov" rows="5">${(d.emergency?.call_provider||[]).join('\n')}</textarea></div><div class="editor-row"><label>Educational Materials:</label></div><div class="editor-row"><textarea id="ed-online" rows="4">${d.online||''}</textarea></div><div class="editor-row"><label>Community Resources:</label></div><div class="editor-row"><textarea id="ed-community" rows="4">${d.community||''}</textarea></div><div class="btn-group"><button class="btn btn-primary" onclick="edSave()">Save Changes</button><button class="btn btn-danger" onclick="edDeleteCond()">Delete Condition</button></div>`}
-function toggleEdDiet(){document.getElementById('ed-diet-fields').style.display=document.getElementById('ed-has-diet').checked?'block':'none'}
-function linesToArr(id){return document.getElementById(id).value.split('\n').map(s=>s.trim()).filter(Boolean)}
-function edSave(){if(!edActiveCond)return;const hasDiet=document.getElementById('ed-has-diet').checked;DATA.condition_data[edActiveCond]={education:document.getElementById('ed-edu').value,diet:hasDiet?{overview:document.getElementById('ed-diet-overview').value,eat_more:linesToArr('ed-eat-more'),limit:linesToArr('ed-limit'),avoid:linesToArr('ed-avoid'),guidelines:linesToArr('ed-guidelines')}:null,emergency:{call_911:linesToArr('ed-911'),call_provider:linesToArr('ed-prov')},online:document.getElementById('ed-online').value,community:document.getElementById('ed-community').value};alert('Saved! Export to save permanently.')}
-function edAddCond(){const name=prompt('Enter new condition name:');if(!name||!name.trim())return;const sys=DATA.body_systems[edActiveSys];if(!DATA.conditions[sys])DATA.conditions[sys]=[];DATA.conditions[sys].push(name.trim());DATA.condition_data[name.trim()]={education:'',diet:null,emergency:{call_911:[],call_provider:[]},online:'',community:''};renderEdConds();renderConditions()}
-function edDeleteCond(){if(!edActiveCond||!confirm(`Delete "${edActiveCond}"?`))return;const sys=DATA.body_systems[edActiveSys];DATA.conditions[sys]=DATA.conditions[sys].filter(c=>c!==edActiveCond);delete DATA.condition_data[edActiveCond];edActiveCond=null;renderEdConds();renderConditions();document.getElementById('ed-form').innerHTML=''}
-function exportData(){const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='data.json';a.click()}
-function revertData(){if(!confirm('Revert all changes?'))return;DATA=JSON.parse(JSON.stringify(originalData));selectedConds={};edActiveCond=null;initApp()}
+
+// =========== CARE PLANS TAB ===========
+function renderCpCatTabs(){
+  const cats=DATA.care_plan_categories||[];
+  document.getElementById('cp-cat-tabs').innerHTML=cats.map((c,i)=>`<div class="sys-tab${i==cpActiveCat?' active':''}" onclick="cpSelectCat(${i})">${c}</div>`).join('');
+  renderCpPlanList();
+}
+
+function cpSelectCat(i){
+  cpActiveCat=i;cpSelectedPlan=null;cpVarValues={};
+  document.querySelectorAll('#cp-cat-tabs .sys-tab').forEach((t,j)=>t.classList.toggle('active',j==i));
+  renderCpPlanList();
+  document.getElementById('cp-var-area').innerHTML='';
+  document.getElementById('cp-pg-area').innerHTML='';
+  document.getElementById('cp-notes-area').innerHTML='';
+}
+
+function renderCpPlanList(){
+  const cats=DATA.care_plan_categories||[];
+  const cat=cats[cpActiveCat];
+  const plans=DATA.care_plans[cat]||[];
+  const c=document.getElementById('cp-plan-list');
+  if(!plans.length){c.innerHTML='<div class="empty-state">No care plans in this category yet.</div>';return}
+  c.innerHTML=plans.map((p,idx)=>{
+    const checked=cpSelectedPlan===idx;
+    return`<label class="cond-item${checked?' checked':''}"><input type="radio" name="cp-radio" ${checked?'checked':''} onchange="cpSelectPlan(${idx})">${escHtml(p.name)}</label>`;
+  }).join('');
+}
+
+function cpSelectPlan(idx){
+  cpSelectedPlan=idx;cpVarValues={};
+  renderCpPlanList();
+  const cats=DATA.care_plan_categories||[];
+  const cat=cats[cpActiveCat];
+  const plan=(DATA.care_plans[cat]||[])[idx];
+  if(!plan)return;
+  // Check if there are variables that need filling
+  if(plan.variables&&plan.variables.length>0){
+    renderCpVarInputs(plan);
+    // Check if any required vars exist
+    const hasRequired=plan.variables.some(v=>v.required);
+    if(hasRequired){
+      document.getElementById('cp-pg-area').innerHTML='';
+      document.getElementById('cp-notes-area').innerHTML='<div class="empty-state">Fill in the required fields above to generate the care plan.</div>';
+      return;
+    }
+  } else {
+    document.getElementById('cp-var-area').innerHTML='';
+  }
+  renderCpOutput(plan);
+}
+
+function renderCpVarInputs(plan){
+  const area=document.getElementById('cp-var-area');
+  // Build a map of which variables trigger re-renders (they have triggers field pointing to their key)
+  const triggerKeys=new Set();
+  plan.variables.forEach(v=>{if(v.dynamicOptions)triggerKeys.add(Object.keys(v.dynamicOptions).length>0?true:false)});
+  // Find which variable keys trigger dynamic options on other variables
+  const triggersMap={};
+  plan.variables.forEach(v=>{
+    if(v.dynamicOptions){
+      // Find which other variable's value determines this one's options
+      // The 'triggers' field on the TRIGGERING variable points to the key that triggers re-render
+      // But actually, the dynamicOptions keys match the values of another variable
+      // We need to find which variable supplies those values
+      plan.variables.forEach(other=>{
+        if(other.key!==v.key&&other.type==='select'){
+          // Check if any of this var's dynamicOptions keys match other's options
+          const dynKeys=Object.keys(v.dynamicOptions);
+          const otherOpts=other.options||[];
+          if(dynKeys.some(dk=>otherOpts.includes(dk))){
+            triggersMap[other.key]=v.key;
+          }
+        }
+      });
+    }
+  });
+
+  let html='<div class="var-inputs"><div class="var-inputs-title">Care Plan Variables</div>';
+  plan.variables.forEach(v=>{
+    const reqStar=v.required?'<span class="required-star"> *</span>':'<span class="optional-tag"> (optional)</span>';
+    html+=`<div class="var-row"><label>${escHtml(v.label)}${reqStar}</label>`;
+    if(v.type==='select'){
+      let opts=v.options||[];
+      // Check if this variable has dynamicOptions and should use a trigger value
+      if(v.dynamicOptions){
+        // Find the trigger variable key
+        let trigKey=null;
+        plan.variables.forEach(other=>{
+          if(other.key!==v.key&&other.type==='select'){
+            const dynKeys=Object.keys(v.dynamicOptions);
+            if(dynKeys.some(dk=>(other.options||[]).includes(dk))){
+              trigKey=other.key;
+            }
+          }
+        });
+        if(trigKey&&cpVarValues[trigKey]){
+          opts=v.dynamicOptions[cpVarValues[trigKey]]||[];
+        }
+      }
+      const isTrigger=triggersMap[v.key]?'true':'false';
+      html+=`<select onchange="cpSetVar('${v.key}',this.value,${isTrigger})"><option value="">-- Select --</option>`;
+      opts.forEach(o=>{
+        const sel=cpVarValues[v.key]===o?'selected':'';
+        html+=`<option value="${escHtml(o)}" ${sel}>${escHtml(o)}</option>`;
+      });
+      html+=`</select>`;
+    } else {
+      const ph=v.placeholder||'';
+      const val=cpVarValues[v.key]||'';
+      html+=`<input type="text" placeholder="${escHtml(ph)}" value="${escHtml(val)}" onchange="cpSetVar('${v.key}',this.value,false)" onkeyup="cpSetVar('${v.key}',this.value,false)">`;
+    }
+    html+=`</div>`;
+  });
+  html+=`<button class="btn btn-primary generate-btn" onclick="cpGenerate()">Generate Care Plan</button>`;
+  html+=`</div>`;
+  area.innerHTML=html;
+}
+
+function cpSetVar(key,val,hasTrigger){
+  cpVarValues[key]=val;
+  if(hasTrigger){
+    // Re-render inputs to update dynamic dropdowns
+    const cats=DATA.care_plan_categories||[];
+    const cat=cats[cpActiveCat];
+    const plan=(DATA.care_plans[cat]||[])[cpSelectedPlan];
+    if(plan)renderCpVarInputs(plan);
+  }
+}
+
+function cpGenerate(){
+  const cats=DATA.care_plan_categories||[];
+  const cat=cats[cpActiveCat];
+  const plan=(DATA.care_plans[cat]||[])[cpSelectedPlan];
+  if(!plan)return;
+  // Check required fields
+  const missing=[];
+  (plan.variables||[]).forEach(v=>{
+    if(v.required&&!cpVarValues[v.key])missing.push(v.label);
+  });
+  if(missing.length){
+    alert('Please fill in the required fields: '+missing.join(', '));
+    return;
+  }
+  renderCpOutput(plan);
+}
+
+function cpSubstitute(text,vars,plan){
+  if(!text)return text;
+  let result=text;
+  (vars||[]).forEach(v=>{
+    const val=cpVarValues[v.key];
+    const pattern=new RegExp('\\{'+v.key+'\\}','g');
+    if(val){
+      result=result.replace(pattern,val);
+    } else {
+      // Leave as bracket placeholder for optional unfilled vars
+      result=result.replace(pattern,'['+v.label+']');
+    }
+  });
+  return result;
+}
+
+function renderCpOutput(plan){
+  const vars=plan.variables||[];
+  // Substitute variables in problem and goal
+  const problem=cpSubstitute(plan.problem,vars,plan);
+  const goal=cpSubstitute(plan.goal,vars,plan);
+
+  // Problem/Goal box
+  document.getElementById('cp-pg-area').innerHTML=`<div class="pg-box"><div class="pg-half"><div class="pg-label">Problem</div><div class="pg-text">${escHtml(problem)}</div></div><div class="pg-half"><div class="pg-label">Goal</div><div class="pg-text">${escHtml(goal)}</div></div></div>`;
+
+  // Interventions - each in its own section
+  let html='';
+  plan.interventions.forEach((intv,idx)=>{
+    const intText=cpSubstitute(intv,vars,plan);
+    const title='Intervention '+(idx+1);
+    const content=`<div style="margin-bottom:8px;line-height:1.6">${escHtml(intText)}</div><hr class="cond-divider"><div style="color:var(--text2);font-style:italic">Notes pending.</div>`;
+    html+=renderSectionHtml(title,content,'cp');
+  });
+  document.getElementById('cp-notes-area').innerHTML=html;
+}
+
 loadData();
 </script>
 </body>
